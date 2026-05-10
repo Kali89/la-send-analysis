@@ -1,0 +1,123 @@
+
+======================================================================
+DV: refusal_rate_pct (extended DSG sample)
+======================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       refusal_rate_pct   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                 -0.054
+Method:                 Least Squares   F-statistic:                    0.2486
+Date:                Sun, 10 May 2026   Prob (F-statistic):              0.990
+Time:                        20:54:41   Log-Likelihood:                -573.80
+No. Observations:                 148   AIC:                             1170.
+Df Residuals:                     137   BIC:                             1203.
+Df Model:                          10                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                  23.3117      5.521      4.223      0.000      12.395      34.228
+C(region_f)[T.East of England]              1.1763      5.659      0.208      0.836     -10.014      12.366
+C(region_f)[T.London]                       2.0036      4.805      0.417      0.677      -7.498      11.506
+C(region_f)[T.North East]                   4.9767      5.634      0.883      0.379      -6.164      16.117
+C(region_f)[T.North West]                   2.6246      5.084      0.516      0.607      -7.429      12.679
+C(region_f)[T.South East]                   3.8875      5.234      0.743      0.459      -6.462      14.237
+C(region_f)[T.South West]                   2.7125      5.481      0.495      0.621      -8.125      13.550
+C(region_f)[T.West Midlands]                5.4684      5.407      1.011      0.314      -5.223      16.160
+C(region_f)[T.Yorkshire and The Humber]     4.6770      5.343      0.875      0.383      -5.889      15.243
+dsg_deficit_per_pupil_full                 -0.0027      0.011     -0.249      0.804      -0.024       0.019
+imd_average_score                          -0.0843      0.151     -0.557      0.579      -0.384       0.215
+==============================================================================
+Omnibus:                        2.949   Durbin-Watson:                   0.038
+Prob(Omnibus):                  0.229   Jarque-Bera (JB):                2.495
+Skew:                           0.300   Prob(JB):                        0.287
+Kurtosis:                       3.211   Cond. No.                     1.40e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.4e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Interpretation: A £1 increase in DSG financial stress per pupil is associated with a -0.0027 pp decrease in refusal rate pct (p=0.8036).
+
+======================================================================
+DV: timeliness_pct (extended DSG sample)
+======================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         timeliness_pct   R-squared:                       0.138
+Model:                            OLS   Adj. R-squared:                  0.075
+Method:                 Least Squares   F-statistic:                     2.177
+Date:                Sun, 10 May 2026   Prob (F-statistic):             0.0227
+Time:                        20:54:41   Log-Likelihood:                -689.44
+No. Observations:                 147   AIC:                             1401.
+Df Residuals:                     136   BIC:                             1434.
+Df Model:                          10                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                  46.5264     12.466      3.732      0.000      21.875      71.178
+C(region_f)[T.East of England]             -2.4010     12.763     -0.188      0.851     -27.640      22.838
+C(region_f)[T.London]                      24.4464     10.873      2.248      0.026       2.945      45.948
+C(region_f)[T.North East]                  15.1695     12.708      1.194      0.235      -9.961      40.300
+C(region_f)[T.North West]                  10.1411     11.469      0.884      0.378     -12.540      32.822
+C(region_f)[T.South East]                   2.2106     11.804      0.187      0.852     -21.132      25.553
+C(region_f)[T.South West]                 -10.7989     12.361     -0.874      0.384     -35.244      13.646
+C(region_f)[T.West Midlands]                4.3793     12.195      0.359      0.720     -19.736      28.495
+C(region_f)[T.Yorkshire and The Humber]    14.6269     12.051      1.214      0.227      -9.204      38.458
+dsg_deficit_per_pupil_full                 -0.0077      0.025     -0.310      0.757      -0.057       0.041
+imd_average_score                          -0.1475      0.343     -0.431      0.667      -0.825       0.530
+==============================================================================
+Omnibus:                       10.359   Durbin-Watson:                   1.979
+Prob(Omnibus):                  0.006   Jarque-Bera (JB):                4.110
+Skew:                           0.008   Prob(JB):                        0.128
+Kurtosis:                       2.181   Cond. No.                     1.40e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.4e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Interpretation: A £1 increase in DSG financial stress per pupil is associated with a -0.0077 pp decrease in timeliness pct (p=0.7573).
+
+======================================================================
+DV: la_official_appeal_rate_pct (extended DSG sample)
+======================================================================
+                                 OLS Regression Results                                
+=======================================================================================
+Dep. Variable:     la_official_appeal_rate_pct   R-squared:                       0.149
+Model:                                     OLS   Adj. R-squared:                  0.080
+Method:                          Least Squares   F-statistic:                     2.163
+Date:                         Sun, 10 May 2026   Prob (F-statistic):             0.0243
+Time:                                 20:54:41   Log-Likelihood:                -359.56
+No. Observations:                          135   AIC:                             741.1
+Df Residuals:                              124   BIC:                             773.1
+Df Model:                                   10                                         
+Covariance Type:                     nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                   6.6276      1.692      3.918      0.000       3.280       9.976
+C(region_f)[T.East of England]              0.2673      1.688      0.158      0.874      -3.075       3.609
+C(region_f)[T.London]                      -0.6732      1.443     -0.466      0.642      -3.530       2.183
+C(region_f)[T.North East]                  -1.6715      1.715     -0.974      0.332      -5.067       1.724
+C(region_f)[T.North West]                  -1.7044      1.548     -1.101      0.273      -4.769       1.360
+C(region_f)[T.South East]                   2.7153      1.590      1.708      0.090      -0.432       5.862
+C(region_f)[T.South West]                  -1.0320      1.705     -0.605      0.546      -4.407       2.343
+C(region_f)[T.West Midlands]               -0.5333      1.638     -0.326      0.745      -3.775       2.708
+C(region_f)[T.Yorkshire and The Humber]    -2.0643      1.610     -1.282      0.202      -5.251       1.122
+dsg_deficit_per_pupil_full                  0.0038      0.003      1.108      0.270      -0.003       0.010
+imd_average_score                          -0.0160      0.048     -0.331      0.741      -0.111       0.080
+==============================================================================
+Omnibus:                       93.087   Durbin-Watson:                   2.047
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              687.389
+Skew:                           2.381   Prob(JB):                    5.44e-150
+Kurtosis:                      12.976   Cond. No.                     1.33e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.33e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+Interpretation: A £1 increase in DSG financial stress per pupil is associated with a 0.0038 pp increase in la official appeal rate pct (p=0.2701).

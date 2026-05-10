@@ -1,0 +1,27 @@
+# Raw data files — downloaded programmatically, see README
+data/raw/s251_2025/
+data/raw/sen_pupils_2025/
+data/raw/sen2_2025/
+data/raw/*.zip
+
+# Keep the data directory structure but not the contents
+!data/
+!data/raw/
+!data/raw/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
