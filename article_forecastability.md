@@ -173,6 +173,8 @@ The more immediate implication is for the councils that are now showing the same
 
 An early warning system using these signals — absolute need-type growth, independent top-up spend as a percentage of DSG, and tribunal appeal rate — could have triggered earlier engagement and potentially prevented the most acute operational deterioration. The signals to build such a system are now publicly available. The question is whether they are being used.
 
+**What this would have meant operationally.** A useful early-warning dashboard would not have asked only whether EHCP totals were rising. It would have tracked absolute ASD, SEMH, and SLCN caseload growth alongside timely assessment throughput, independent-provider exposure, tribunal pressure, and DSG carry-forward — because these signals warned of different kinds of collapse. Tracking only total demand would have missed the throughput-capacity squeeze before it became visible in timeliness statistics. Tracking only financial stress would have missed the legal-pressure failures in councils that were not yet in deficit. The monitoring failure was not a lack of data but a failure to combine demand, throughput, legal, and placement-market signals into a single picture — and to treat different collapse types as distinct policy problems requiring distinct early responses.
+
 ---
 
 ## Limitations
