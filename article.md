@@ -275,6 +275,30 @@ The most policy-actionable of these hypotheses is the first. If the problem is a
 
 ---
 
+## The full picture: a causal chain
+
+The seven analytical threads in this piece converge on a single account. It is worth stating it plainly before drawing conclusions.
+
+**Over the past decade, the population of children with EHCPs changed.** Social, Emotional and Mental Health needs grew from 13% to 21% of all EHCP children between 2015/16 and 2024/25 — an 8 percentage-point shift. Autistic Spectrum Disorder grew from 26% to 32%. These are the two most contested, most expensive-to-place categories, and the most likely to end in tribunal when the provision offered is unsuitable.
+
+**The maintained school estate did not follow.** SEMH schools fell from 22% to 11% of new maintained special school openings over the same period. Places grew, but in the wrong proportions. This mismatch is not a South East problem — it is national, running at a median of 13–16 percentage points across all council types.
+
+**What makes some councils expensive is access, not supply volume.** The maintained SEMH provision that does exist is unevenly accessible. Councils whose populations live further from their nearest maintained SEMH school spend significantly more on independent placements (β = +0.016 per km, p = 0.003, n = 146). Safety Valve LAs — large South East shire counties like Hampshire, Surrey, Hertfordshire, West Sussex — tend to have SEMH schools concentrated in county towns, leaving rural populations far from any state alternative. Geographic size alone is not the mechanism: how spread-out a council's population is has no independent predictive value (p = 0.84) once actual provision distance is measured. They are not expensive because they are large; they are expensive because the SEMH provision that does exist is in the wrong places.
+
+**The cost consequence is independent specialist placements.** Safety Valve LAs place 0.89 children per 1,000 pupils in independent specialist schools, against 0.65 in councils with no intervention — a 37% gap. At £60,000–120,000 per place per year, this is almost certainly the primary driver of DSG deficits. They do not have fewer maintained places per pupil overall (3.80 vs 3.95, p = 0.70); they have the wrong mix, inaccessibly located.
+
+**Financial pressure feeds back into operational failure.** DSG deficits → staffing cuts → EP workforce shrinkage → fewer assessments completed within 20 weeks → growing backlogs → rushed or thin plans when they finally arrive → families challenge the quality at tribunal → legal costs and further placements deepen the deficit. The spending data tells this story directly: Safety Valve LAs spend 41% more per EHCP on administration (£716 vs £507, consistent with caseworkers managing growing backlogs rather than delivering efficiently), while EP spend per plan is flat — not reflecting efficiency but the bottleneck on throughput.
+
+**The timeliness failure predated the Safety Valve programme.** In the three years before entering the programme, Safety Valve LAs were already 10.2 percentage points worse on 20-week compliance than similar councils. The 2022 operational collapse — 3,500 fewer plans issued within the legal limit in a single year, with no corresponding demand surge — was the point at which structural pressure became undeniable. The programme found a problem that was already there; it has not reversed it.
+
+**Tribunal appeals are the endpoint, not the origin.** Safety Valve LAs face appeal rates of 7.5% versus 5.4% elsewhere (p = 0.045). But there is no significant correlation between refusal rates and appeal rates (r = 0.13, p = 0.12). Families are not primarily appealing because they were refused. They are appealing the quality and contents of plans produced after long delays by overstretched teams who have been managing a throughput ceiling of roughly 9,500 timely cases per year while total demand grew 60% since 2019.
+
+**The headline metric most commonly scrutinised shows nothing.** EHCP refusal rates in Safety Valve councils: 25.3%. In councils with no intervention: 25.1%. The difference is indistinguishable from zero (p = 0.76). DfE oversight under Safety Valve agreements may be actively constraining overt refusals at the front door. What is escaping scrutiny is the queue behind it.
+
+The crisis in Safety Valve local authorities is not a gatekeeping crisis. It is the terminal expression of a structural mismatch between what the maintained special school system was built to provide and what the EHCP population now needs — playing out through the finances of large South East shire counties that have been funding the gap with expensive independent placements for years, and whose budgets, staffing, and assessment capacity have been hollowing out as a result.
+
+---
+
 ## What needs to happen
 
 The policy implications of the capacity-collapse reading differ from those of the gatekeeping reading.
