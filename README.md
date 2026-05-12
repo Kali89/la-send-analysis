@@ -18,16 +18,20 @@ Two analyses are published here:
 | 20-week compliance | **35.8%** | **57.0%** | 0.001 ** |
 | Official tribunal appeal rate | **7.5%** | **5.4%** | 0.045 * |
 
-### Article 2: Forecastability
+### Article 2: Forecastability (eight model families A–H)
 
-| Forecast year | Best model | Target | LOO-CV AUC |
+| Forecast year | Model | Target | LOO-CV AUC |
 |---|---|---|---|
-| 2016 | Signals only (tribunal + spend) | Legal-pressure collapse | 0.71 |
-| 2017 | Signals only | Legal-pressure collapse | 0.77 |
-| 2019 | Full model | Placement/cost collapse | 0.81 |
-| 2021 | Signals only | Legal-pressure collapse | **0.88** |
+| 2016 | G: Signals (tribunal + spend) | Legal-pressure collapse | 0.71 |
+| 2019 | B: Need-type counts only | Timeliness collapse | 0.69 |
+| 2019 | B: Need-type counts only | Legal-pressure collapse | 0.77 |
+| 2020 | G: Signals only | Legal-pressure collapse | 0.83 |
+| 2021 | E: Counts + timeliness | Composite collapse | **0.82** |
+| 2021 | G: Signals only | Legal-pressure collapse | **0.88** |
 
-**High-risk councils with no current DfE intervention:** Bristol (risk score 0.90), Birmingham (0.83), Staffordshire (0.80).
+**Key finding:** Need-type growth (Model B) predicted timeliness collapse as well as or better than system-failure signals (AUC 0.66 vs 0.50); but for legal-pressure and placement collapse, tribunal rates and independent spend dominated.
+
+**High-risk councils with no current DfE intervention:** Bristol (risk score 0.90), Birmingham (0.82), Bromley (0.77), Staffordshire (0.69).
 
 ---
 
@@ -45,13 +49,14 @@ Two analyses are published here:
 ├── article_forecastability.md       # Article 2: Forecastability
 ├── outputs/
 │   ├── FINDINGS.md                  # Detailed statistical findings
-│   ├── figures/                     # 41 PNG charts (150 dpi)
+│   ├── figures/                     # 43 PNG charts (150 dpi)
 │   └── tables/
 │       ├── la_summary_2024_extended.csv     # 151-LA 2024 cross-section
 │       ├── panel_timeseries.csv             # 1,753 LA-year rows (2014–2024)
 │       ├── la_collapse_labels.csv           # Collapse labels per LA (3 definitions)
-│       ├── forecastability_summary.csv      # AUC × model × year × collapse type
-│       ├── la_risk_scores_2024.csv          # Current risk deciles (147 LAs)
+│       ├── forecastability_summary.csv      # AUC × model family × year × collapse type (124 evaluations)
+│       ├── forecastability_verdict.csv      # Forecastability verdict per collapse type × year
+│       ├── la_risk_scores_2024.csv          # Current risk deciles (143 LAs)
 │       └── la_scenario_forecasts.csv        # 5-scenario projections to 2030
 └── data/
     └── raw/                         # Not committed — see Download instructions
@@ -121,13 +126,21 @@ The `forecastability_analysis.py` script predicts system collapse in 2022–2024
 - Placement/cost collapse: independent placements > 75th percentile per 1,000 pupils
 - Composite: flags on ≥ 2 of the 3 above
 
-**Model families:**
-- `signals_only`: tribunal rate + trend + S251 independent top-up % of DSG
-- `demand_only`: EHCP growth rate + level
-- `demand_legal`: demand + tribunal
-- `demand_cost`: demand + S251 spend
-- `demand_throughput`: demand + timeliness (2019+ only)
-- `full`: all available features
+**Eight model families (A–H):**
+- `A_total_demand`: total EHCP caseload level + log-linear growth rate only
+- `B_need_type_counts`: absolute EHCP counts + 3yr absolute growth in ASD, SEMH, SLCN, MLD (no tribunal/spend/timeliness) — directly tests whether demand-type growth predicted collapse
+- `C_need_type_shares`: need-type percentage composition only (tests composition vs. volume)
+- `D_counts_capacity`: need-type counts + independent top-up spend + EP service spend
+- `E_counts_throughput`: need-type counts + 20-week compliance trend (2019+ only)
+- `F_counts_cost`: need-type counts + independent top-up spend + DSG balance
+- `G_signals_only`: tribunal appeal rate + trend + independent top-up % of DSG (original strongest model)
+- `H_full`: all available features combined
+
+**Need-type data note:** LA-level EHCP counts by primary need type are only available for 2015/16–2019/20 (DfE historical release) and 2024/25 (SEN2 2025). The years 2020/21–2023/24 have no published LA-level need-type breakdown. Models B–F and H use 2020 data as a proxy for training year 2021, and can only produce 3-year growth features from 2019 onward.
+
+**Key finding:** The answer to *did need-type growth predict collapse?* depends on which type of failure:
+- **Timeliness collapse**: Model B (need-type counts only) outperforms Model G (signals), AUC 0.66 vs 0.50 at 2020. Need-type growth was the dominant predictor.
+- **Legal-pressure and placement collapse**: Model G dominates (AUC 0.83–0.88), with B adding modest incremental value. System-failure signals dominated.
 
 **Evaluation:** LOO cross-validated AUC, Precision@10, Precision@20. Safety Valve / DBV status never enters any model as feature or target.
 
