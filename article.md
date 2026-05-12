@@ -196,6 +196,33 @@ What this finding cannot tell us is which direction the causal arrow runs. Did i
 
 ![Regional capacity profile and independent placement rates](outputs/figures/12_regional_capacity_profile.png)
 
+### A decade of shifting need
+
+The supply hypothesis — maintained schools exist but aren't the right type — can be tested directly now that historical EHCP need-type data is available from 2015/16 onwards.
+
+The national EHCP need profile has shifted substantially over the decade:
+
+| Need type | 2015/16 | 2024/25 | Change |
+|---|---|---|---|
+| Autistic Spectrum Disorder | 25.8% | 31.5% | +5.7pp |
+| Social, Emotional and Mental Health | 12.7% | 20.7% | +8.0pp |
+| Moderate Learning Difficulty | 13.4% | 10.6% | −2.8pp |
+| Speech, Language and Communication | 13.9% | 21.3% | +7.4pp |
+
+SEMH as a share of all EHCP children has grown by **8 percentage points in ten years** — from roughly 1 in 8 to 1 in 5. ASD has grown by nearly 6 points. The population of children with EHCPs has changed, even if the maintained school estate has not.
+
+This demand shift has been consistent across all council types. Safety Valve LAs have seen SEMH grow by 8.3 percentage points since 2015/16 — marginally more than Delivering Better Value councils (7.3pp) or unaffected councils (7.3pp), consistent with their higher current SEMH prevalence.
+
+Meanwhile, new maintained special school openings have moved in the wrong direction. Among maintained special schools with known opening dates, **SEMH schools accounted for 21.6% of new openings before 2016**. Since 2016, that figure has fallen to **11.2%**. ASD-specialist schools have held roughly steady as a proportion of new openings (19.9% pre-2016, 18.2% post-2016). The maintained sector is building capacity broadly in line with pre-existing provision profiles, not shifting toward where need has grown fastest.
+
+The result is a structural gap that is now universal. Across all 150 local authorities with complete data, the share of EHCP children with SEMH needs exceeds the share of maintained special school capacity designated for SEMH — by a median of **13 percentage points nationally**. The ASD gap is similar in magnitude (+17pp). Safety Valve LAs show a specifically larger SEMH gap (+16pp) than Delivering Better Value (+11pp) or unaffected councils (+13pp), while their ASD gap is somewhat smaller (+12pp), consistent with their historically larger ASD-specialist school stock.
+
+Critically, this provision mismatch does not, by itself, predict which councils spend the most on independent placements — the mismatch is too universal for that (all councils face it). What matters, as the next section shows, is whether the SEMH provision that does exist is accessible to the population that needs it.
+
+![National EHCP need-type profile, 2015/16–2024/25](outputs/figures/29_national_demand_shift.png)
+
+![New maintained special school openings by SEN type, 2005–2026](outputs/figures/32_new_supply_cohort.png)
+
 ### Access gaps, not geography
 
 An alternative framing of the supply question is not about how many places exist, but how far families are from them. Using population-weighted centroids for all 33,755 Lower Layer Super Output Areas (LSOAs) in England, matched to the location of every maintained special school by primary SEN type, we can compute the mean distance from each LA's population to its nearest maintained SEMH or ASD school.
@@ -238,7 +265,7 @@ The strongest statistical signal in the data is the density of independent speci
 
 Three further hypotheses remain plausible and are not mutually exclusive:
 
-**1. Wrong type of provision.** Even where maintained special school places exist, they may not match the need profile — autism and SEMH specialist capacity may be insufficient even in LAs where total maintained capacity per pupil is adequate. The LSOA access analysis above provides partial evidence for this: SEMH distance is a significant predictor of independent spend even after controlling for total maintained capacity per pupil. But testing the type-match hypothesis fully would require school-level SEN specialism data matched to LA EHCP need profiles.
+**1. Wrong type of provision.** The need-type and supply analysis above confirms this is a real and universal problem: SEMH need has grown by 8 percentage points since 2015/16 while new maintained SEMH school openings have halved as a share of the new-build programme. The LSOA access analysis reinforces it: SEMH distance is a significant predictor of independent spend. But the mismatch is too uniform across council types to explain which specific LAs spend the most — what varies is geographic access to the SEMH provision that does exist.
 
 **2. Tribunal behaviour.** Families who successfully argue at tribunal for a named independent placement create a placement the council must fund. SEND Tribunal upholds parental choice in roughly 80% of cases. Whether Safety Valve councils lose tribunal cases at higher rates — and whether those losses explain a disproportionate share of their independent placements — requires tribunal outcome data broken down by LA and placement type, which is not currently published.
 
@@ -276,6 +303,7 @@ All data used in this analysis are from official DfE or MHCLG sources:
 - **IMD 2019** — average deprivation score by upper-tier LA (IoD2019, MHCLG)
 - **GIAS (Get Information About Schools)** — full establishment file, May 2026; school type, capacity, and pupil numbers for all 1,068 state-funded special schools
 - **LSOA 2021 population-weighted centroids** — ONS ArcGIS (33,755 England LSOAs), joined to upper-tier LA via ONS LSOA21–UTLA22 lookup; per-LSOA distances computed by vectorised nearest-neighbour search (scipy cKDTree) against all maintained special schools by primary SEN type
+- **SEN2 historical need-type data (2015/16–2019/20)** — DfE SEN2 2019–20 release, `sen_age_gender.csv`; LA-level EHCP pupils by primary need type for five academic years; joined to current 2024/25 data to form the ten-year demand trend
 
 Intervention status (Safety Valve, Delivering Better Value) assigned from DfE programme announcements. Non-parametric group tests use Mann-Whitney U and Kruskal-Wallis H. OLS regressions include IMD 2019 average score as a deprivation control and region fixed effects.
 
