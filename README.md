@@ -1,16 +1,16 @@
 # England's SEND Crisis: LA-Level Analysis
 
-**Is England's SEND funding crisis causing local councils to gatekeep EHCP applications?**
+Two analyses are published here:
 
-This repository contains the full analysis pipeline, outputs, and write-up for an investigation into whether financially stressed English local authorities (those under the DfE's Safety Valve programme) are refusing more EHCP applications, failing on statutory timeliness, and facing more SEND Tribunal appeals.
+1. **[The queue problem, not gatekeeping](article.md)** — Safety Valve councils are not refusing more applications; they are failing on timeliness, producing poor-quality plans, and driving higher tribunal rates through capacity collapse.
 
-**Key finding:** Financially stressed councils are not refusing significantly more applications — but nearly two-thirds of children assessed in Safety Valve authorities wait longer than the legal 20-week limit for their plan. The crisis is a capacity collapse, not a gatekeeping story.
-
-→ **[Read the full article](article.md)**
+2. **[The collapse was foreseeable — and the next one already is](article_forecastability.md)** — Using only data available in 2016, tribunal appeal rates and independent placement spend could already identify which councils would hit systemic failure. The same signals are now visible in a new set of authorities.
 
 ---
 
-## Findings at a glance
+## Key findings at a glance
+
+### Article 1: Queue problem, not gatekeeping
 
 | Outcome | Safety Valve LAs | No-intervention LAs | p-value |
 |---|---|---|---|
@@ -18,57 +18,61 @@ This repository contains the full analysis pipeline, outputs, and write-up for a
 | 20-week compliance | **35.8%** | **57.0%** | 0.001 ** |
 | Official tribunal appeal rate | **7.5%** | **5.4%** | 0.045 * |
 
-The five worst LA performers on timeliness in 2024 (Devon 3.2%, Cambridgeshire 7.7%, West Sussex 11.4%, Medway 11.7%, Essex 16.2%) are all Safety Valve authorities.
+### Article 2: Forecastability
+
+| Forecast year | Best model | Target | LOO-CV AUC |
+|---|---|---|---|
+| 2016 | Signals only (tribunal + spend) | Legal-pressure collapse | 0.71 |
+| 2017 | Signals only | Legal-pressure collapse | 0.77 |
+| 2019 | Full model | Placement/cost collapse | 0.81 |
+| 2021 | Signals only | Legal-pressure collapse | **0.88** |
+
+**High-risk councils with no current DfE intervention:** Bristol (risk score 0.90), Birmingham (0.83), Staffordshire (0.80).
 
 ---
 
 ## Repository structure
 
 ```
-├── analysis.py                  # Main analysis pipeline (data load → figures → tables)
-├── extension.py                 # Extension: DSG expansion, mediation, event study
-├── article.md                   # Full write-up / blog post
+├── analysis.py                      # Core pipeline (SEN2 2025, tribunal, regressions)
+├── extension.py                     # DSG expansion, mediation, event study
+├── capacity_analysis.py             # GIAS special school capacity analysis
+├── spend_model.py                   # LSOA access distance + spend regression
+├── mismatch_analysis.py             # Need-type vs. supply mismatch over time
+├── prediction_analysis.py           # Early prediction of Safety Valve status
+├── forecastability_analysis.py      # Forecastability study (this new analysis)
+├── article.md                       # Article 1: Queue problem
+├── article_forecastability.md       # Article 2: Forecastability
 ├── outputs/
-│   ├── FINDINGS.md              # Detailed statistical findings + caveats
-│   ├── figures/                 # 13 PNG charts (150 dpi)
-│   │   ├── 01_national_trends.png
-│   │   ├── 02_la_refusal_rates_2024.png
-│   │   ├── 03_la_timeliness_2024.png
-│   │   ├── 03b_la_ehcp_rate_2024.png
-│   │   ├── 03c_la_tribunal_rate_2024.png
-│   │   ├── 04_regional_boxplots.png
-│   │   ├── 05_intervention_vs_none_trends.png
-│   │   ├── 06_refusal_vs_tribunal_scatter.png
-│   │   ├── 07_regression_coefficients.png
-│   │   ├── 07b_regression_coefficients_extended.png
-│   │   ├── 08_event_study.png
-│   │   ├── 09_mediation_path.png
-│   │   └── 10_sv_la_trajectories.png
+│   ├── FINDINGS.md                  # Detailed statistical findings
+│   ├── figures/                     # 41 PNG charts (150 dpi)
 │   └── tables/
-│       ├── la_summary_2024.csv          # 151-LA 2024 cross-section
-│       ├── la_summary_2024_extended.csv # + full DSG coverage
-│       ├── panel_timeseries.csv         # 1,753 LA-year rows (2014–2024)
-│       ├── regression_results.txt       # OLS summaries (n=50)
-│       └── regression_results_extended.txt  # OLS summaries (n≈150)
+│       ├── la_summary_2024_extended.csv     # 151-LA 2024 cross-section
+│       ├── panel_timeseries.csv             # 1,753 LA-year rows (2014–2024)
+│       ├── la_collapse_labels.csv           # Collapse labels per LA (3 definitions)
+│       ├── forecastability_summary.csv      # AUC × model × year × collapse type
+│       ├── la_risk_scores_2024.csv          # Current risk deciles (147 LAs)
+│       └── la_scenario_forecasts.csv        # 5-scenario projections to 2030
 └── data/
-    └── raw/                     # Not committed — see Download instructions below
+    └── raw/                         # Not committed — see Download instructions
 ```
 
 ---
 
 ## Data sources
 
-All data are from official DfE sources and are downloaded programmatically by the analysis scripts. No manual downloads are required to reproduce the 2019–2024 core analysis.
-
-| Dataset | Source | Notes |
+| Dataset | Source | Required for |
 |---|---|---|
-| SEN2 2025 (requests, timeliness, caseload, plans) | [DfE Explore Education Statistics](https://explore-education-statistics.service.gov.uk/find-statistics/education-health-and-care-plans) | Downloaded via EES API |
-| SEND Tribunal appeal rate 2014–2024 | DfE SEN2 2025 supporting file | First published 2025 |
-| S251 LA & School Expenditure 2024–25 | [DfE Explore Education Statistics](https://explore-education-statistics.service.gov.uk/find-statistics/la-and-school-expenditure) | DSG 1.9.3 carry-forward; 153 LAs |
-| SEN pupils 2024–25 | [DfE Explore Education Statistics](https://explore-education-statistics.service.gov.uk/find-statistics/special-educational-needs-in-england) | Total pupils by LA (denominator) |
-| IMD 2019 | [MHCLG IoD2019 Table 10](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/833995/File_10_-_IoD2019_Local_Authority_District_Summaries__lower-tier__.xlsx) | Downloaded at runtime |
+| SEN2 2025 (requests, timeliness, caseload, plans) | DfE Explore Education Statistics | All analyses |
+| SEND Tribunal appeal rate 2014–2024 | DfE SEN2 2025 supporting file | All analyses |
+| S251 LA & School Expenditure 2015/16–2024/25 | DfE Explore Education Statistics | Extension, forecastability |
+| SEN pupils 2024–25 | DfE Explore Education Statistics | Forecastability, spend model |
+| SEN2 historical 2019–20 (need-type 2015/16–2019/20) | DfE archive | Mismatch, forecastability |
+| GIAS all establishments (May 2026) | get-information-schools.service.gov.uk | Capacity, spend model |
+| LSOA 2021 centroids | ONS ArcGIS | Spend model |
+| IMD 2019 | MHCLG IoD2019 Table 10 | All regression models |
 
-Safety Valve and Delivering Better Value programme membership from DfE programme announcements (2022–2025).
+Safety Valve and Delivering Better Value programme membership from DfE announcements (2022–2025).
 
 ---
 
@@ -76,16 +80,72 @@ Safety Valve and Delivering Better Value programme membership from DfE programme
 
 ```bash
 # Install dependencies
-pip install pandas numpy matplotlib seaborn scipy statsmodels requests openpyxl
+pip install pandas numpy matplotlib seaborn scipy statsmodels scikit-learn requests openpyxl
 
-# Run core analysis (downloads SEN2 2025 data automatically on first run)
+# 1. Core analysis: SEN2 data → timeliness, refusals, tribunals, regressions
 python analysis.py
 
-# Run extension (DSG expansion, mediation, event study)
+# 2. Extension: DSG S251 expansion, mediation, event study
 python extension.py
+
+# 3. Capacity: GIAS special school capacity and structural chain analysis
+#    Requires: data/raw/edubasealldata20260512.csv (download from GIAS)
+python capacity_analysis.py
+
+# 4. Access distances: LSOA centroids → nearest special school by SEN type
+#    Requires: data/raw/lsoa_centroids_2021.csv (ONS ArcGIS, auto-fetched or manual)
+python spend_model.py
+
+# 5. Provision-need mismatch over time
+#    Requires: data/raw/special-educational-needs-in-england_2019-20.zip
+python mismatch_analysis.py
+
+# 6. Forecastability study: early warning signals, risk scores, scenario projections
+#    Requires: all data/raw/ above (must run after analysis.py and extension.py)
+python forecastability_analysis.py
 ```
 
-The scripts download the required data to `data/raw/` on first run. The S251 and SEN pupils downloads are large (~350MB and ~4.7GB respectively); the SEN2 data is ~36MB.
+**Note:** Scripts 3–6 require manual data downloads. GIAS (~61MB) is from the DfE's Get Information About Schools download page. The S251 zip (~12MB) and SEN pupils (~4.7GB) are from DfE Explore Education Statistics.
+
+Scripts must be run in order (each builds on outputs of earlier ones). The core analysis (steps 1–2) can be run independently; steps 3–6 require the panel outputs from step 1.
+
+---
+
+## Forecastability methodology
+
+The `forecastability_analysis.py` script predicts system collapse in 2022–2024 using only data available at each year from 2016 to 2021. Collapse is defined from observable outcomes, not programme status.
+
+**Collapse definitions (configurable at top of script):**
+- Timeliness collapse: mean 20-week compliance < 40% over 2022–2024
+- Legal-pressure collapse: mean official appeal rate > 75th percentile
+- Placement/cost collapse: independent placements > 75th percentile per 1,000 pupils
+- Composite: flags on ≥ 2 of the 3 above
+
+**Model families:**
+- `signals_only`: tribunal rate + trend + S251 independent top-up % of DSG
+- `demand_only`: EHCP growth rate + level
+- `demand_legal`: demand + tribunal
+- `demand_cost`: demand + S251 spend
+- `demand_throughput`: demand + timeliness (2019+ only)
+- `full`: all available features
+
+**Evaluation:** LOO cross-validated AUC, Precision@10, Precision@20. Safety Valve / DBV status never enters any model as feature or target.
+
+---
+
+## Caveats
+
+1. **Refusal rate inflation by backlogs:** Councils with large backlogs show lower apparent refusal rates (decisions pending). Delay-as-gatekeeping is not captured by refusal rates.
+2. **Forecastability ≠ causal mechanism:** High AUC from early tribunal rates reflects partly autocorrelation (persistent structural conditions), not pure prediction of future events.
+3. **DSG balance ≠ operational capacity:** End-of-year carry-forward is an accounting figure; staffing headcount is the key missing variable.
+4. **Scenario projections are sensitivity illustrations, not forecasts:** Real-world dynamics (policy interventions, capital programmes) are not modelled.
+5. **Selection into Safety Valve:** SV LAs were already performing worse before programme entry. Cross-sectional comparisons cannot establish causation.
+
+---
+
+## Licence
+
+Code: MIT. Data outputs in `outputs/` are derived from Crown Copyright data (Open Government Licence v3.0).
 
 ---
 
