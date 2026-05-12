@@ -196,6 +196,22 @@ What this finding cannot tell us is which direction the causal arrow runs. Did i
 
 ![Regional capacity profile and independent placement rates](outputs/figures/12_regional_capacity_profile.png)
 
+### Access gaps, not geography
+
+An alternative framing of the supply question is not about how many places exist, but how far families are from them. Using population-weighted centroids for all 33,755 Lower Layer Super Output Areas (LSOAs) in England, matched to the location of every maintained special school by primary SEN type, we can compute the mean distance from each LA's population to its nearest maintained SEMH or ASD school.
+
+When these distance measures enter a regression predicting independent placement top-up spend per EHCP (S251 line 1.2.3, 2023/24), one finding is significant and one is a clear null.
+
+The **mean distance to the nearest maintained SEMH school is a significant positive predictor of independent spend per EHCP** (β = +0.016 per km, p = 0.003): councils whose populations live further from state SEMH provision spend more on independent placements, after controlling for need-type profile (% ASD, % SEMH), deprivation, EHCP prevalence, and region. The relationship holds even with all 152 upper-tier LAs in the model — a notably larger and more geographically representative sample than the DSG-deficit regressions, which were limited to 50 LAs. Distance to ASD provision is in the expected direction but weaker (p = 0.06).
+
+The null is equally informative: **geographic population dispersal — how spread-out the LA's population is relative to its own centroid — has no predictive value** (p = 0.84). A sprawling shire county with population distributed across market towns does not spend more on independent placements than a compact urban authority, once the actual provision distance is controlled for. This is because special schools, both maintained and independent, tend to locate near the populations they serve. Dispersal matters only insofar as it creates provision gaps; it does not independently drive cost. The expensive councils are not expensive because they are large — they are expensive because SEMH provision is thin relative to the need profile of their population.
+
+Taken together with the independent supply findings, this points toward a consistent picture: the independent placement cost burden is driven by a mismatch between the type of provision available in the maintained sector and the needs of EHCP children in that area, particularly for SEMH. Where that gap exists, families — and tribunals — fill it with independent placements.
+
+The model using structural access and demographic factors explains **27% of the variance** in independent placement spend across councils (R² = 0.27, n = 146 with complete data). Safety Valve LAs show a median actual-to-predicted spend ratio of **1.09x** — modestly above what their structural characteristics would predict, but not dramatically so. The biggest outliers are Merton (no intervention, 3.2x predicted), Medway (Safety Valve, 2.6x), and Barnsley (Delivering Better Value, 2.6x). The remaining 73% of variance is unexplained by structural access factors and demographics — almost certainly reflecting historical commissioning patterns, tribunal behaviour, and local authority-specific decisions that cross-sectional data cannot capture.
+
+![LSOA population-weighted distance to nearest maintained special school by intervention status](outputs/figures/26_lsoa_distance_by_status.png)
+
 ### What the supply data cannot tell us
 
 The GIAS capacity and utilisation figures capture whether a place physically exists and whether it is occupied. They do not capture whether it is the *right kind* of place. A council may have abundant maintained special school capacity for children with moderate learning difficulties but almost none for non-verbal autism or severe SEMH needs — precisely the categories driving EHCP growth nationally. Safety Valve LAs have the highest share of EHCP children with SEMH needs (23.2% vs 19.4% in unaffected LAs), a category strongly associated with independent specialist placements and tribunal disputes.
@@ -222,7 +238,7 @@ The strongest statistical signal in the data is the density of independent speci
 
 Three further hypotheses remain plausible and are not mutually exclusive:
 
-**1. Wrong type of provision.** Even where maintained special school places exist, they may not match the need profile — autism and SEMH specialist capacity may be insufficient even in LAs where total maintained capacity per pupil is adequate. Testing this would require school-level SEN specialism data matched to LA EHCP need profiles.
+**1. Wrong type of provision.** Even where maintained special school places exist, they may not match the need profile — autism and SEMH specialist capacity may be insufficient even in LAs where total maintained capacity per pupil is adequate. The LSOA access analysis above provides partial evidence for this: SEMH distance is a significant predictor of independent spend even after controlling for total maintained capacity per pupil. But testing the type-match hypothesis fully would require school-level SEN specialism data matched to LA EHCP need profiles.
 
 **2. Tribunal behaviour.** Families who successfully argue at tribunal for a named independent placement create a placement the council must fund. SEND Tribunal upholds parental choice in roughly 80% of cases. Whether Safety Valve councils lose tribunal cases at higher rates — and whether those losses explain a disproportionate share of their independent placements — requires tribunal outcome data broken down by LA and placement type, which is not currently published.
 
@@ -259,6 +275,7 @@ All data used in this analysis are from official DfE or MHCLG sources:
 - **SEN pupils 2024–25** — total pupils by LA for per-pupil denominators
 - **IMD 2019** — average deprivation score by upper-tier LA (IoD2019, MHCLG)
 - **GIAS (Get Information About Schools)** — full establishment file, May 2026; school type, capacity, and pupil numbers for all 1,068 state-funded special schools
+- **LSOA 2021 population-weighted centroids** — ONS ArcGIS (33,755 England LSOAs), joined to upper-tier LA via ONS LSOA21–UTLA22 lookup; per-LSOA distances computed by vectorised nearest-neighbour search (scipy cKDTree) against all maintained special schools by primary SEN type
 
 Intervention status (Safety Valve, Delivering Better Value) assigned from DfE programme announcements. Non-parametric group tests use Mann-Whitney U and Kruskal-Wallis H. OLS regressions include IMD 2019 average score as a deprivation control and region fixed effects.
 
