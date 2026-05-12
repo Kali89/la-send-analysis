@@ -1,0 +1,188 @@
+CAPACITY ANALYSIS — REGRESSION RESULTS
+======================================================================
+
+
+Model A: % independent ~ maintained capacity + IMD + region
+------------------------------------------------------------
+                               OLS Regression Results                              
+===================================================================================
+Dep. Variable:     pct_special_independent   R-squared:                       0.199
+Model:                                 OLS   Adj. R-squared:                  0.138
+Method:                      Least Squares   F-statistic:                     3.238
+Date:                     Tue, 12 May 2026   Prob (F-statistic):           0.000932
+Time:                             09:07:40   Log-Likelihood:                -459.93
+No. Observations:                      141   AIC:                             941.9
+Df Residuals:                          130   BIC:                             974.3
+Df Model:                               10                                         
+Covariance Type:                 nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                  22.4987      3.395      6.628      0.000      15.783      29.214
+C(region_f)[T.East of England]             -3.2403      3.309     -0.979      0.329      -9.786       3.306
+C(region_f)[T.London]                       1.7405      2.774      0.627      0.531      -3.747       7.228
+C(region_f)[T.North East]                  -0.0391      3.188     -0.012      0.990      -6.346       6.268
+C(region_f)[T.North West]                   3.9986      2.873      1.392      0.166      -1.684       9.682
+C(region_f)[T.South East]                   1.3464      3.012      0.447      0.656      -4.612       7.305
+C(region_f)[T.South West]                   2.3417      3.222      0.727      0.469      -4.033       8.716
+C(region_f)[T.West Midlands]                1.6443      3.054      0.538      0.591      -4.398       7.687
+C(region_f)[T.Yorkshire and The Humber]     0.8861      3.065      0.289      0.773      -5.178       6.950
+maintained_special_capacity_per1000        -0.9120      0.465     -1.962      0.052      -1.832       0.008
+imd_average_score                          -0.2857      0.091     -3.149      0.002      -0.465      -0.106
+==============================================================================
+Omnibus:                        6.742   Durbin-Watson:                   2.255
+Prob(Omnibus):                  0.034   Jarque-Bera (JB):                6.320
+Skew:                           0.473   Prob(JB):                       0.0424
+Kurtosis:                       3.426   Cond. No.                         351.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+Model C: timeliness ~ % independent + IMD + region
+------------------------------------------------------------
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         timeliness_pct   R-squared:                       0.188
+Model:                            OLS   Adj. R-squared:                  0.125
+Method:                 Least Squares   F-statistic:                     2.981
+Date:                Tue, 12 May 2026   Prob (F-statistic):            0.00207
+Time:                        09:07:40   Log-Likelihood:                -653.84
+No. Observations:                 140   AIC:                             1330.
+Df Residuals:                     129   BIC:                             1362.
+Df Model:                          10                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                  32.9404     15.243      2.161      0.033       2.783      63.098
+C(region_f)[T.East of England]             -0.8692     13.489     -0.064      0.949     -27.557      25.818
+C(region_f)[T.London]                      28.9113     11.378      2.541      0.012       6.400      51.422
+C(region_f)[T.North East]                  19.9944     12.886      1.552      0.123      -5.500      45.489
+C(region_f)[T.North West]                  13.0276     11.722      1.111      0.268     -10.165      36.220
+C(region_f)[T.South East]                   6.2742     12.249      0.512      0.609     -17.960      30.509
+C(region_f)[T.South West]                 -11.9991     13.176     -0.911      0.364     -38.068      14.070
+C(region_f)[T.West Midlands]                8.1277     12.463      0.652      0.515     -16.531      32.786
+C(region_f)[T.Yorkshire and The Humber]    20.4068     12.491      1.634      0.105      -4.307      45.120
+pct_special_independent                     0.4805      0.355      1.355      0.178      -0.221       1.182
+imd_average_score                           0.0063      0.371      0.017      0.986      -0.728       0.740
+==============================================================================
+Omnibus:                        7.062   Durbin-Watson:                   1.924
+Prob(Omnibus):                  0.029   Jarque-Bera (JB):                3.276
+Skew:                           0.023   Prob(JB):                        0.194
+Kurtosis:                       2.252   Cond. No.                         388.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+Model E: timeliness ~ maintained capacity + IMD + region
+------------------------------------------------------------
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         timeliness_pct   R-squared:                       0.177
+Model:                            OLS   Adj. R-squared:                  0.113
+Method:                 Least Squares   F-statistic:                     2.770
+Date:                Tue, 12 May 2026   Prob (F-statistic):            0.00394
+Time:                        09:07:40   Log-Likelihood:                -654.77
+No. Observations:                 140   AIC:                             1332.
+Df Residuals:                     129   BIC:                             1364.
+Df Model:                          10                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                  41.6869     13.998      2.978      0.003      13.991      69.383
+C(region_f)[T.East of England]             -3.4542     13.626     -0.254      0.800     -30.413      23.505
+C(region_f)[T.London]                      29.2977     11.463      2.556      0.012       6.618      51.977
+C(region_f)[T.North East]                  18.8717     13.129      1.437      0.153      -7.105      44.849
+C(region_f)[T.North West]                  14.1741     11.830      1.198      0.233      -9.232      37.580
+C(region_f)[T.South East]                   6.1658     12.403      0.497      0.620     -18.373      30.705
+C(region_f)[T.South West]                 -11.3099     13.269     -0.852      0.396     -37.562      14.942
+C(region_f)[T.West Midlands]                8.3941     12.577      0.667      0.506     -16.489      33.278
+C(region_f)[T.Yorkshire and The Humber]    21.4933     12.621      1.703      0.091      -3.479      46.465
+maintained_special_capacity_per1000         0.6011      1.915      0.314      0.754      -3.189       4.391
+imd_average_score                          -0.2034      0.374     -0.543      0.588      -0.944       0.537
+==============================================================================
+Omnibus:                        4.729   Durbin-Watson:                   1.951
+Prob(Omnibus):                  0.094   Jarque-Bera (JB):                2.600
+Skew:                          -0.035   Prob(JB):                        0.273
+Kurtosis:                       2.336   Cond. No.                         349.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Model B: DSG deficit ~ % independent + IMD + region
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         dsg_deficit_pp   R-squared:                       0.323
+Model:                            OLS   Adj. R-squared:                  0.154
+Method:                 Least Squares   F-statistic:                     1.909
+Date:                Tue, 12 May 2026   Prob (F-statistic):             0.0820
+Time:                        09:07:40   Log-Likelihood:                -315.07
+No. Observations:                  46   AIC:                             650.1
+Df Residuals:                      36   BIC:                             668.4
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                 344.6924    285.358      1.208      0.235    -234.040     923.424
+C(region_f)[T.East of England]            176.2903    190.681      0.925      0.361    -210.428     563.009
+C(region_f)[T.London]                    -517.4334    262.341     -1.972      0.056   -1049.486      14.620
+C(region_f)[T.North West]                 -91.9156    213.928     -0.430      0.670    -525.783     341.951
+C(region_f)[T.South East]                 133.2433    188.101      0.708      0.483    -248.243     514.730
+C(region_f)[T.South West]                  24.0885    212.099      0.114      0.910    -406.068     454.245
+C(region_f)[T.West Midlands]             -123.4185    169.021     -0.730      0.470    -466.208     219.371
+C(region_f)[T.Yorkshire and The Humber]  -118.8073    188.980     -0.629      0.534    -502.077     264.463
+pct_special_independent                     0.9059      6.157      0.147      0.884     -11.580      13.392
+imd_average_score                           5.0751      6.952      0.730      0.470      -9.025      19.175
+==============================================================================
+Omnibus:                        4.527   Durbin-Watson:                   1.906
+Prob(Omnibus):                  0.104   Jarque-Bera (JB):                5.055
+Skew:                          -0.073   Prob(JB):                       0.0799
+Kurtosis:                       4.617   Cond. No.                         346.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Model D: tribunal ~ % independent + IMD + region
+                                 OLS Regression Results                                
+=======================================================================================
+Dep. Variable:     la_official_appeal_rate_pct   R-squared:                       0.158
+Model:                                     OLS   Adj. R-squared:                  0.087
+Method:                          Least Squares   F-statistic:                     2.228
+Date:                         Tue, 12 May 2026   Prob (F-statistic):             0.0204
+Time:                                 09:07:40   Log-Likelihood:                -346.78
+No. Observations:                          130   AIC:                             715.6
+Df Residuals:                              119   BIC:                             747.1
+Df Model:                                   10                                         
+Covariance Type:                     nonrobust                                         
+===========================================================================================================
+                                              coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                   7.3104      2.115      3.456      0.001       3.122      11.499
+C(region_f)[T.East of England]             -0.0201      1.829     -0.011      0.991      -3.642       3.602
+C(region_f)[T.London]                      -1.0784      1.549     -0.696      0.488      -4.146       1.989
+C(region_f)[T.North East]                  -2.3357      1.776     -1.315      0.191      -5.852       1.181
+C(region_f)[T.North West]                  -2.3642      1.610     -1.468      0.145      -5.552       0.824
+C(region_f)[T.South East]                   2.1577      1.688      1.278      0.204      -1.185       5.500
+C(region_f)[T.South West]                  -2.0814      1.828     -1.138      0.257      -5.702       1.539
+C(region_f)[T.West Midlands]               -1.0938      1.711     -0.639      0.524      -4.481       2.293
+C(region_f)[T.Yorkshire and The Humber]    -2.6389      1.711     -1.542      0.126      -6.028       0.750
+pct_special_independent                    -0.0298      0.050     -0.592      0.555      -0.130       0.070
+imd_average_score                          -0.0113      0.053     -0.213      0.832      -0.116       0.094
+==============================================================================
+Omnibus:                       88.038   Durbin-Watson:                   2.018
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              615.984
+Skew:                           2.317   Prob(JB):                    1.74e-134
+Kurtosis:                      12.604   Cond. No.                         374.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+

@@ -3,6 +3,9 @@ data/raw/s251_2025/
 data/raw/sen_pupils_2025/
 data/raw/sen2_2025/
 data/raw/*.zip
+# GIAS establishment file (61MB, re-downloadable from get-information-schools.service.gov.uk/Downloads)
+data/raw/edubasealldata*.csv
+data/raw/links_edubasealldata*.csv
 
 # Keep the data directory structure but not the contents
 !data/
