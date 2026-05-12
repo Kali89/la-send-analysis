@@ -60,6 +60,18 @@ Devon issued plans on time in **3 out of every 100 cases**.
 
 ![20-week timeliness by LA and intervention status, 2024](outputs/figures/03_la_timeliness_2024.png)
 
+### How long are children actually waiting?
+
+The SEN2 2025 data breaks delays into three buckets for the first time: within 20 weeks, between 20 weeks and one year, and over one year. The picture this produces is troubling.
+
+Nationally in 2024, **45.9%** of EHCPs were issued within the legal limit, **46.9%** took between 20 weeks and a year, and **7.2%** took longer than a year. For Safety Valve LAs, the median council issued just **35.7%** within 20 weeks, with **56.9%** falling in the 20-week-to-one-year band and **4.2%** exceeding one year.
+
+The bulk of the Safety Valve delay falls in the middle bucket — children waiting six months to a year, not the multi-year waits that generate headlines. But the scale is large: in a typical Safety Valve council, more than half of all children assessed received their plan between five months and twelve months late.
+
+The worst individual >1-year outliers are not concentrated in Safety Valve authorities. Leeds (57.2% of plans took over a year, Delivering Better Value) and Kirklees (46.2%, Delivering Better Value) are the most extreme cases nationally; Leicestershire (44.6%, no intervention) is third. The timeliness crisis is worst in Safety Valve LAs as a group, but the very longest individual delays cut across all programme categories.
+
+![Timeliness breakdown: within 20 weeks, 20 weeks–1 year, over 1 year, 2024](outputs/figures/20_timeliness_three_buckets_2024.png)
+
 ### Tribunal appeals: families are pushing back
 
 When families disagree with their council's SEND decision, they can appeal to the SEND Tribunal. The DfE now publishes an official appeal rate for each LA — the number of appeals as a share of all appealable decisions.
@@ -85,6 +97,48 @@ The capacity collapse story is: council under financial pressure → staffing cu
 This is a different "doom loop" — and arguably a more insidious one, because it does not show up in the headline refusal rate statistics that are most commonly cited in advocacy and journalism.
 
 ![National trends in EHCP requests, timeliness, and tribunal appeals, 2014-2024](outputs/figures/05_intervention_vs_none_trends.png)
+
+### A capacity ceiling, not a gradual decline
+
+The aggregate figures make the failure mode concrete. In 2019, Safety Valve LAs collectively issued **9,572 EHCPs within the 20-week limit**. In 2024, they issued **9,921** — essentially unchanged over five years. Over the same period, the total number of plans those councils were trying to issue grew from 18,091 to 29,051, an increase of **60%**.
+
+The system hit a ceiling. Safety Valve authorities are processing roughly the same absolute number of timely cases as they were in 2019, while the queue behind them has grown by more than 10,000 children a year.
+
+This is not what happened everywhere. Delivering Better Value councils — also under financial pressure but with a different programme structure — grew their timely output from 11,545 to 18,759 over the same period, broadly tracking demand.
+
+![Aggregate timely throughput vs total demand, 2019–2024](outputs/figures/17_capacity_ceiling_aggregate.png)
+
+### 2022: an operational collapse, not a demand surge
+
+The timeliness rate in Safety Valve LAs had been holding around 52–53% through 2019–2021. In 2022 it fell sharply to **36.8%**, and has not recovered — it stood at 34.2% in 2024.
+
+The obvious explanation would be a sudden surge in demand in 2022. That is not what happened. The total number of plans issued by Safety Valve LAs actually *fell* slightly in 2022 compared to 2021 (20,667 vs 21,195). But timely plans collapsed from 11,127 to 7,598 — a loss of more than 3,500 cases processed within the legal limit in a single year. This was an operational failure, concentrated at the moment the first Safety Valve agreements were being signed and the immediate post-Covid backlog was being absorbed.
+
+![Demand vs capacity growth, 2019–2024](outputs/figures/18_demand_vs_capacity_growth.png)
+
+### Not all Safety Valve councils are the same
+
+The aggregate picture conceals substantial divergence within the Safety Valve group. Between 2022 and 2024, ten Safety Valve authorities improved their timeliness, some substantially: Oxfordshire recovered from 4.0% to 38.6% (+35 percentage points), Hertfordshire from 32.3% to 55.2% (+23pp), and Wiltshire from 13.4% to 32.5% (+19pp).
+
+Against these recoveries, eighteen Safety Valve councils deteriorated over the same period. The worst declines were in Southend-on-Sea (71.7% → 16.1%, −56pp), Medway (66.1% → 11.7%, −54pp), Somerset (69.5% → 33.5%, −36pp), and Isle of Wight (66.8% → 28.6%, −38pp). These are councils that had previously been managing adequately and have since lost that capacity.
+
+This within-group divergence matters for policy. Safety Valve is not a homogeneous category of councils uniformly in decline. Some have found ways to stabilise or improve — what they did differently is a more actionable question than the aggregate group comparison.
+
+![Individual Safety Valve LA timeliness trajectories, 2019–2024](outputs/figures/21_sv_timeliness_trajectories.png)
+
+### What spending data reveals about capacity
+
+The S251 LA expenditure returns allow a partial picture of what has happened to SEND assessment capacity over time, and how it differs across council types in 2024.
+
+On educational psychologist spend per EHCP issued — the most direct proxy available for assessment capacity — Safety Valve councils are spending *less* than others: a median of **£364 per EHCP** in 2024, against **£373** in Delivering Better Value councils. This is consistent with EP workforce shortage as a constraint: fewer EPs processing more cases generates lower apparent spend-per-plan, not because councils are investing more efficiently but because the bottleneck limits throughput.
+
+The sharpest difference is in administration spend per EHCP: Safety Valve councils spend a median of **£716**, compared to **£507** in Delivering Better Value authorities. This likely reflects the overhead of managing large caseload backlogs — more correspondence, more review meetings, more chasing — not more effective service delivery.
+
+Transport spend per EHCP is also higher in Safety Valve authorities (median **£2,909** vs **£2,276**), consistent with their disproportionate independent specialist school placements, which tend to be further from home than maintained alternatives.
+
+Nationally, spending on SEN administration per EHCP has risen from a median of £448 in 2019 to £571 in 2024 — a 27% real increase. EP spend has been roughly flat in nominal terms over the same period (£378 to £395), meaning it has fallen in real terms as EHCP numbers have grown. This is the spending signature of a service that is absorbing more administrative overhead to manage growing backlogs while EP capacity has not kept pace.
+
+![Spend per EHCP by LA type, 2019–2024](outputs/figures/19_spend_per_ehcp.png)
 
 ---
 
@@ -189,7 +243,7 @@ The families waiting more than 20 weeks in Devon, Cambridgeshire and West Sussex
 Four data improvements would substantially strengthen future analysis:
 
 1. **School-level SEN specialism data** — what types of needs each special school caters to, matched to LA EHCP need profiles. Would test the "wrong type" hypothesis directly.
-2. **SEND team staffing data by LA** — DfE has this through the School Workforce Census but does not publish it at LA level in usable form. The single most important missing variable for testing the capacity-collapse mechanism.
+2. **SEND team staffing data by LA** — DfE has this through the School Workforce Census but does not publish it at LA level in usable form. The single most important missing variable for testing the capacity-collapse mechanism. S251 spending data (used here) is a proxy, but staffing headcount would be far more direct.
 3. **Tribunal outcome data by LA and placement type** — would test the advocacy/tribunal hypothesis and quantify how much of the independent placement burden is tribunal-driven vs council-agreed.
 4. **LA-level SEND legal costs** — not published; currently invisible in financial data but essential for testing whether the tribunal cost spiral is the key feedback mechanism.
 
@@ -199,9 +253,9 @@ Four data improvements would substantially strengthen future analysis:
 
 All data used in this analysis are from official DfE or MHCLG sources:
 
-- **DfE SEN2 2025 statistical release** — requests, timeliness, caseload, new plans (LA-level, 2019–2024)
+- **DfE SEN2 2025 statistical release** — requests, timeliness, caseload, new plans (LA-level, 2019–2024); timeliness three-bucket breakdown (within 20w / 20w–1yr / >1yr) available for 2023–2024
 - **SEND Tribunal appeal rate 2014–2024** — DfE supporting file, first published 2025
-- **S251 LA and School Expenditure 2024–25** — DSG carry-forward balance by LA
+- **S251 LA and School Expenditure 2015/16–2024/25** — DSG carry-forward balance by LA; EP service (line 2.1.1), SEN administration (2.1.2), and SEN transport (2.1.4) expenditure by LA across ten years
 - **SEN pupils 2024–25** — total pupils by LA for per-pupil denominators
 - **IMD 2019** — average deprivation score by upper-tier LA (IoD2019, MHCLG)
 - **GIAS (Get Information About Schools)** — full establishment file, May 2026; school type, capacity, and pupil numbers for all 1,068 state-funded special schools
