@@ -1,6 +1,6 @@
-# England's SEND collapse was foreseeable — and the next one already is
+# England's SEND collapse had multiple early-warning signatures — and different councils now show each one
 
-**An eight-model forecastability study finds that ASD and SEMH caseload growth predicted timeliness failure years in advance — while legal pressure and independent placement costs were dominated by a different set of early signals.**
+**An eight-model forecastability study finds that different types of SEND system failure had different predictive signals: timeliness failure was visible in absolute ASD and SEMH caseload growth; legal-pressure and placement-cost failure were visible in tribunal rates and independent-provider spend. The forecasting failure was not a lack of data, but a failure to combine demand, throughput, legal, and placement-market signals.**
 
 *Forecastability analysis using DfE SEN2 2025, S251 expenditure 2015/16–2024/25, and SEND Tribunal data 2014–2024 | May 2026*
 
@@ -8,7 +8,7 @@
 
 The collapse of EHCP services in England's most financially stressed local authorities did not arrive without warning. The data to predict it existed years before the crisis became visible. This analysis tests that claim directly: using only information available at each year from 2016 to 2021, how accurately could we have identified which councils would enter systemic failure by 2022–2024?
 
-The headline result is clear, but the detail matters. Eight model families — from a simple total-demand baseline to a full specification combining need-type growth, tribunal history, independent placement spend, and timeliness trends — produce different answers depending on which type of collapse you are trying to predict.
+The headline result is clear, but the detail matters. Eight model families — from a simple total-demand baseline to a full specification combining need-type growth, tribunal history, independent placement spend, and timeliness trends — produce different answers depending on which type of collapse you are trying to predict. There was not one SEND collapse signal. There were at least two, with different causes and different early signatures.
 
 ---
 
@@ -52,7 +52,7 @@ To directly test whether need-type growth predicted collapse, eight model famili
 
 **Family A: Total EHCP demand** — total EHCP caseload level and log-linear growth rate only. This is the baseline: does raw demand volume predict which councils collapsed?
 
-**Family B: Need-type absolute counts** — absolute EHCP counts and 3-year absolute growth in ASD, SEMH, SLCN, and MLD, with no tribunal, spend, or timeliness features. This directly tests whether the demand-type shift predicted collapse.
+**Family B: Need-type absolute counts** — absolute EHCP counts and 3-year absolute growth in ASD, SEMH, SLCN, and MLD, with no tribunal, spend, or timeliness features. This directly tests whether the demand-type shift predicted collapse. (The analysis models four primary need types — ASD, SEMH, SLCN, and MLD — which together account for around 65% of all EHCPs nationally. SLD, PMLD, SpLD, and other categories are tracked in the data but excluded from the predictive models.)
 
 **Family C: Need-type shares** — the percentage composition of the LA's EHCP caseload by need type. This tests whether the *composition* of demand matters independently of its *volume*.
 
@@ -72,17 +72,19 @@ To directly test whether need-type growth predicted collapse, eight model famili
 
 The AUC heatmap — showing leave-one-out cross-validated prediction accuracy for all eight model families across all six training years and four collapse definitions — produces a striking asymmetry. The answer to *did need-type growth predict collapse?* depends entirely on which type of collapse you are predicting.
 
-**Timeliness collapse — need-type growth was the dominant predictor.**
+**Timeliness collapse — demand growth was the dominant predictor; system signals were essentially useless.**
 
-From 2019 data (when 3-year absolute growth features became available), Model B (need-type counts only, no tribunal or spend data) achieves an AUC of 0.69. By comparison, Model G (system-failure signals: tribunal rate and independent spend) achieves only 0.54 on the same target. This reversal from every other collapse type is striking: for timeliness failure, knowing that a council had been processing disproportionate numbers of new ASD and SEMH cases for three years was a better predictor than knowing its tribunal rate or financial position.
+From 2019 data (when 3-year absolute growth features became available), Model B (need-type counts only, no tribunal or spend data) achieves an AUC of 0.69. By comparison, Model G (system-failure signals: tribunal rate and independent spend) achieves only 0.54 on the same target — barely above random. This reversal from every other collapse type is the analysis's most important finding.
 
-The finding is consistent with a specific mechanism. Timeliness failure is primarily a throughput capacity problem: the council's assessment and plan-writing capacity was overwhelmed by the volume and complexity of incoming demand. ASD and SEMH cases, which often require specialist input and multi-agency coordination, are more resource-intensive per case than MLD or SpLD cases. A council experiencing rapid absolute growth in these two need types faces a rising per-case workload that is not captured by total caseload volume alone.
+Two important caveats apply. First, the margin between need-type counts (Model B) and total EHCP demand (Model A) is modest: Model A achieves AUC 0.65–0.70 for timeliness across training years, while Model B is in the same range (0.65–0.69 from 2019). Absolute need-type counts partly proxy LA size: a large council processing many cases of any type is more likely to struggle with timeliness. The cleaner distinction is that need-type *shares* (Model C) perform near-randomly (AUC ~0.49–0.52), confirming that the *composition* of demand matters much less than its absolute volume. The signal is in the total demand and its need-type components jointly, not in the proportional mix alone.
+
+Second, the model is predictive, not causal. The finding is *consistent with* a workload-complexity mechanism — ASD and SEMH assessments are known to be more resource-intensive than MLD or SpLD cases, so rapid absolute growth in these need types could be compressing throughput capacity in a way that total caseload volume does not fully capture. But the model does not directly measure per-case workload, EP hours, plan-writing complexity, or multi-agency coordination demands. The interpretation should be: these features are associated with timeliness failure, in a pattern consistent with a demand-complexity explanation.
 
 **Legal-pressure and placement collapse — system-failure signals dominated.**
 
 For legal-pressure collapse (high tribunal rates), Model G achieves AUC 0.71 from 2016 data and 0.88 from 2021 data. Model B (need-type counts) achieves AUC 0.77 from 2019 data — meaningful, but consistently below G. The tribunal rate itself has strong autocorrelation: councils with high appeal rates in 2016–2018 continued to have high appeal rates in 2022–2024. This reflects a persistent structural condition — a combination of plan quality, parental expectation, and the local advice ecosystem — that is not primarily driven by recent caseload growth.
 
-For placement/cost collapse, the pattern is similar: Model G achieves AUC 0.75–0.80 from 2018 onward; Model B reaches 0.70–0.73 from 2019. The full model (H) achieves the highest AUC for placement collapse (0.86 from 2019), suggesting that need-type growth and system signals together explain placement concentration better than either does alone. This is mechanistically plausible: independent placements accumulate when a council both faces high ASD/SEMH demand (which is more likely to require specialist provision) and lacks maintained alternative capacity (which is captured by the independent spend signal).
+For placement/cost collapse, the pattern is similar: Model G achieves AUC 0.75–0.80 from 2018 onward; Model B reaches 0.70–0.73 from 2019. The full model (H) achieves the highest AUC for placement collapse (0.86 from 2019), suggesting that need-type growth and system signals together explain placement concentration better than either does alone. This is consistent with a pattern in which councils facing both high ASD/SEMH demand (associated with higher rates of specialist provision) and a high pre-existing reliance on independent placements were more likely to accumulate further placements — though the direction of causality between these factors cannot be established from the cross-sectional data.
 
 **Composite collapse — signals dominated, but need-type growth contributed.**
 
@@ -118,9 +120,9 @@ For timeliness collapse, the separation is cleaner. Councils with very high SEMH
 
 ---
 
-## Which councils are next
+## Which councils already show the same risk signature?
 
-The risk scores presented here use Model E (need-type counts plus timeliness trend), which achieves the highest LOO-CV AUC for composite collapse at 2021 features (0.82). This model combines the demand-side need-type growth signal with the throughput signal, neither of which uses Safety Valve or DBV status as an input.
+The risk scores presented here use Model E (need-type counts plus timeliness trend), which achieves the highest LOO-CV AUC for composite collapse at 2021 features (0.82). This model combines the demand-side need-type growth signal with the throughput signal, neither of which uses Safety Valve or DBV status as an input. The scores measure structural similarity to councils that entered collapse — not a prediction of future programme entry or future failure.
 
 ![Current risk scores](outputs/figures/39_risk_scores_2024.png)
 
@@ -163,7 +165,7 @@ The scenario range for late plans in 2030 is roughly 65,000 to 127,000 — a fac
 
 The primary finding is a refinement of the forecastability claim. It was not simply that "the data to predict collapse existed." The signals were different for different types of failure, and mixing them would have produced a less accurate early warning than using them appropriately.
 
-For **timeliness failure** — the type most directly connected to the capacity collapse that Safety Valve councils experienced — the warning signal was in the demand data. Councils processing rapidly growing numbers of ASD and SEMH cases in 2016–2020, without commensurate growth in throughput capacity, were structurally committed to a timeliness crisis. An early warning system monitoring absolute EHCP growth by need type — not just total caseload — would have identified this group before the failure became acute.
+For **timeliness failure** — the type most directly connected to the capacity collapse that Safety Valve councils experienced — the warning signal was in the demand data. Councils with high and growing absolute caseloads, particularly in ASD and SEMH, were associated with subsequent timeliness failure in a pattern not captured by tribunal or financial data. An early warning system monitoring absolute EHCP growth would have identified this group before the failure became acute — though it is important to note that this signal partly proxies total LA size, and that need-type *composition* (shares) was not useful independently of volume.
 
 For **legal-pressure and placement failure** — the types most directly connected to DSG deficits and financial intervention — the warning signal was in the financial and legal data. Councils committing a high and rising share of their DSG to independent provider top-ups, while simultaneously attracting higher tribunal rates, were structurally committed to a different failure mode. An early warning system for this pathway could have been built from S251 returns and tribunal data that were both publicly available from 2015/16 onward.
 
@@ -176,6 +178,8 @@ An early warning system using these signals — absolute need-type growth, indep
 ## Limitations
 
 **Cross-sectional training data**: All models are trained on cross-sectional LA-level data. Collapse prediction partially captures autocorrelation (high tribunal rates in 2016 predict high rates in 2022–2024) as well as genuine structural risk.
+
+**Need-type counts partly proxy LA size**: Absolute ASD and SEMH counts are correlated with total EHCP caseload, which is itself correlated with LA population. Model A (total demand) and Model B (need-type counts) produce similar AUC for timeliness collapse (~0.65–0.69). The cleaner result is that need-type *shares* are near-useless (AUC ~0.50), while absolute counts add signal. Whether need-type composition adds predictive value *beyond* total scale is marginal at most training years.
 
 **Need-type data gap 2020/21–2023/24**: LA-level EHCP counts by primary need type are not published for these four years. The analysis uses real data from 2015/16–2019/20 (historical release) and 2024/25 (SEN2 2025). Training year 2021 features use 2020 need-type data as a proxy.
 
