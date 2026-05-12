@@ -2,7 +2,7 @@
 
 **New data shows financially stressed councils are not refusing more children — they're leaving families waiting for over a year**
 
-*Analysis of DfE SEN2 2025 data | May 2026*
+*Analysis of DfE SEN2 2025 data and GIAS school capacity data | May 2026*
 
 ---
 
@@ -110,23 +110,63 @@ The tribunal data published for the first time in 2025 allows us to trace indivi
 
 ---
 
+## Why are Safety Valve councils disproportionately expensive?
+
+The core puzzle is that Safety Valve councils — concentrated in the South East — are not generating more EHCP applications per pupil than elsewhere. Request rates are actually highest in the North West (5.1 per 1,000 pupils) and lowest in London and the South East (3.7 per 1,000). Nor do Safety Valve LAs have significantly higher EHCP prevalence rates.
+
+So why are their budgets collapsing?
+
+The answer lies in where children end up once they have an EHCP. Safety Valve councils place **0.89 children per 1,000 pupils** in independent specialist schools — compared to **0.65** for councils with no DfE intervention, a gap of 37%. Independent specialist schools charge £60,000–120,000 per year per place, sometimes more for residential provision. A council with 500 children in independent specialist placements is spending £35–50 million a year on that group alone, before transport costs.
+
+![Supply and independent placement burden by intervention status](outputs/figures/13_status_capacity_comparison.png)
+
+### Testing the supply hypothesis
+
+The obvious explanation is that South East councils simply don't have enough maintained specialist schools, so families are forced into the independent sector. Using data from the DfE's school register (GIAS) covering all 1,068 state-funded special schools in England, we can test this directly.
+
+The simple version of the hypothesis doesn't hold: Safety Valve LAs have **3.80 maintained special school places per 1,000 pupils** — virtually identical to the 3.95 in unaffected councils (Mann-Whitney p = 0.70). They actually have *more* state special schools in their area (11.8 vs 5.7), reflecting the fact that they tend to be large shire counties rather than compact metropolitan boroughs.
+
+The utilisation picture is equally counterintuitive. State-funded special schools across England are genuinely under pressure — nationally, they operate at **102% of their registered capacity**, with 84% running above 90% of capacity. But South East councils' maintained special schools have *lower* utilisation (99.5% of registered capacity) than councils in Yorkshire (112.7%) or the North West (107.5%). Raw overcrowding of maintained schools does not explain the South East's higher independent placement rates.
+
+There is, however, a weaker but real relationship running in the expected direction: across all 143 LAs with complete data, councils with more maintained special school capacity per pupil do have fewer independent placements (r = −0.28, p < 0.001). The supply effect exists, but it is modest and largely absorbed by regional variation once region fixed effects are included in regression models.
+
+![Maintained capacity versus independent placement rate](outputs/figures/11_capacity_vs_independent.png)
+
+### What the supply data cannot tell us
+
+The GIAS capacity and utilisation figures capture whether a place physically exists and whether it is occupied. They do not capture whether it is the *right kind* of place. A council may have abundant maintained special school capacity for children with moderate learning difficulties but almost none for non-verbal autism or severe SEMH needs — precisely the categories driving EHCP growth nationally. Safety Valve LAs have the highest share of EHCP children with SEMH needs (23.2% vs 19.4% in unaffected LAs), a category strongly associated with independent specialist placements and tribunal disputes.
+
+The data also cannot capture what happens when a maintained school has technically available places but is operationally full — when the physical space exists but the staffing ratios needed to safely support high-needs children are already stretched to breaking point. GIAS registered capacity is the DfE's administrative figure; it is not updated in real time to reflect a school's actual ability to take on another child with complex, high-cost needs.
+
+Finally, there is a family advocacy dimension the data cannot resolve. In affluent South East areas, families are more likely to pursue named placements in independent schools through the SEND Tribunal — which upholds parental choice in roughly 80% of cases. A council that nominally has capacity may still be forced to fund an independent placement because a well-resourced family argued successfully at tribunal that the maintained school's provision was not appropriate for their child's specific profile. Whether this explains a meaningful share of the South East's independent placement burden cannot be determined from published data alone.
+
+![Regional capacity profile and independent placement rates](outputs/figures/12_regional_capacity_profile.png)
+
+---
+
 ## What does DSG deficit actually predict?
 
 The analysis includes regression models using DSG (Dedicated Schools Grant) deficit data from DfE S251 returns to test whether a council's financial position directly predicts its SEND outcomes.
 
 In a restricted sample of 50 LAs with estimated DSG deficit figures, DSG deficit per pupil was a significant predictor of timeliness failure (β = −0.034 percentage points per £1 deficit per pupil, p = 0.023). This implied that a council with a £900/pupil deficit would have roughly 31 percentage points lower timeliness than an otherwise-identical balanced council.
 
-When the sample is expanded to 150 LAs using the full S251 data, this relationship loses statistical significance (p = 0.76). This likely reflects a genuine limitation: the DSG deficit measure captures end-of-year accounting balances, not operational capacity. A council can have a large paper deficit while still processing EHCPs adequately, and vice versa. The region fixed effects also absorb much of the variance — Safety Valve LAs are disproportionately in the South East — making it difficult to separate the financial effect from regional structural factors.
-
-The DSG deficit data is therefore a useful indicator of financial pressure at the macro level (it is how the DfE identifies Safety Valve candidates) but is not, on its own, a reliable predictor of individual LA SEND performance.
+When the sample is expanded to 150 LAs using the full S251 data, this relationship loses statistical significance (p = 0.76). The DSG carry-forward balance captures end-of-year accounting positions, not operational capacity. Region fixed effects also absorb much of the variance — Safety Valve LAs are disproportionately in the South East — making it difficult to separate the financial effect from regional structural factors with available data.
 
 ---
 
-## Mediation analysis
+## What we still cannot explain
 
-The analysis tested whether the pathway from DSG deficit to tribunal appeals operates *through* operational capacity stress (throughput of cases) and timeliness failure — the capacity-collapse story in quantitative form. Using Baron-Kenny mediation analysis with a sample of 134 LAs, all pathways were non-significant.
+The analysis identifies what is happening with confidence: Safety Valve councils are failing on timeliness, facing higher tribunal rates, and carrying disproportionately expensive independent placement burdens. What it cannot yet close is *why* those independent placement rates are higher.
 
-This null result is most likely a power and measurement issue rather than evidence against the mechanism. The DSG carry-forward balance, as noted above, is a coarse proxy for operational stress, and 134 LAs provides limited power to detect mediation across a two-mediator chain. Future work with a direct SEND staffing measure (SEND team FTE per 1,000 active EHCPs) would provide a more powerful test of the capacity-collapse hypothesis.
+Three hypotheses remain plausible and are not mutually exclusive:
+
+**1. Wrong type of provision.** Even where maintained special school places exist, they may not match the need profile — autism and SEMH specialist capacity may be insufficient even in LAs where total maintained capacity per pupil is adequate. Testing this would require school-level SEN specialism data matched to LA EHCP need profiles.
+
+**2. Tribunal behaviour.** Affluent South East families, disproportionately resourced to pursue tribunal cases (which cost £5,000–15,000 in legal fees and are won by families in ~80% of cases), may be securing independent placements at higher rates regardless of maintained availability. Testing this would require tribunal outcome data broken down by LA and placement type — not currently published.
+
+**3. Historical commissioning lock-in.** Some councils built long-standing relationships with specific independent providers and continue to use them as default placements, even where maintained alternatives have since developed. This would require historical placement data not available in the published SEN2 series.
+
+The most policy-actionable of these hypotheses is the first. If the problem is a mismatch between the type of maintained provision available and the type of need driving placements, building more of the same kind of maintained school will not fix it. The question is whether the *right specialism* exists in the maintained sector — and that requires a different dataset.
 
 ---
 
@@ -134,27 +174,29 @@ This null result is most likely a power and measurement issue rather than eviden
 
 The policy implications of the capacity-collapse reading differ from those of the gatekeeping reading.
 
-If the problem is gatekeeping, the solution is scrutiny of refusal decisions — which the DfE Safety Valve agreements may already be providing. But if the problem is capacity collapse, scrutiny of refusal rates is insufficient and potentially counterproductive: it keeps the front door open while the system behind it is overwhelmed.
+If the problem is gatekeeping, the solution is scrutiny of refusal decisions — which the DfE Safety Valve agreements may already be providing. But if the problem is capacity collapse combined with an expensive placement burden, scrutiny of refusal rates is largely beside the point. It keeps the front door open while the system behind it is overwhelmed, and does nothing about the cost driver.
 
-The families waiting more than 20 weeks in Devon, Cambridgeshire and West Sussex are not being refused. They are waiting. And while they wait, the 20-week clock continues, the child's needs go unmet, and the chance of a good outcome from the eventual assessment diminishes.
+The families waiting more than 20 weeks in Devon, Cambridgeshire and West Sussex are not being refused. They are waiting. And while they wait, the 20-week clock runs, the child's needs go unmet, and the chances of a good outcome from the eventual assessment diminish.
 
-Three changes to the data infrastructure would substantially strengthen future analysis:
+Four data improvements would substantially strengthen future analysis:
 
-1. **SEND team staffing data** by LA — DfE has this through the School Workforce Census but does not publish it at LA level in a usable form.
-2. **LA-level SEND legal costs** — currently invisible in published financial data but crucial for testing the tribunal cost spiral.
-3. **Pre-2019 SEN2 process data** — extending the panel to match the tribunal data's 2014 start would allow proper parallel-trends testing for the event study.
+1. **School-level SEN specialism data** — what types of needs each special school caters to, matched to LA EHCP need profiles. Would test the "wrong type" hypothesis directly.
+2. **SEND team staffing data by LA** — DfE has this through the School Workforce Census but does not publish it at LA level in usable form. The single most important missing variable for testing the capacity-collapse mechanism.
+3. **Tribunal outcome data by LA and placement type** — would test the advocacy/tribunal hypothesis and quantify how much of the independent placement burden is tribunal-driven vs council-agreed.
+4. **LA-level SEND legal costs** — not published; currently invisible in financial data but essential for testing whether the tribunal cost spiral is the key feedback mechanism.
 
 ---
 
 ## Data and methodology
 
-All data used in this analysis are from official DfE sources, loaded programmatically:
+All data used in this analysis are from official DfE or MHCLG sources:
 
 - **DfE SEN2 2025 statistical release** — requests, timeliness, caseload, new plans (LA-level, 2019–2024)
 - **SEND Tribunal appeal rate 2014–2024** — DfE supporting file, first published 2025
 - **S251 LA and School Expenditure 2024–25** — DSG carry-forward balance by LA
 - **SEN pupils 2024–25** — total pupils by LA for per-pupil denominators
 - **IMD 2019** — average deprivation score by upper-tier LA (IoD2019, MHCLG)
+- **GIAS (Get Information About Schools)** — full establishment file, May 2026; school type, capacity, and pupil numbers for all 1,068 state-funded special schools
 
 Intervention status (Safety Valve, Delivering Better Value) assigned from DfE programme announcements. Non-parametric group tests use Mann-Whitney U and Kruskal-Wallis H. OLS regressions include IMD 2019 average score as a deprivation control and region fixed effects.
 
