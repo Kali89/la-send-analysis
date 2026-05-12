@@ -1,0 +1,41 @@
+la_code,la_name,region,intervention_status,ehcp_annual_growth,annual_cost_2024_m,annual_cost_2030_m,cost_increase_m,cost_increase_per_pupil
+E10000016,Kent,South East,Safety Valve,0.12,120.00,218.65,98.65,91.10
+E10000030,Surrey,South East,Safety Valve,0.10,98.48,177.55,79.07,96.85
+E10000014,Hampshire,South East,Safety Valve,0.14,76.72,139.79,63.07,79.49
+E10000020,Norfolk,East of England,Safety Valve,0.09,67.20,117.99,50.79,102.49
+E10000008,Devon,South West,Safety Valve,0.13,60.32,109.91,49.59,116.29
+E10000028,Staffordshire,West Midlands,,0.09,48.40,82.28,33.88,65.17
+E10000017,Lancashire,North West,Delivering Better Value,0.08,45.76,73.86,28.10,37.83
+E10000032,West Sussex,South East,Safety Valve,0.07,41.28,63.86,22.58,43.14
+E06000049,Cheshire East,North West,Safety Valve,0.16,30.96,56.41,25.45,104.83
+E10000029,Suffolk,East of England,Safety Valve,0.10,30.96,55.20,24.24,54.47
+E10000018,Leicestershire,East Midlands,,0.10,30.40,54.90,24.50,57.05
+E10000034,Worcestershire,West Midlands,Safety Valve,0.08,30.72,51.15,20.43,57.06
+E10000012,Essex,East of England,Safety Valve,0.07,30.64,45.69,15.05,16.03
+E10000007,Derbyshire,East Midlands,Safety Valve,0.09,25.20,44.25,19.05,42.59
+E10000025,Oxfordshire,South East,Safety Valve,0.11,23.76,43.29,19.53,40.90
+E06000054,Wiltshire,South West,Safety Valve,0.09,24.24,40.76,16.52,54.46
+E10000031,Warwickshire,West Midlands,Safety Valve,0.08,25.36,40.63,15.27,38.95
+E09000024,Merton,London,,0.10,21.92,39.94,18.02,139.61
+E06000035,Medway,South East,Safety Valve,0.07,24.40,38.25,13.85,65.45
+E06000052,Cornwall,South West,Delivering Better Value,0.08,21.68,35.85,14.17,47.25
+E10000003,Cambridgeshire,East of England,Safety Valve,0.13,19.52,35.57,16.05,38.72
+E10000015,Hertfordshire,East of England,Safety Valve,0.13,18.88,34.40,15.52,17.20
+E10000024,Nottinghamshire,East Midlands,Delivering Better Value,0.07,22.00,32.95,10.95,21.24
+E09000006,Bromley,London,,0.12,18.00,32.80,14.80,63.55
+E10000013,Gloucestershire,South West,Safety Valve,0.09,17.36,30.27,12.91,31.76
+E09000008,Croydon,London,Delivering Better Value,0.07,19.84,30.08,10.24,39.71
+E06000021,Stoke-on-Trent,West Midlands,Delivering Better Value,0.05,21.44,29.41,7.97,47.25
+E09000023,Lewisham,London,,0.09,16.88,29.14,12.26,76.76
+E10000011,East Sussex,South East,Safety Valve,0.05,20.16,27.49,7.33,24.95
+E09000032,Wandsworth,London,,0.09,16.32,27.29,10.97,65.42
+E06000023,"Bristol, City of",South West,,0.12,14.32,26.09,11.77,41.94
+E08000032,Bradford,Yorkshire and The Humber,Delivering Better Value,0.10,14.16,25.80,11.64,28.39
+E09000009,Ealing,London,,0.07,15.92,24.71,8.79,37.53
+E08000014,Sefton,North West,Delivering Better Value,0.14,13.52,24.64,11.12,65.72
+E08000030,Walsall,West Midlands,Delivering Better Value,0.13,13.44,24.49,11.05,49.95
+E08000002,Bury,North West,Delivering Better Value,0.08,14.48,23.74,9.26,74.69
+E09000005,Brent,London,,0.10,12.80,23.32,10.52,51.98
+E09000017,Hillingdon,London,Delivering Better Value,0.08,13.92,23.03,9.11,40.08
+E10000019,Lincolnshire,East Midlands,Delivering Better Value,0.10,12.40,22.59,10.19,22.88
+E08000025,Birmingham,West Midlands,,0.03,18.00,21.64,3.64,4.24

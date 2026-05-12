@@ -1,0 +1,143 @@
+la_code,la_name,region,intervention_status,trib_2016,trib_slope_1416,pct_independent_1819,imd_average_score,maintained_special_capacity_per1000,is_sv
+E06000001,Hartlepool,North East,Delivering Better Value,0.000,-0.000,13.806,35.037,6.403,0
+E06000002,Middlesbrough,North East,Delivering Better Value,0.100,0.050,4.990,40.460,3.573,0
+E06000003,Redcar and Cleveland,North East,Delivering Better Value,0.300,0.150,9.692,29.792,4.002,0
+E06000004,Stockton-on-Tees,North East,Delivering Better Value,0.600,-0.250,9.509,25.790,4.985,0
+E06000005,Darlington,North East,Delivering Better Value,0.000,0.000,12.773,25.657,7.142,0
+E06000006,Halton,North West,Delivering Better Value,1.000,-0.350,10.427,32.325,4.831,0
+E06000007,Warrington,North West,,0.500,-0.000,12.963,18.942,2.881,0
+E06000008,Blackburn with Darwen,North West,Delivering Better Value,0.100,-0.450,14.243,36.013,3.584,0
+E06000009,Blackpool,North West,,0.100,0.050,17.367,45.039,7.387,0
+E06000011,East Riding of Yorkshire,Yorkshire and The Humber,Delivering Better Value,1.000,0.150,9.395,15.605,2.367,0
+E06000012,North East Lincolnshire,Yorkshire and The Humber,Delivering Better Value,0.900,0.100,9.043,31.335,3.420,0
+E06000013,North Lincolnshire,Yorkshire and The Humber,Delivering Better Value,0.000,-0.050,20.053,22.096,2.021,0
+E06000014,York,Yorkshire and The Humber,,0.300,-0.050,2.970,11.727,2.016,0
+E06000015,Derby,East Midlands,Delivering Better Value,1.400,-1.350,7.333,26.323,2.994,0
+E06000016,Leicester,East Midlands,Delivering Better Value,1.300,0.400,8.341,30.877,5.193,0
+E06000017,Rutland,East Midlands,,3.000,0.650,41.509,8.381,,0
+E06000018,Nottingham,East Midlands,Delivering Better Value,1.900,-0.400,4.378,34.891,2.223,0
+E06000020,Telford and Wrekin,West Midlands,,0.900,0.000,8.434,24.988,1.993,0
+E06000021,Stoke-on-Trent,West Midlands,Delivering Better Value,0.600,-0.350,22.509,34.504,5.641,0
+E06000022,Bath and North East Somerset,South West,,0.600,-0.100,13.193,11.745,4.423,0
+E06000023,"Bristol, City of",South West,,1.500,-0.150,5.118,26.363,4.368,0
+E06000024,North Somerset,South West,Delivering Better Value,4.200,0.150,14.951,15.825,3.718,0
+E06000025,South Gloucestershire,South West,,1.300,0.150,16.337,11.660,2.445,0
+E06000026,Plymouth,South West,Delivering Better Value,0.100,-0.050,4.299,26.619,4.566,0
+E06000027,Torbay,South West,,0.100,0.000,7.336,28.104,6.342,0
+E06000030,Swindon,South West,Safety Valve,0.700,-0.150,4.190,18.622,4.131,1
+E06000031,Peterborough,East of England,Safety Valve,0.500,-0.150,6.727,27.821,4.386,1
+E06000032,Luton,East of England,Delivering Better Value,0.700,0.150,4.793,25.908,5.532,0
+E06000033,Southend-on-Sea,East of England,Safety Valve,1.000,-0.250,1.667,22.375,4.586,1
+E06000034,Thurrock,East of England,Safety Valve,0.400,-0.550,7.212,20.928,4.257,1
+E06000035,Medway,South East,Safety Valve,1.900,-0.750,14.808,23.936,4.806,1
+E06000036,Bracknell Forest,South East,Safety Valve,1.200,-0.100,15.434,10.241,2.796,1
+E06000037,West Berkshire,South East,,0.900,-0.150,12.034,9.952,3.561,0
+E06000038,Reading,South East,Delivering Better Value,1.100,0.200,7.839,19.619,3.881,0
+E06000039,Slough,South East,Delivering Better Value,0.300,0.050,5.541,22.965,3.040,0
+E06000040,Windsor and Maidenhead,South East,,0.900,-0.250,7.119,8.376,3.573,0
+E06000041,Wokingham,South East,,0.800,-0.300,12.202,5.846,3.479,0
+E06000042,Milton Keynes,South East,Delivering Better Value,0.600,0.150,4.855,17.980,4.707,0
+E06000043,Brighton and Hove,South East,,0.800,-0.550,7.547,20.761,1.609,0
+E06000044,Portsmouth,South East,Delivering Better Value,0.700,-0.150,4.586,26.899,6.314,0
+E06000045,Southampton,South East,Delivering Better Value,2.900,0.250,8.472,26.876,5.959,0
+E06000046,Isle of Wight,South East,Safety Valve,1.300,0.200,3.279,23.294,5.819,1
+E06000049,Cheshire East,North West,Safety Valve,1.500,-0.050,10.719,14.475,2.591,1
+E06000050,Cheshire West and Chester,North West,,0.600,-0.300,2.822,18.083,2.536,0
+E06000051,Shropshire,West Midlands,Safety Valve,0.100,-0.400,15.184,17.153,3.255,1
+E06000052,Cornwall,South West,Delivering Better Value,1.000,0.250,16.699,23.072,1.787,0
+E06000054,Wiltshire,South West,Safety Valve,2.100,0.350,16.184,13.447,2.334,1
+E06000055,Bedford,East of England,,0.600,-0.100,6.477,18.932,4.514,0
+E06000056,Central Bedfordshire,East of England,,0.500,-0.100,2.318,12.152,4.644,0
+E06000057,Northumberland,North East,,0.600,-0.300,8.326,22.079,8.462,0
+E08000001,Bolton,North West,Delivering Better Value,0.200,0.050,10.913,30.691,4.079,0
+E08000002,Bury,North West,Delivering Better Value,0.700,-0.050,22.245,23.682,4.461,0
+E08000003,Manchester,North West,Delivering Better Value,1.000,-0.400,4.933,40.005,5.662,0
+E08000004,Oldham,North West,Delivering Better Value,0.800,0.050,6.764,33.155,7.850,0
+E08000005,Rochdale,North West,Delivering Better Value,0.400,-0.150,5.891,34.415,5.004,0
+E08000006,Salford,North West,Delivering Better Value,0.400,-0.500,10.000,34.210,5.698,0
+E08000007,Stockport,North West,Delivering Better Value,0.700,-0.200,11.382,20.826,4.089,0
+E08000008,Tameside,North West,Delivering Better Value,0.400,-0.800,9.727,31.374,5.445,0
+E08000009,Trafford,North West,Delivering Better Value,1.500,-0.750,10.981,16.088,4.695,0
+E08000010,Wigan,North West,Delivering Better Value,0.200,-0.300,5.767,25.713,4.548,0
+E08000011,Knowsley,North West,Delivering Better Value,0.100,0.050,6.919,43.006,7.287,0
+E08000012,Liverpool,North West,Delivering Better Value,1.000,-0.550,2.712,42.412,5.795,0
+E08000013,St. Helens,North West,,1.300,-0.050,6.824,31.518,4.170,0
+E08000014,Sefton,North West,Delivering Better Value,2.000,0.350,7.801,27.035,4.695,0
+E08000015,Wirral,North West,Delivering Better Value,0.600,-0.100,4.828,29.589,7.140,0
+E08000016,Barnsley,Yorkshire and The Humber,Delivering Better Value,0.700,-0.550,20.165,29.933,3.699,0
+E08000017,Doncaster,Yorkshire and The Humber,Delivering Better Value,0.400,-0.000,11.321,30.289,3.822,0
+E08000018,Rotherham,Yorkshire and The Humber,Delivering Better Value,0.100,-0.050,8.145,29.550,6.369,0
+E08000019,Sheffield,Yorkshire and The Humber,Delivering Better Value,1.400,-1.300,4.066,27.060,3.400,0
+E08000021,Newcastle upon Tyne,North East,Delivering Better Value,0.100,0.000,3.250,29.790,4.905,0
+E08000022,North Tyneside,North East,,1.100,0.200,1.452,22.279,3.365,0
+E08000023,South Tyneside,North East,Delivering Better Value,0.500,0.050,1.054,31.509,2.505,0
+E08000024,Sunderland,North East,Delivering Better Value,0.600,-0.100,4.314,30.586,6.171,0
+E08000025,Birmingham,West Midlands,,2.100,0.150,4.576,38.067,5.740,0
+E08000026,Coventry,West Midlands,Delivering Better Value,1.400,0.200,3.899,25.613,4.368,0
+E08000027,Dudley,West Midlands,,2.000,0.750,7.195,24.103,4.243,0
+E08000028,Sandwell,West Midlands,Delivering Better Value,0.900,-0.650,6.140,34.884,2.188,0
+E08000029,Solihull,West Midlands,,1.300,-0.400,15.473,17.370,4.625,0
+E08000030,Walsall,West Midlands,Delivering Better Value,1.100,-0.400,5.446,31.555,3.915,0
+E08000031,Wolverhampton,West Midlands,Delivering Better Value,0.200,-0.100,4.367,32.102,5.211,0
+E08000032,Bradford,Yorkshire and The Humber,Delivering Better Value,0.200,-0.100,3.899,34.666,3.670,0
+E08000033,Calderdale,Yorkshire and The Humber,Delivering Better Value,0.600,0.050,10.250,26.351,0.477,0
+E08000034,Kirklees,Yorkshire and The Humber,Delivering Better Value,0.900,-0.050,6.250,25.151,2.418,0
+E08000035,Leeds,Yorkshire and The Humber,Delivering Better Value,0.500,-0.450,5.392,27.301,4.159,0
+E08000036,Wakefield,Yorkshire and The Humber,Delivering Better Value,0.400,0.100,5.151,27.306,2.711,0
+E08000037,Gateshead,North East,Delivering Better Value,2.300,0.400,4.012,28.217,5.629,0
+E09000002,Barking and Dagenham,London,,1.400,-0.200,10.183,32.768,2.429,0
+E09000003,Barnet,London,,1.900,-0.400,12.846,16.148,2.448,0
+E09000004,Bexley,London,Delivering Better Value,1.100,-1.250,16.061,16.273,4.486,0
+E09000005,Brent,London,,1.300,-0.500,11.148,25.558,4.989,0
+E09000006,Bromley,London,,1.600,-0.150,15.393,14.163,3.637,0
+E09000007,Camden,London,,1.200,-0.250,10.256,20.131,2.773,0
+E09000008,Croydon,London,Delivering Better Value,2.000,-0.400,10.337,22.477,5.531,0
+E09000009,Ealing,London,,2.400,0.400,10.733,22.710,4.370,0
+E09000010,Enfield,London,,0.400,-0.250,10.503,25.781,4.420,0
+E09000011,Greenwich,London,Delivering Better Value,2.500,-0.200,10.221,24.464,4.172,0
+E09000012,Hackney,London,,0.500,-0.950,25.516,32.526,2.746,0
+E09000013,Hammersmith and Fulham,London,,2.400,-0.100,11.111,22.270,2.861,0
+E09000014,Haringey,London,,1.100,-0.550,19.957,27.956,3.060,0
+E09000015,Harrow,London,,0.800,-0.550,13.057,15.031,2.396,0
+E09000016,Havering,London,Delivering Better Value,0.600,0.150,11.311,16.789,2.384,0
+E09000017,Hillingdon,London,Delivering Better Value,1.500,0.050,8.522,18.223,4.557,0
+E09000018,Hounslow,London,Delivering Better Value,1.200,0.150,13.976,21.487,5.242,0
+E09000019,Islington,London,,0.800,-0.850,7.431,27.535,4.488,0
+E09000020,Kensington and Chelsea,London,,3.700,0.650,22.159,21.526,2.256,0
+E09000021,Kingston upon Thames,London,,2.000,0.100,26.562,11.381,5.281,0
+E09000022,Lambeth,London,,2.000,-0.500,13.566,25.422,4.701,0
+E09000023,Lewisham,London,,3.200,0.050,12.564,26.661,4.577,0
+E09000024,Merton,London,,0.700,-0.800,28.725,14.649,4.757,0
+E09000025,Newham,London,Delivering Better Value,3.100,-0.150,10.169,29.577,1.475,0
+E09000026,Redbridge,London,,1.200,-0.100,6.186,17.203,3.439,0
+E09000027,Richmond upon Thames,London,,2.400,-0.100,25.348,9.425,2.101,0
+E09000028,Southwark,London,,1.500,-0.550,20.418,25.811,3.935,0
+E09000029,Sutton,London,,1.500,-1.200,18.683,13.987,4.135,0
+E09000030,Tower Hamlets,London,Delivering Better Value,0.200,0.050,6.750,27.913,4.399,0
+E09000031,Waltham Forest,London,,0.500,-0.350,4.135,25.209,4.814,0
+E09000032,Wandsworth,London,,1.700,-0.450,19.205,16.611,5.390,0
+E09000033,Westminster,London,,3.600,0.600,11.905,20.339,2.603,0
+E10000002,Buckinghamshire,South East,,1.300,0.200,6.184,10.700,,0
+E10000003,Cambridgeshire,East of England,Safety Valve,1.600,-0.450,10.953,15.400,4.400,1
+E10000007,Derbyshire,East Midlands,Safety Valve,1.700,0.150,7.699,22.100,3.199,1
+E10000008,Devon,South West,Safety Valve,0.900,0.100,15.132,18.000,3.916,1
+E10000011,East Sussex,South East,Safety Valve,3.000,0.600,9.197,21.400,4.462,1
+E10000012,Essex,East of England,Safety Valve,1.300,-0.350,7.860,19.700,3.899,1
+E10000013,Gloucestershire,South West,Safety Valve,1.300,-0.100,10.149,16.200,3.045,1
+E10000014,Hampshire,South East,Safety Valve,2.700,-0.250,9.004,14.600,2.975,1
+E10000015,Hertfordshire,East of England,Safety Valve,1.700,-0.250,3.350,13.800,2.969,1
+E10000016,Kent,South East,Safety Valve,1.900,-1.400,15.643,22.400,4.468,1
+E10000017,Lancashire,North West,Delivering Better Value,0.700,-0.550,11.601,27.300,4.195,0
+E10000018,Leicestershire,East Midlands,,1.100,-0.100,21.445,15.600,4.454,0
+E10000019,Lincolnshire,East Midlands,Delivering Better Value,1.400,0.300,4.560,20.500,5.191,0
+E10000020,Norfolk,East of England,Safety Valve,0.800,-0.400,16.875,22.500,4.423,1
+E10000023,North Yorkshire,Yorkshire and The Humber,Safety Valve,1.100,-0.050,7.549,14.200,,1
+E10000024,Nottinghamshire,East Midlands,Delivering Better Value,1.600,-0.500,5.275,22.900,2.721,0
+E10000025,Oxfordshire,South East,Safety Valve,0.900,-0.250,13.547,14.400,2.828,1
+E10000027,Somerset,South West,Safety Valve,2.700,-0.200,21.064,15.100,,1
+E10000028,Staffordshire,West Midlands,,1.900,0.200,9.319,21.800,4.918,0
+E10000029,Suffolk,East of England,Safety Valve,1.600,-0.050,13.177,18.500,3.785,1
+E10000030,Surrey,South East,Safety Valve,2.500,-0.400,20.223,11.200,3.541,1
+E10000031,Warwickshire,West Midlands,Safety Valve,0.500,-0.150,13.801,16.100,4.251,1
+E10000032,West Sussex,South East,Safety Valve,1.700,0.250,10.114,14.500,2.989,1
+E10000034,Worcestershire,West Midlands,Safety Valve,1.000,-0.050,8.229,18.900,4.801,1
