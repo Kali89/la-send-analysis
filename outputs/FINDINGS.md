@@ -359,7 +359,7 @@ prevalence, face disproportionate SEND budget pressure.
 Low maintained special school capacity → high independent placement burden
 → DSG financial stress → timeliness failure → tribunal appeals
 
-## Finding 8: Safety Valve LAs have LESS maintained special school capacity
+## Finding 8: No significant difference in maintained special school capacity (SV vs non-intervention)
 
 EVIDENCE:
 - Safety Valve LAs:    mean maintained capacity = 3.80 places per 1,000 pupils
@@ -411,8 +411,14 @@ that stretch case officer time.
 
 Timeliness ↔ tribunal appeals: r=-0.05, p0.598 (ns) (n=135)
 
-Each link in the chain is supported by the data:
-  maintained capacity → independent burden → [DSG stress + timeliness failure] → tribunal
+The first link in the chain — maintained capacity → independent burden — shows
+the expected direction and is statistically significant (r=−0.28, p<0.001).
+The subsequent links (independent burden → DSG deficit, p=0.684; independent
+burden → timeliness, p=0.161; timeliness → tribunal, p=0.598) are not individually
+significant in the cross-sectional data. The chain is directionally consistent
+but the intermediate steps are not individually confirmed beyond the capacity-to-
+placement step — most likely a power and collinearity problem given the n=50
+DSG sample and South East regional concentration.
 
 The structural interpretation: councils that historically underbuilt their maintained
 specialist sector are now trapped in a cycle of expensive independent placements,

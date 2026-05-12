@@ -66,7 +66,7 @@ The SEN2 2025 data breaks delays into three buckets for the first time: within 2
 
 Nationally in 2024, **45.9%** of EHCPs were issued within the legal limit, **46.9%** took between 20 weeks and a year, and **7.2%** took longer than a year. For Safety Valve LAs, the median council issued just **35.7%** within 20 weeks, with **56.9%** falling in the 20-week-to-one-year band and **4.2%** exceeding one year.
 
-The bulk of the Safety Valve delay falls in the middle bucket — children waiting six months to a year, not the multi-year waits that generate headlines. But the scale is large: in a typical Safety Valve council, more than half of all children assessed received their plan between five months and twelve months late.
+The bulk of the Safety Valve delay falls in the middle bucket — children waiting six months to a year, not the multi-year waits that generate headlines. But the scale is large: in a typical Safety Valve council, more than half of all children assessed received their plan in the 20-week-to-one-year band — arriving between around five months and a year after the original request, against a legal deadline of 20 weeks.
 
 The worst individual >1-year outliers are not concentrated in Safety Valve authorities. Leeds (57.2% of plans took over a year, Delivering Better Value) and Kirklees (46.2%, Delivering Better Value) are the most extreme cases nationally; Leicestershire (44.6%, no intervention) is third. The timeliness crisis is worst in Safety Valve LAs as a group, but the very longest individual delays cut across all programme categories.
 
@@ -78,7 +78,7 @@ When families disagree with their council's SEND decision, they can appeal to th
 
 Safety Valve LAs faced an average official appeal rate of **7.5%** in 2024. For councils with no intervention, it was **5.4%**. The difference is statistically significant (Mann-Whitney p = 0.045).
 
-But — and this is the key insight — the tribunal pressure is *not* being driven by refusals. There is no significant correlation between an LA's refusal rate and its tribunal appeal rate (Pearson r = 0.13, p = 0.12). Families are not primarily appealing because they were refused an assessment; they are appealing on other grounds: the contents of the EHCP, the placement offered, or the quality of provision specified.
+But — and this is the key insight — the tribunal pressure does not appear to be driven by refusals. There is no significant correlation between an LA's refusal rate and its tribunal appeal rate (Pearson r = 0.13, p = 0.12). This is suggestive rather than definitive: the official appeal rate uses all appealable decisions as its denominator while the refusal rate measures only initial requests, so the denominators are not directly comparable and the correlation may be partly suppressed by that mismatch. The pattern nonetheless points toward appeals on other grounds — the contents of the EHCP, the placement offered, or the quality of provision specified — rather than the initial refusal decision.
 
 This matters for the causal story. It suggests that the EHCP plans being produced by financially stressed councils — often after long delays and with stretched staff — are not meeting families' needs well enough. The plans are being issued; they are just not good enough.
 
