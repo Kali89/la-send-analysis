@@ -94,6 +94,8 @@ It would not be fair to require new special school construction before the trend
 
 By the time the 2023 SEND and AP Improvement Plan focused seriously on workforce and specialist-capacity expansion — the broadly correct response — many councils were already deep into operational and financial crisis. The plan contained most of what was needed. It would have been considerably more effective had it begun several years earlier.
 
+One counter-argument deserves acknowledgement. The government's February 2026 white paper frames the problem primarily as a structural design failure: the 2014 Act created perverse funding mechanisms, inadequate demand-management triggers, and a system of statutory entitlements that could not be sustained without legislative change. That analysis is not wrong. Structural reform was also needed, and the white paper's redesign — the four-tier system, national price bands for independent school fees, and EHCP restrictions from 2030 — represents a belated reckoning with those design flaws. But the structural argument does not exculpate the failure to act on low-regret interventions. EP training expansion and a capacity audit are not alternatives to legislative reform — they are complementary responses operating on different timescales. A government beginning the legislative process in 2018 could have run both tracks simultaneously. That it did not is a separate failure from the structural one.
+
 ---
 
 ## Part Five: What do we do now
@@ -104,7 +106,7 @@ The post-mortem has a forward-looking purpose. The same signals that predicted t
 
 A useful early-warning system would not track only total EHCP numbers or high-needs block expenditure. It would monitor five signal categories simultaneously, because they warn of different failure modes:
 
-1. **Absolute need-type growth** — the number of new ASD, SEMH, and SLCN EHCPs issued per year per LA, not just as a share of the total. Rising absolute numbers in these categories, relative to assessment throughput, predict timeliness failure.
+1. **Absolute need-type growth** — the number of new ASD, SEMH, and SLCN EHCPs issued per year per LA, not just as a share of the total. Rising absolute numbers in these categories, relative to assessment throughput, predict timeliness failure. Existing published tracking — by the IFS, IfG, and in DfE's own statistics — tends to report ASD and SEMH as percentages of the total EHCP caseload. The forecastability analysis shows that shares are near-useless for prediction; the signal is in absolute volume.
 
 2. **Timely assessment throughput** — plans issued within 20 weeks as a proportion of new requests, tracked as a trend rather than a single-year snapshot. A council whose throughput rate is falling while demand is rising is compressing its buffer.
 
