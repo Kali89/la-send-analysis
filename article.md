@@ -146,7 +146,7 @@ Nationally, spending on SEN administration per EHCP has risen from a median of �
 
 A critical question for interpreting these findings is whether the Safety Valve programme *caused* the performance deterioration, or whether it *identified* councils that were already struggling.
 
-The event study analysis — comparing Safety Valve LAs to controls in the years before and after programme entry — provides a clear answer on timeliness: **Safety Valve LAs were already 10.2 percentage points worse on 20-week compliance in the three years before they entered the programme** (54.0% vs 64.2% for controls in the pre-entry period).
+The event study analysis — comparing Safety Valve LAs to controls in the years before and after programme entry — provides a clear answer on timeliness: **Safety Valve LAs were already 11.6 percentage points worse on 20-week compliance in the three years before they entered the programme** (52.6% vs 64.2% for controls in the pre-entry period).
 
 On tribunal appeal rates, the pre-entry gap was much smaller (+0.3 percentage points). Tribunal appeal rates were generally low across all LAs in the 2014–2019 period; the widening of the gap between Safety Valve and non-intervention LAs appears to be a more recent phenomenon.
 
@@ -253,7 +253,7 @@ The analysis includes regression models using DSG (Dedicated Schools Grant) defi
 
 In a restricted sample of 50 LAs with estimated DSG deficit figures, DSG deficit per pupil was a significant predictor of timeliness failure (β = −0.034 percentage points per £1 deficit per pupil, p = 0.023). This implied that a council with a £900/pupil deficit would have roughly 31 percentage points lower timeliness than an otherwise-identical balanced council.
 
-When the sample is expanded to 150 LAs using the full S251 data, this relationship loses statistical significance (p = 0.76). The DSG carry-forward balance captures end-of-year accounting positions, not operational capacity. Region fixed effects also absorb much of the variance — Safety Valve LAs are disproportionately in the South East — making it difficult to separate the financial effect from regional structural factors with available data.
+When the sample is expanded to 147 LAs using the full S251 data, this relationship loses statistical significance (p = 0.76). The DSG carry-forward balance captures end-of-year accounting positions, not operational capacity. Region fixed effects also absorb much of the variance — Safety Valve LAs are disproportionately in the South East — making it difficult to separate the financial effect from regional structural factors with available data.
 
 ---
 
@@ -289,7 +289,7 @@ The seven analytical threads in this piece converge on a single account. It is w
 
 **Financial pressure feeds back into operational failure.** DSG deficits → staffing cuts → EP workforce shrinkage → fewer assessments completed within 20 weeks → growing backlogs → rushed or thin plans when they finally arrive → families challenge the quality at tribunal → legal costs and further placements deepen the deficit. The spending data tells this story directly: Safety Valve LAs spend 41% more per EHCP on administration (£716 vs £507, consistent with caseworkers managing growing backlogs rather than delivering efficiently), while EP spend per plan is flat — not reflecting efficiency but the bottleneck on throughput.
 
-**The timeliness failure predated the Safety Valve programme.** In the three years before entering the programme, Safety Valve LAs were already 10.2 percentage points worse on 20-week compliance than similar councils. The 2022 operational collapse — 3,500 fewer plans issued within the legal limit in a single year, with no corresponding demand surge — was the point at which structural pressure became undeniable. The programme found a problem that was already there; it has not reversed it.
+**The timeliness failure predated the Safety Valve programme.** In the three years before entering the programme, Safety Valve LAs were already 11.6 percentage points worse on 20-week compliance than similar councils. The 2022 operational collapse — 3,500 fewer plans issued within the legal limit in a single year, with no corresponding demand surge — was the point at which structural pressure became undeniable. The programme found a problem that was already there; it has not reversed it.
 
 **Tribunal appeals are the endpoint, not the origin.** Safety Valve LAs face appeal rates of 7.5% versus 5.4% elsewhere (p = 0.045). But there is no significant correlation between refusal rates and appeal rates (r = 0.13, p = 0.12). Families are not primarily appealing because they were refused. They are appealing the quality and contents of plans produced after long delays by overstretched teams who have been managing a throughput ceiling of roughly 9,500 timely cases per year while total demand grew 60% since 2019.
 

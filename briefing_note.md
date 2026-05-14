@@ -35,7 +35,7 @@ A predictive model trained on 2021 features — with no knowledge of Safety Valv
 
 Several are already in collapse on individual indicators. Central Bedfordshire's 26.5% mean timeliness is among the worst of any council nationally. These are observations, not predictions: the crisis is present, not merely approaching.
 
-*Risk scores are model outputs reflecting structural similarity to councils that entered collapse — not official designations.*
+*Risk scores are model outputs reflecting structural similarity to councils that entered collapse — not official designations. Enfield (score 0.69) is excluded from this shortlist because its 20-week timeliness is 89.7% — no crisis signal on any individual indicator.*
 
 ---
 

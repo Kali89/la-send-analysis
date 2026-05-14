@@ -26,8 +26,8 @@ ROOT     = Path(__file__).parent
 FIG_DIR  = ROOT / 'outputs' / 'figures'
 TABLE_DIR = ROOT / 'outputs' / 'tables'
 
-COLORS = {'Safety Valve': '#d62728', 'DBV': '#ff7f0e', 'None': '#1f77b4'}
-STATUS_ORDER = ['Safety Valve', 'DBV', 'None']
+COLORS = {'Safety Valve': '#d62728', 'Delivering Better Value': '#ff7f0e', 'None': '#1f77b4'}
+STATUS_ORDER = ['Safety Valve', 'Delivering Better Value', 'None']
 
 def safe(s):
     return pd.to_numeric(
@@ -352,7 +352,7 @@ ax.set_yticks(y_pos)
 ax.set_yticklabels(tim24_sorted['la_name'].fillna(tim24_sorted['la_code']), fontsize=6)
 ax.set_xlabel('Percentage of plans issued (%)', fontsize=11)
 ax.set_title('Timeliness breakdown by local authority, 2024\n'
-             'Right-edge bars: ■ Safety Valve  ■ DBV  ■ No intervention',
+             'Right-edge bars: ■ Safety Valve  ■ Delivering Better Value  ■ No intervention',
              fontsize=11, fontweight='bold')
 ax.axvline(100, color='grey', lw=0.5, alpha=0.4)
 ax.set_xlim(0, 107)

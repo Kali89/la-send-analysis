@@ -46,7 +46,7 @@ One important caveat: a model using only total EHCP demand — ignoring need typ
 
 **For legal-pressure and placement failure, the warning was in the financial and legal data.**
 
-A model using tribunal appeal rate and independent top-up spend as a percentage of DSG — both published annually since 2015/16 — achieves AUC 0.71 for legal-pressure collapse from 2016 data alone, rising to 0.88 by 2021. For placement and cost collapse, the same signals achieve AUC 0.72–0.80 across the training years, with the full model reaching 0.86 from 2019.
+A model using tribunal appeal rate and independent top-up spend as a percentage of DSG — both published annually since 2015/16 — achieves AUC 0.71 for legal-pressure collapse from 2016 data alone, rising to 0.88 by 2021. For placement and cost collapse, the same signals achieve AUC 0.72–0.80 from 2019 onward (0.56–0.72 in 2016–2018 as the signal builds), with the full model reaching 0.86 from 2019.
 
 The tribunal rate has strong autocorrelation: councils that were attracting high appeal rates in 2014–2016 continued to do so in 2022–2024. This is not purely a prediction of future events — it partly reflects a persistent structural condition in how some councils operate, how local advice ecosystems work, and how parental awareness and expectations vary. But it is precisely that persistence that makes it a useful early signal: a council running above-average tribunal rates in 2016 was structurally more likely to be in the high-appeal group six years later.
 

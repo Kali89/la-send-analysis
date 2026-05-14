@@ -301,9 +301,9 @@ ax2.set_title('Model coefficients\n(standardised predictors)', fontsize=12, font
 ax2.grid(True, axis='x', alpha=0.3)
 
 plt.tight_layout()
-fig.savefig(FIG_DIR / '14_retrospective_roc.png', dpi=150, bbox_inches='tight')
+fig.savefig(FIG_DIR / '14b_retrospective_roc.png', dpi=150, bbox_inches='tight')
 plt.close()
-print("  Saved figure 14")
+print("  Saved figure 14b")
 
 # ── Figure 15: 2016 early warning list ──────────────────────────────────────
 ranked = model_data.sort_values('loo_prob', ascending=False).reset_index(drop=True)

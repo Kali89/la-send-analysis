@@ -29,9 +29,9 @@ Two analyses are published here:
 | 2021 | E: Counts + timeliness | Composite collapse | **0.82** |
 | 2021 | G: Signals only | Legal-pressure collapse | **0.88** |
 
-**Key finding:** Need-type growth (Model B) predicted timeliness collapse as well as or better than system-failure signals (AUC 0.66 vs 0.50); but for legal-pressure and placement collapse, tribunal rates and independent spend dominated.
+**Key finding:** Need-type growth (Model B) predicted timeliness collapse as well as or better than system-failure signals (AUC 0.66 vs 0.50 at the 2020 training year); but for legal-pressure and placement collapse, tribunal rates and independent spend dominated.
 
-**High-risk councils with no current DfE intervention:** Bristol (risk score 0.90), Birmingham (0.82), Bromley (0.77), Staffordshire (0.69).
+**High-risk councils with no current DfE intervention:** Bristol (risk score 0.90), Birmingham (0.82), Bromley (0.77), Lewisham (0.72), Staffordshire (0.69), Central Bedfordshire (0.64). These are model outputs indicating structural similarity to councils already in collapse; they are not official classifications.
 
 ---
 
@@ -146,26 +146,10 @@ The `forecastability_analysis.py` script predicts system collapse in 2022–2024
 
 ---
 
-## Caveats
-
-1. **Refusal rate inflation by backlogs:** Councils with large backlogs show lower apparent refusal rates (decisions pending). Delay-as-gatekeeping is not captured by refusal rates.
-2. **Forecastability ≠ causal mechanism:** High AUC from early tribunal rates reflects partly autocorrelation (persistent structural conditions), not pure prediction of future events.
-3. **DSG balance ≠ operational capacity:** End-of-year carry-forward is an accounting figure; staffing headcount is the key missing variable.
-4. **Scenario projections are sensitivity illustrations, not forecasts:** Real-world dynamics (policy interventions, capital programmes) are not modelled.
-5. **Selection into Safety Valve:** SV LAs were already performing worse before programme entry. Cross-sectional comparisons cannot establish causation.
-
----
-
-## Licence
-
-Code: MIT. Data outputs in `outputs/` are derived from Crown Copyright data (Open Government Licence v3.0).
-
----
-
 ## Methodology notes
 
 - **Non-parametric tests:** Mann-Whitney U (two-group) and Kruskal-Wallis H (three-group) for all group comparisons, given non-normal distributions.
-- **OLS regressions:** DV ∈ {refusal rate, timeliness, tribunal rate}; predictors: DSG financial stress per pupil, IMD 2019 average score, region fixed effects. Two samples: n=50 (hardcoded DSG estimates) and n≈150 (S251 full data).
+- **OLS regressions:** DV ∈ {refusal rate, timeliness, tribunal rate}; predictors: DSG financial stress per pupil, IMD 2019 average score, region fixed effects. Two samples: n=50 (hardcoded DSG estimates) and n=147 (S251 full data).
 - **Event study:** Safety Valve entry year as t=0; outcomes averaged by event-time for SV vs no-intervention LAs. Pre-period uses tribunal data back to 2014.
 - **Mediation (Baron-Kenny):** Chain: DSG deficit → throughput stress (M1) → 20-week timeliness (M2) → tribunal appeal rate. Sobel test for each indirect path. All paths non-significant in the 134-LA sample.
 - **Small LAs excluded:** City of London and Isles of Scilly excluded from all statistical tests due to tiny population.
@@ -176,9 +160,11 @@ Code: MIT. Data outputs in `outputs/` are derived from Crown Copyright data (Ope
 
 1. **Refusal rate inflation by backlogs:** LAs with large backlogs show lower *apparent* refusal rates (decisions still pending). Gatekeeping via delay rather than formal refusal is not captured by refusal rates.
 2. **Timeliness and tribunal clock-stopping:** LAs can pause the statutory 20-week clock during mediation/tribunal proceedings, which may depress reported timeliness independently of capacity.
-3. **DSG balance ≠ operational capacity:** End-of-year DSG carry-forward is an accounting figure; it does not directly measure staffing levels or throughput capacity.
-4. **Selection into Safety Valve:** SV LAs were already performing worse before programme entry (pre-entry timeliness gap: −10.2 pp). Causal inference from cross-sectional comparisons should be treated with caution.
-5. **Parallel trends unverifiable:** The event study has only 3 pre-entry years of SEN2 process data (2019–2021) for most SV LAs, limiting formal DiD assumptions.
+3. **Forecastability ≠ causal mechanism:** High AUC from early tribunal rates reflects partly autocorrelation (persistent structural conditions), not pure prediction of future events.
+4. **DSG balance ≠ operational capacity:** End-of-year DSG carry-forward is an accounting figure; it does not directly measure staffing levels or throughput capacity.
+5. **Scenario projections are sensitivity illustrations, not forecasts:** Real-world dynamics (policy interventions, capital programmes) are not modelled.
+6. **Selection into Safety Valve:** SV LAs were already performing worse before programme entry (pre-entry timeliness gap: −11.6 pp, three years before entry). Causal inference from cross-sectional comparisons should be treated with caution.
+7. **Parallel trends unverifiable:** The event study has only 3 pre-entry years of SEN2 process data (2019–2021) for most SV LAs, limiting formal DiD assumptions.
 
 ---
 

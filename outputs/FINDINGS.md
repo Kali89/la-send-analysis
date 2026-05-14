@@ -449,4 +449,10 @@ which is incompatible with the 2–4 year Safety Valve timescales.
 5. **Data vintage**: GIAS as of May 2026; SEN2 data from 2023-24 academic year.
    Some new special schools opened or converted in the intervening period.
 
+6. **DfE data suppression in `indep_per_1000`**: The `special_independent` placement count
+   in the SEN2 caseload file is suppressed (`x` → NaN → 0) for several LAs with small counts
+   (notably Hackney, Peterborough). Where a council shows `indep_per_1000 = 0` alongside a
+   non-zero `topup_independent_pct`, the zero reflects suppression, not genuine absence of
+   independent placements. Risk scores for these LAs may be understated.
+
 *Generated: 2026-05-12 using GIAS, DfE SEN2 2025, S251 2024-25*

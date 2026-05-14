@@ -84,7 +84,7 @@ Second, the model is predictive, not causal. The finding is *consistent with* a 
 
 For legal-pressure collapse (high tribunal rates), Model G achieves AUC 0.71 from 2016 data and 0.88 from 2021 data. Model B (need-type counts) achieves AUC 0.77 from 2019 data — meaningful, but consistently below G. The tribunal rate itself has strong autocorrelation: councils with high appeal rates in 2016–2018 continued to have high appeal rates in 2022–2024. This reflects a persistent structural condition — a combination of plan quality, parental expectation, and the local advice ecosystem — that is not primarily driven by recent caseload growth.
 
-For placement/cost collapse, the pattern is similar: Model G achieves AUC 0.75–0.80 from 2018 onward; Model B reaches 0.70–0.73 from 2019. The full model (H) achieves the highest AUC for placement collapse (0.86 from 2019), suggesting that need-type growth and system signals together explain placement concentration better than either does alone. This is consistent with a pattern in which councils facing both high ASD/SEMH demand (associated with higher rates of specialist provision) and a high pre-existing reliance on independent placements were more likely to accumulate further placements — though the direction of causality between these factors cannot be established from the cross-sectional data.
+For placement/cost collapse, the pattern is similar: Model G achieves AUC 0.75–0.80 from 2019 onward (0.72 at 2018); Model B reaches 0.70–0.73 from 2019. The full model (H) achieves the highest AUC for placement collapse (0.86 from 2019), suggesting that need-type growth and system signals together explain placement concentration better than either does alone. This is consistent with a pattern in which councils facing both high ASD/SEMH demand (associated with higher rates of specialist provision) and a high pre-existing reliance on independent placements were more likely to accumulate further placements — though the direction of causality between these factors cannot be established from the cross-sectional data.
 
 **Composite collapse — signals dominated, but need-type growth contributed.**
 
@@ -138,6 +138,8 @@ Most of the top-ranked councils are already in DfE intervention programmes, vali
 | Central Bedfordshire | 0.64 (High) | 26.5% | 2.5% | 1.0 |
 
 Several of these councils are already showing collapse-level metrics on individual indicators. Bristol's mean timeliness over 2022–2024 was 37.5% (below the 40% collapse threshold), Bromley's was 33.7%, and Staffordshire's was 33.5%. Central Bedfordshire's mean timeliness of 26.5% is among the worst individual performances of any council in the country. These are observations about the current data, not predictions about future programme entry.
+
+*Note on selection: Enfield scores 0.69 on the same model but is excluded from this shortlist because its mean 20-week timeliness is 89.7% — the highest of any high-scoring council — and it shows no crisis signal on any individual indicator. The shortlist above shows councils whose model risk score is corroborated by actual deterioration in at least one observable outcome.*
 
 ---
 
