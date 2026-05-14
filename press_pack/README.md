@@ -14,6 +14,7 @@
 | `policy_asks.md` | Policy journalists, parliamentary correspondents | Writing about what should happen next |
 | `anticipated_challenges.md` | Journalists expecting official pushback | Preparing for DfE or council responses |
 | `github_link_and_citation.md` | All | Crediting the work; data sourcing |
+| `facility_priorities.md` | Policy journalists, planners, DfE capital teams | Where to build maintained special school provision and what type |
 
 ---
 
@@ -35,3 +36,5 @@ Do not lead with risk scores unless the recipient already understands the method
 |---|---|
 | `tables_for_media/high_risk_councils.csv` | The six high-risk councils: risk score, timeliness, appeal rate, independent placements |
 | `tables_for_media/headline_comparison.csv` | The three headline statistics comparing Safety Valve vs no-intervention LAs |
+| `tables_for_media/facility_priority_top20.csv` | Top 20 LA × need-type facility priorities: gap, growth, facility type, lead time |
+| `figures_for_media/44_facility_priority.png` | Top 30 facility priorities ranked by urgency score (ASD/SEMH/MLD, new school vs RPU) |

@@ -1,0 +1,21 @@
+priority_rank,la_name,region,need_type,need_type_full,facility_type,lead_time,typical_places,gap_abs_children,demand_growth_to_2030,indep_cost_2030_m
+1,Hampshire,South East,SEMH,"Social, Emotional & Mental Health",Resourced provision unit / SEN unit,1–2 years,10–25,3602,2.05,157.6
+2,Essex,East of England,ASD,Autistic Spectrum Disorder,Resourced provision unit / SEN unit,1–2 years,10–25,2766,2.05,46.2
+3,Norfolk,East of England,SEMH,"Social, Emotional & Mental Health",Resourced provision unit / SEN unit,1–2 years,10–25,2663,2.05,138.1
+4,Norfolk,East of England,ASD,Autistic Spectrum Disorder,Resourced provision unit / SEN unit,1–2 years,10–25,2422,2.05,138.1
+5,Cornwall,South West,ASD,Autistic Spectrum Disorder,New maintained special school,4–6 years,80–150,1420,2.05,44.5
+6,Norfolk,East of England,MLD,Moderate Learning Difficulties,New maintained special school,4–6 years,80–150,1470,2.05,138.1
+7,Lancashire,North West,ASD,Autistic Spectrum Disorder,Resourced provision unit / SEN unit,1–2 years,10–25,3517,2.04,59.3
+8,Suffolk,East of England,ASD,Autistic Spectrum Disorder,New maintained special school,4–6 years,80–150,1952,1.75,63.6
+9,Essex,East of England,SEMH,"Social, Emotional & Mental Health",New maintained special school,4–6 years,80–150,1938,2.05,46.2
+10,Hertfordshire,East of England,MLD,Moderate Learning Difficulties,Resourced provision unit / SEN unit,1–2 years,10–25,2429,1.61,38.8
+11,Worcestershire,West Midlands,SEMH,"Social, Emotional & Mental Health",New maintained special school,4–6 years,80–150,1596,2.05,63.1
+12,Cornwall,South West,SEMH,"Social, Emotional & Mental Health",New maintained special school,4–6 years,80–150,1074,2.05,44.5
+13,Bradford,Yorkshire and The Humber,SEMH,"Social, Emotional & Mental Health",New maintained special school,4–6 years,80–150,1746,2.05,29.1
+14,Buckinghamshire,South East,ASD,Autistic Spectrum Disorder,New maintained special school,4–6 years,80–150,2302,1.39,26.2
+15,Surrey,South East,SEMH,"Social, Emotional & Mental Health",Resourced provision unit / SEN unit,1–2 years,10–25,2156,1.5,194.3
+16,Kent,South East,ASD,Autistic Spectrum Disorder,Resourced provision unit / SEN unit,1–2 years,10–25,3355,1.08,246.5
+17,Wiltshire,South West,SEMH,"Social, Emotional & Mental Health",New maintained special school,4–6 years,80–150,1487,2.05,48.8
+18,Worcestershire,West Midlands,ASD,Autistic Spectrum Disorder,New maintained special school,4–6 years,80–150,1359,2.05,63.1
+19,Nottinghamshire,East Midlands,ASD,Autistic Spectrum Disorder,Resourced provision unit / SEN unit,1–2 years,10–25,1761,2.05,45.2
+20,West Sussex,South East,SEMH,"Social, Emotional & Mental Health",New maintained special school,4–6 years,80–150,1538,1.88,84.8
