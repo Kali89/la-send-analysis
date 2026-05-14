@@ -150,7 +150,24 @@ print(special_all.groupby('school_category').agg(
     median_capacity=('SchoolCapacity','median')
 ).to_string())
 
-# Aggregate state-funded special school capacity by LA (using GSSLACode for join)
+# Fix GSSLACode before aggregating: some LAs have placeholder or post-boundary-change codes.
+# Map by LA (name) so we don't contaminate other LAs sharing the same placeholder code.
+# • BCP and Dorset both use X999999 (pre-2019 merger placeholder) — map each by name.
+# • Buckinghamshire schools use E06000060 (2020 unitary) but panel carries E10000002 (old county).
+_LANAME_TO_GSSCODE = {
+    'Bournemouth, Christchurch and Poole': 'E06000058',
+    'Dorset':                              'E06000059',
+    'Buckinghamshire':                     'E10000002',
+}
+
+def _fix_gsslacode(row):
+    override = _LANAME_TO_GSSCODE.get(row['LA (name)'])
+    return override if override else row['GSSLACode (name)']
+
+special_all = special_all.copy()
+special_all['GSSLACode (name)'] = special_all.apply(_fix_gsslacode, axis=1)
+
+# Aggregate state-funded special school capacity by LA
 state_special = special_all[special_all['school_category'] == 'state_special'].copy()
 
 la_capacity = (state_special
@@ -178,6 +195,7 @@ la_indep_schools = (indep_special
     )
     .rename(columns={'GSSLACode (name)': 'la_code'})
 )
+
 la_capacity = la_capacity.merge(la_indep_schools, on='la_code', how='left')
 print(f"Independent special schools by LA: {la_indep_schools['n_indep_special_schools'].sum()} schools total")
 
@@ -260,6 +278,9 @@ pupils = (sen_phase[
 ].groupby('new_la_code', as_index=False)
  .agg(total_pupils=('total_pupils', lambda x: pd.to_numeric(x, errors='coerce').sum()))
  .rename(columns={'new_la_code': 'la_code'}))
+
+# Buckinghamshire: sen_phase_type_ uses E06000060 (new unitary) but panel uses E10000002 (old county)
+pupils['la_code'] = pupils['la_code'].replace({'E06000060': 'E10000002'})
 
 panel = panel.merge(pupils, on='la_code', how='left')
 

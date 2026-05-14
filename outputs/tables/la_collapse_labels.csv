@@ -24,6 +24,7 @@ E06000056,Central Bedfordshire,East of England,,26.467,3,2.500,3,0.985,5.280,1.0
 E06000049,Cheshire East,North West,Safety Valve,50.833,3,2.400,3,6.375,31.618,0.000,0.000,1.000,1.000,0.000
 E06000050,Cheshire West and Chester,North West,,17.867,3,2.867,3,1.880,9.059,1.000,0.000,0.000,1.000,0.000
 E06000052,Cornwall,South West,Delivering Better Value,11.567,3,2.633,3,3.614,33.960,1.000,0.000,0.000,1.000,0.000
+E06000047,County Durham,North East,,15.067,3,6.267,3,1.039,4.274,1.000,1.000,0.000,2.000,1.000
 E08000026,Coventry,West Midlands,Delivering Better Value,58.167,3,3.267,3,1.537,6.965,0.000,0.000,0.000,0.000,0.000
 E09000008,Croydon,London,Delivering Better Value,64.300,3,1.933,3,3.848,14.753,0.000,0.000,1.000,1.000,0.000
 E06000005,Darlington,North East,Delivering Better Value,82.067,3,1.333,3,3.133,15.269,0.000,0.000,0.000,0.000,0.000
@@ -94,7 +95,7 @@ E06000003,Redcar and Cleveland,North East,Delivering Better Value,41.167,3,3.333
 E09000027,Richmond upon Thames,London,,70.833,3,3.000,3,3.249,26.556,0.000,0.000,0.000,0.000,0.000
 E08000005,Rochdale,North West,Delivering Better Value,58.633,3,1.367,3,3.461,14.872,0.000,0.000,0.000,0.000,0.000
 E08000018,Rotherham,Yorkshire and The Humber,Delivering Better Value,69.133,3,2.367,3,2.330,8.768,0.000,0.000,0.000,0.000,0.000
-E06000017,Rutland,East Midlands,,58.900,3,4.133,3,2.644,28.378,0.000,1.000,0.000,1.000,0.000
+E06000017,Rutland,East Midlands,,58.900,3,4.133,3,2.644,28.378,0.000,0.000,0.000,0.000,0.000
 E08000006,Salford,North West,Delivering Better Value,49.867,3,3.000,3,3.405,13.281,0.000,0.000,0.000,0.000,0.000
 E08000028,Sandwell,West Midlands,Delivering Better Value,34.700,3,2.133,3,2.294,14.258,1.000,0.000,0.000,1.000,0.000
 E08000014,Sefton,North West,Delivering Better Value,40.333,3,2.033,3,3.997,16.019,0.000,0.000,1.000,1.000,0.000
@@ -142,7 +143,6 @@ E08000031,Wolverhampton,West Midlands,Delivering Better Value,50.267,3,0.800,3,1
 E10000034,Worcestershire,West Midlands,Safety Valve,31.933,3,2.100,3,4.290,17.181,1.000,0.000,1.000,2.000,1.000
 E06000014,York,Yorkshire and The Humber,,83.100,3,1.867,3,0.216,2.083,0.000,0.000,0.000,0.000,0.000
 E06000058,"Bournemouth, Christchurch and Poole",South West,,28.533,3,,0,3.835,16.036,1.000,0.000,1.000,2.000,1.000
-E06000047,County Durham,North East,,15.067,3,,0,1.039,4.274,1.000,0.000,0.000,1.000,0.000
 E06000059,Dorset,South West,Safety Valve,57.167,3,,0,4.289,18.688,0.000,0.000,1.000,1.000,0.000
 E06000019,"Herefordshire, County of",West Midlands,,73.067,3,,0,1.875,10.731,0.000,0.000,0.000,0.000,0.000
 E06000010,"Kingston upon Hull, City of",Yorkshire and The Humber,,21.100,3,,0,0.589,3.299,1.000,0.000,0.000,1.000,0.000

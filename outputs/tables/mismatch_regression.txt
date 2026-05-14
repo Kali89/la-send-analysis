@@ -5,8 +5,8 @@ Dependent variable: log(S251 1.2.3 per EHCP)
 Dep. Variable:     log_indep_per_ehcp   R-squared:                       0.099
 Model:                            OLS   Adj. R-squared:                  0.011
 Method:                 Least Squares   F-statistic:                     2.317
-Date:                Tue, 12 May 2026   Prob (F-statistic):            0.00837
-Time:                        14:46:51   Log-Likelihood:                -209.45
+Date:                Thu, 14 May 2026   Prob (F-statistic):            0.00837
+Time:                        21:36:52   Log-Likelihood:                -209.45
 No. Observations:                 147   AIC:                             446.9
 Df Residuals:                     133   BIC:                             488.8
 Df Model:                          13                                         

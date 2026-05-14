@@ -40,7 +40,7 @@ E06000055,Bedford,East of England,None,473.0,153.0,1899.0,355.0,32.3467230443974
 E09000014,Haringey,London,None,553.0,176.0,2833.0,219.0,31.82640144665461,82.6,1487.0,,8.3,,33.7,False,False,False
 E06000056,Central Bedfordshire,East of England,None,944.0,300.0,3541.0,649.0,31.779661016949152,42.5,4894.0,,2.9,,13.1,False,False,False
 E08000018,Rotherham,Yorkshire and The Humber,Delivering Better Value,959.0,304.0,3310.0,535.0,31.69968717413973,79.3,2125.0,,4.6,,31.8,False,False,False
-E06000047,County Durham,North East,None,1009.0,316.0,4501.0,920.0,31.318136769078297,16.6,,,,,29.4,False,False,False
+E06000047,County Durham,North East,None,1009.0,316.0,4501.0,920.0,31.318136769078297,16.6,3124.0,,11.0,,29.4,False,False,False
 E06000002,Middlesbrough,North East,Delivering Better Value,436.0,135.0,1872.0,306.0,30.963302752293576,98.0,1442.0,,1.6,,41.2,False,False,False
 E09000018,Hounslow,London,Delivering Better Value,699.0,214.0,3100.0,398.0,30.61516452074392,77.9,2525.0,,3.9,,24.6,False,False,False
 E10000032,West Sussex,South East,Safety Valve,2448.0,744.0,7684.0,1495.0,30.392156862745097,11.4,4154.0,,8.4,710.0,14.5,False,False,False
@@ -71,7 +71,7 @@ E09000005,Brent,London,None,705.0,170.0,3500.0,473.0,24.113475177304963,79.5,169
 E08000005,Rochdale,North West,Delivering Better Value,755.0,182.0,2829.0,415.0,24.10596026490066,40.7,1772.0,,2.5,,34.1,False,False,False
 E06000033,Southend-on-Sea,East of England,Safety Valve,569.0,137.0,1737.0,299.0,24.077328646748683,16.1,1344.0,,3.6,290.0,25.3,False,False,False
 E06000021,Stoke-on-Trent,West Midlands,Delivering Better Value,788.0,189.0,2970.0,559.0,23.98477157360406,32.9,2421.0,,4.3,370.0,37.9,False,False,False
-E06000058,"Bournemouth, Christchurch and Poole",South West,None,1230.0,295.0,3769.0,784.0,23.983739837398375,74.1,,,,,20.4,False,False,False
+E06000058,"Bournemouth, Christchurch and Poole",South West,None,1230.0,295.0,3769.0,784.0,23.983739837398375,74.1,,,,-287.0,20.4,False,False,False
 E10000017,Lancashire,North West,Delivering Better Value,3658.0,876.0,11258.0,1720.0,23.947512301804263,17.3,5032.0,,6.6,,27.3,False,False,False
 E08000003,Manchester,North West,Delivering Better Value,2305.0,546.0,7798.0,1657.0,23.68763557483731,63.5,5110.0,,2.1,530.0,42.1,False,False,False
 E09000019,Islington,London,None,511.0,121.0,2035.0,295.0,23.679060665362034,78.6,1548.0,,7.5,,34.5,False,False,False

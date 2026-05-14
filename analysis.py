@@ -141,6 +141,7 @@ DSG_DEFICIT_PER_PUPIL = {
     'Sandwell':270,'Walsall':250,'Dudley':220,'Solihull':180,
     'Richmond upon Thames':-120,'Kingston upon Thames':-80,'Wokingham':-90,
     'Windsor and Maidenhead':-60,
+    'Bournemouth, Christchurch and Poole':-287,  # S251 2023-24: surplus LA
 }
 
 # LA → region mapping (using DfE region_name from the data)
@@ -311,12 +312,13 @@ new['n_new_ehc_plans'] = to_numeric_safe(new['n_new_ehc_plans'])
 # Normalise to match requests.csv naming conventions
 def normalise_la_name(name):
     if not isinstance(name, str): return name
-    # Title-case since tribunal file uses proper case mostly
     replacements = {
         'Bristol, City of':               'Bristol, City of',
         'Kingston upon Hull, City of':    'Kingston upon Hull',
+        'Kingston Upon Hull, City of':    'Kingston upon Hull',   # capital-U variant in tribunal CSV
         'Herefordshire, County of':       'Herefordshire',
         'Durham, County':                 'County Durham',
+        'Durham':                         'County Durham',        # tribunal CSV omits ", County"
         "King's Lynn":                    "King's Lynn and West Norfolk",
     }
     return replacements.get(name.strip(), name.strip())

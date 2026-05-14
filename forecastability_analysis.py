@@ -591,10 +591,11 @@ collapse['y_placement']  = (collapse['indep_per_1000']  > placement_thresh).asty
 for col in ['y_timeliness', 'y_appeal', 'y_placement']:
     collapse[col] = np.where(collapse[col].isna(), np.nan, collapse[col])
 
+_all_na = collapse[['y_timeliness', 'y_appeal', 'y_placement']].isna().all(axis=1)
 collapse['n_flags'] = (collapse[['y_timeliness', 'y_appeal', 'y_placement']]
                        .apply(lambda r: r.sum(skipna=True), axis=1))
 collapse['y_composite'] = (collapse['n_flags'] >= COMPOSITE_MIN_FLAGS).astype(float)
-collapse.loc[collapse['n_flags'].isna(), 'y_composite'] = np.nan
+collapse.loc[_all_na, 'y_composite'] = np.nan  # LAs missing all three metrics → not classified
 
 for col, label in [('y_timeliness','Timeliness'), ('y_appeal','Appeal'),
                    ('y_placement','Placement'), ('y_composite','Composite')]:

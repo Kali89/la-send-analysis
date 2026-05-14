@@ -111,11 +111,6 @@ hist = hist.merge(totals_hist, on=['la_code', 'time_period'])
 hist['pct'] = hist['n'] / hist['total'] * 100
 
 # National averages by year
-nat_hist = (hist.groupby(['time_period', 'need'])
-            .apply(lambda g: g['n'].sum() / g['total'].max() * 100
-                   if g['total'].max() > 0 else np.nan)
-            .reset_index(name='pct_national'))
-
 # Wide LA-year table
 demand_hist = (
     hist.pivot_table(index=['la_code', 'time_period'], columns='need', values='pct')
@@ -162,8 +157,11 @@ nat_demand['pct_national'] = nat_demand['n'] / nat_demand['year_total'] * 100
 nat_now_counts = {}
 for need, col in [('ASD','asd_pc'),('SEMH','semh_pc'),('MLD','mld_pc'),
                   ('SLD','sld_pc'),('SLCN','slcn_pc')]:
-    # Weighted average (approximate — use mean of LA %s as national proxy)
-    nat_now_counts[need] = needs_now[col].mean()
+    # Weighted mean by total EHCP children, consistent with historical method
+    weights = needs_now['total_ehcp_now'].fillna(0)
+    total_w = weights.sum()
+    nat_now_counts[need] = ((needs_now[col] * weights).sum() / total_w
+                            if total_w > 0 else np.nan)
 
 nat_now_rows = [{'time_period': 202425, 'need': k, 'pct_national': v}
                 for k, v in nat_now_counts.items()]

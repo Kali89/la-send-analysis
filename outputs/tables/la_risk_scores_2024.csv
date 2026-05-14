@@ -1,144 +1,144 @@
 la_code,la_name,region,intervention_status,risk_score,risk_decile,risk_tier,y_composite,mean_timeliness,mean_appeal,indep_per_1000,topup_independent_pct,trib_level,ehcp_growth
-E09000002,Barking and Dagenham,London,,0.187,4,Low (< 25%),0.000,21.967,2.000,1.058,1.519,2.300,-0.324
-E09000003,Barnet,London,,0.094,2,Low (< 25%),0.000,94.000,4.800,1.627,4.673,2.900,-0.260
-E08000016,Barnsley,Yorkshire and The Humber,Delivering Better Value,0.132,3,Low (< 25%),0.000,87.433,2.300,6.240,15.898,1.500,-0.200
-E06000022,Bath and North East Somerset,South West,,0.192,5,Low (< 25%),0.000,27.867,2.467,3.011,22.790,0.800,-0.238
-E06000055,Bedford,East of England,,0.043,1,Low (< 25%),0.000,79.633,1.400,0.661,2.240,1.300,-0.295
-E09000004,Bexley,London,Delivering Better Value,0.200,5,Low (< 25%),0.000,77.067,1.867,2.743,10.921,1.200,-0.261
-E08000025,Birmingham,West Midlands,,0.820,10,Critical (> 75%),0.000,49.433,5.567,1.049,3.565,3.300,-0.326
-E06000008,Blackburn with Darwen,North West,Delivering Better Value,0.028,1,Low (< 25%),0.000,90.900,0.933,2.406,3.897,0.200,-0.431
-E06000009,Blackpool,North West,,0.154,4,Low (< 25%),0.000,76.100,0.500,3.819,13.588,0.200,-0.286
-E08000001,Bolton,North West,Delivering Better Value,0.372,6,Moderate (25–50%),0.000,53.167,1.333,2.137,5.750,0.300,-0.266
-E06000036,Bracknell Forest,South East,Safety Valve,0.263,5,Moderate (25–50%),1.000,44.333,6.200,4.600,8.665,1.600,-0.232
-E08000032,Bradford,Yorkshire and The Humber,Delivering Better Value,0.655,9,High (50–75%),0.000,79.800,4.033,1.726,3.547,1.000,-0.342
-E09000005,Brent,London,,0.211,5,Low (< 25%),0.000,51.500,1.667,3.161,5.247,1.700,-0.230
-E06000043,Brighton and Hove,South East,,0.133,3,Low (< 25%),0.000,76.467,3.700,2.454,3.189,1.800,-0.313
-E06000023,"Bristol, City of",South West,,0.905,10,Critical (> 75%),0.000,37.467,2.900,2.551,4.479,1.000,-0.288
-E09000006,Bromley,London,,0.766,10,Critical (> 75%),1.000,33.700,4.000,3.865,17.893,2.100,-0.243
-E10000002,Buckinghamshire,South East,,0.137,3,Low (< 25%),0.000,46.467,3.533,1.787,,2.700,-0.229
-E08000002,Bury,North West,Delivering Better Value,0.322,6,Moderate (25–50%),0.000,74.700,2.067,5.841,7.689,0.600,-0.246
-E08000033,Calderdale,Yorkshire and The Humber,Delivering Better Value,0.033,1,Low (< 25%),0.000,97.433,2.233,2.973,0.704,1.400,-0.344
-E10000003,Cambridgeshire,East of England,Safety Valve,0.386,6,Moderate (25–50%),0.000,29.867,3.167,2.355,6.113,1.100,-0.221
-E09000007,Camden,London,,0.044,1,Low (< 25%),0.000,96.567,3.567,2.386,2.549,2.200,-0.244
-E06000056,Central Bedfordshire,East of England,,0.636,8,High (50–75%),0.000,26.467,2.500,0.985,3.754,0.600,-0.288
-E06000049,Cheshire East,North West,Safety Valve,0.292,5,Moderate (25–50%),0.000,50.833,2.400,6.375,12.863,0.800,-0.159
-E06000050,Cheshire West and Chester,North West,,0.491,7,Moderate (25–50%),0.000,17.867,2.867,1.880,1.709,2.000,-0.302
-E06000052,Cornwall,South West,Delivering Better Value,0.125,3,Low (< 25%),0.000,11.567,2.633,3.614,6.058,1.200,-0.286
-E08000026,Coventry,West Midlands,Delivering Better Value,0.333,6,Moderate (25–50%),0.000,58.167,3.267,1.537,4.950,1.400,-0.352
-E09000008,Croydon,London,Delivering Better Value,0.574,8,High (50–75%),0.000,64.300,1.933,3.848,7.036,1.700,-0.243
-E06000005,Darlington,North East,Delivering Better Value,0.043,1,Low (< 25%),0.000,82.067,1.333,3.133,14.590,0.600,-0.292
-E06000015,Derby,East Midlands,Delivering Better Value,0.658,9,High (50–75%),1.000,20.633,5.733,2.852,8.213,1.400,-0.281
-E10000007,Derbyshire,East Midlands,Safety Valve,0.584,8,High (50–75%),1.000,30.033,7.367,2.816,4.018,3.600,-0.359
-E10000008,Devon,South West,Safety Valve,0.969,10,Critical (> 75%),1.000,6.633,3.800,7.073,14.595,1.300,-0.231
-E08000017,Doncaster,Yorkshire and The Humber,Delivering Better Value,0.140,3,Low (< 25%),0.000,66.467,2.767,2.675,14.009,0.700,-0.260
-E08000027,Dudley,West Midlands,,0.475,7,Moderate (25–50%),0.000,44.767,3.767,2.679,5.810,2.100,-0.299
-E09000009,Ealing,London,,0.172,4,Low (< 25%),0.000,62.933,1.867,3.400,3.070,1.300,-0.256
-E06000011,East Riding of Yorkshire,Yorkshire and The Humber,Delivering Better Value,0.102,3,Low (< 25%),0.000,97.767,1.367,1.436,2.540,1.100,-0.234
-E10000011,East Sussex,South East,Safety Valve,0.190,4,Low (< 25%),0.000,85.633,9.500,3.431,6.230,5.500,-0.222
-E09000010,Enfield,London,,0.688,9,High (50–75%),0.000,89.733,1.533,1.791,5.582,0.800,-0.229
-E10000012,Essex,East of England,Safety Valve,0.773,10,Critical (> 75%),1.000,9.267,5.233,1.632,4.956,3.600,-0.262
-E10000013,Gloucestershire,South West,Safety Valve,0.349,6,Moderate (25–50%),0.000,29.967,3.900,2.135,5.381,0.700,-0.289
-E09000011,Greenwich,London,Delivering Better Value,0.511,7,High (50–75%),0.000,40.933,5.033,1.813,2.856,3.700,-0.322
-E09000012,Hackney,London,,0.613,8,High (50–75%),0.000,43.700,2.567,0.000,8.367,1.600,-0.252
-E06000006,Halton,North West,Delivering Better Value,0.289,5,Moderate (25–50%),0.000,46.767,1.867,4.804,5.716,0.600,-0.296
-E09000013,Hammersmith and Fulham,London,,0.530,7,High (50–75%),0.000,82.567,1.967,4.210,4.268,0.900,-0.277
-E10000014,Hampshire,South East,Safety Valve,0.984,10,Critical (> 75%),0.000,53.900,3.833,4.834,4.660,1.700,-0.229
-E09000014,Haringey,London,,0.628,8,High (50–75%),0.000,74.767,4.500,2.219,7.823,1.700,-0.266
-E09000015,Harrow,London,,0.532,8,High (50–75%),1.000,29.067,1.567,4.044,6.068,0.900,-0.228
-E06000001,Hartlepool,North East,Delivering Better Value,0.467,7,Moderate (25–50%),0.000,57.900,2.367,3.971,5.194,1.000,-0.308
-E09000016,Havering,London,Delivering Better Value,0.258,5,Moderate (25–50%),0.000,61.850,1.767,1.272,2.700,0.700,-0.173
-E10000015,Hertfordshire,East of England,Safety Valve,0.721,9,High (50–75%),0.000,43.000,11.733,1.046,2.668,2.500,-0.312
-E09000017,Hillingdon,London,Delivering Better Value,0.186,4,Low (< 25%),0.000,70.233,2.967,3.061,6.901,1.200,-0.255
-E09000018,Hounslow,London,Delivering Better Value,0.239,5,Low (< 25%),0.000,73.333,2.633,3.724,7.764,1.600,-0.270
-E06000046,Isle of Wight,South East,Safety Valve,0.092,2,Low (< 25%),0.000,47.700,3.533,0.588,4.041,3.700,-0.232
-E09000019,Islington,London,,0.228,5,Low (< 25%),0.000,58.633,4.933,1.541,3.307,2.600,-0.307
-E09000020,Kensington and Chelsea,London,,0.041,1,Low (< 25%),0.000,94.733,6.400,1.629,9.325,1.600,-0.235
-E10000016,Kent,South East,Safety Valve,0.992,10,Critical (> 75%),1.000,30.400,5.800,5.541,8.560,2.200,-0.171
-E09000021,Kingston upon Thames,London,,0.053,1,Low (< 25%),0.000,70.800,3.700,3.257,11.598,2.700,-0.175
-E08000034,Kirklees,Yorkshire and The Humber,Delivering Better Value,0.407,7,Moderate (25–50%),0.000,16.767,2.233,1.629,3.166,0.600,-0.225
-E08000011,Knowsley,North West,Delivering Better Value,0.126,3,Low (< 25%),0.000,55.233,2.467,6.263,5.561,0.500,-0.258
+E09000002,Barking and Dagenham,London,,0.193,4,Low (< 25%),0.000,21.967,2.000,1.058,1.519,2.300,-0.324
+E09000003,Barnet,London,,0.096,2,Low (< 25%),0.000,94.000,4.800,1.627,4.673,2.900,-0.260
+E08000016,Barnsley,Yorkshire and The Humber,Delivering Better Value,0.142,3,Low (< 25%),0.000,87.433,2.300,6.240,15.898,1.500,-0.200
+E06000022,Bath and North East Somerset,South West,,0.199,5,Low (< 25%),0.000,27.867,2.467,3.011,22.790,0.800,-0.238
+E06000055,Bedford,East of England,,0.047,1,Low (< 25%),0.000,79.633,1.400,0.661,2.240,1.300,-0.295
+E09000004,Bexley,London,Delivering Better Value,0.195,4,Low (< 25%),0.000,77.067,1.867,2.743,10.921,1.200,-0.261
+E08000025,Birmingham,West Midlands,,0.862,10,Critical (> 75%),0.000,49.433,5.567,1.049,3.565,3.300,-0.326
+E06000008,Blackburn with Darwen,North West,Delivering Better Value,0.030,1,Low (< 25%),0.000,90.900,0.933,2.406,3.897,0.200,-0.431
+E06000009,Blackpool,North West,,0.158,4,Low (< 25%),0.000,76.100,0.500,3.819,13.588,0.200,-0.286
+E08000001,Bolton,North West,Delivering Better Value,0.394,6,Moderate (25–50%),0.000,53.167,1.333,2.137,5.750,0.300,-0.266
+E06000036,Bracknell Forest,South East,Safety Valve,0.275,5,Moderate (25–50%),1.000,44.333,6.200,4.600,8.665,1.600,-0.232
+E08000032,Bradford,Yorkshire and The Humber,Delivering Better Value,0.672,9,High (50–75%),0.000,79.800,4.033,1.726,3.547,1.000,-0.342
+E09000005,Brent,London,,0.219,5,Low (< 25%),0.000,51.500,1.667,3.161,5.247,1.700,-0.230
+E06000043,Brighton and Hove,South East,,0.144,3,Low (< 25%),0.000,76.467,3.700,2.454,3.189,1.800,-0.313
+E06000023,"Bristol, City of",South West,,0.897,10,Critical (> 75%),0.000,37.467,2.900,2.551,4.479,1.000,-0.288
+E09000006,Bromley,London,,0.746,9,High (50–75%),1.000,33.700,4.000,3.865,17.893,2.100,-0.243
+E10000002,Buckinghamshire,South East,,0.139,3,Low (< 25%),0.000,46.467,3.533,1.787,,2.700,-0.229
+E08000002,Bury,North West,Delivering Better Value,0.338,6,Moderate (25–50%),0.000,74.700,2.067,5.841,7.689,0.600,-0.246
+E08000033,Calderdale,Yorkshire and The Humber,Delivering Better Value,0.038,1,Low (< 25%),0.000,97.433,2.233,2.973,0.704,1.400,-0.344
+E10000003,Cambridgeshire,East of England,Safety Valve,0.398,6,Moderate (25–50%),0.000,29.867,3.167,2.355,6.113,1.100,-0.221
+E09000007,Camden,London,,0.046,1,Low (< 25%),0.000,96.567,3.567,2.386,2.549,2.200,-0.244
+E06000056,Central Bedfordshire,East of England,,0.660,9,High (50–75%),0.000,26.467,2.500,0.985,3.754,0.600,-0.288
+E06000049,Cheshire East,North West,Safety Valve,0.298,5,Moderate (25–50%),0.000,50.833,2.400,6.375,12.863,0.800,-0.159
+E06000050,Cheshire West and Chester,North West,,0.507,7,High (50–75%),0.000,17.867,2.867,1.880,1.709,2.000,-0.302
+E06000052,Cornwall,South West,Delivering Better Value,0.133,3,Low (< 25%),0.000,11.567,2.633,3.614,6.058,1.200,-0.286
+E06000047,County Durham,North East,,0.488,7,Moderate (25–50%),1.000,15.067,6.267,1.039,2.956,2.200,-0.278
+E08000026,Coventry,West Midlands,Delivering Better Value,0.341,6,Moderate (25–50%),0.000,58.167,3.267,1.537,4.950,1.400,-0.352
+E09000008,Croydon,London,Delivering Better Value,0.567,8,High (50–75%),0.000,64.300,1.933,3.848,7.036,1.700,-0.243
+E06000005,Darlington,North East,Delivering Better Value,0.047,1,Low (< 25%),0.000,82.067,1.333,3.133,14.590,0.600,-0.292
+E06000015,Derby,East Midlands,Delivering Better Value,0.674,9,High (50–75%),1.000,20.633,5.733,2.852,8.213,1.400,-0.281
+E10000007,Derbyshire,East Midlands,Safety Valve,0.619,8,High (50–75%),1.000,30.033,7.367,2.816,4.018,3.600,-0.359
+E10000008,Devon,South West,Safety Valve,0.971,10,Critical (> 75%),1.000,6.633,3.800,7.073,14.595,1.300,-0.231
+E08000017,Doncaster,Yorkshire and The Humber,Delivering Better Value,0.152,4,Low (< 25%),0.000,66.467,2.767,2.675,14.009,0.700,-0.260
+E08000027,Dudley,West Midlands,,0.488,7,Moderate (25–50%),0.000,44.767,3.767,2.679,5.810,2.100,-0.299
+E09000009,Ealing,London,,0.177,4,Low (< 25%),0.000,62.933,1.867,3.400,3.070,1.300,-0.256
+E06000011,East Riding of Yorkshire,Yorkshire and The Humber,Delivering Better Value,0.104,2,Low (< 25%),0.000,97.767,1.367,1.436,2.540,1.100,-0.234
+E10000011,East Sussex,South East,Safety Valve,0.189,4,Low (< 25%),0.000,85.633,9.500,3.431,6.230,5.500,-0.222
+E09000010,Enfield,London,,0.680,9,High (50–75%),0.000,89.733,1.533,1.791,5.582,0.800,-0.229
+E10000012,Essex,East of England,Safety Valve,0.825,10,Critical (> 75%),1.000,9.267,5.233,1.632,4.956,3.600,-0.262
+E10000013,Gloucestershire,South West,Safety Valve,0.415,6,Moderate (25–50%),0.000,29.967,3.900,2.135,5.381,0.700,-0.289
+E09000011,Greenwich,London,Delivering Better Value,0.491,7,Moderate (25–50%),0.000,40.933,5.033,1.813,2.856,3.700,-0.322
+E09000012,Hackney,London,,0.610,8,High (50–75%),0.000,43.700,2.567,0.000,8.367,1.600,-0.252
+E06000006,Halton,North West,Delivering Better Value,0.281,5,Moderate (25–50%),0.000,46.767,1.867,4.804,5.716,0.600,-0.296
+E09000013,Hammersmith and Fulham,London,,0.538,8,High (50–75%),0.000,82.567,1.967,4.210,4.268,0.900,-0.277
+E10000014,Hampshire,South East,Safety Valve,0.986,10,Critical (> 75%),0.000,53.900,3.833,4.834,4.660,1.700,-0.229
+E09000014,Haringey,London,,0.636,8,High (50–75%),0.000,74.767,4.500,2.219,7.823,1.700,-0.266
+E09000015,Harrow,London,,0.521,7,High (50–75%),1.000,29.067,1.567,4.044,6.068,0.900,-0.228
+E06000001,Hartlepool,North East,Delivering Better Value,0.465,7,Moderate (25–50%),0.000,57.900,2.367,3.971,5.194,1.000,-0.308
+E09000016,Havering,London,Delivering Better Value,0.270,5,Moderate (25–50%),0.000,61.850,1.767,1.272,2.700,0.700,-0.173
+E10000015,Hertfordshire,East of England,Safety Valve,0.730,9,High (50–75%),0.000,43.000,11.733,1.046,2.668,2.500,-0.312
+E09000017,Hillingdon,London,Delivering Better Value,0.173,4,Low (< 25%),0.000,70.233,2.967,3.061,6.901,1.200,-0.255
+E09000018,Hounslow,London,Delivering Better Value,0.237,5,Low (< 25%),0.000,73.333,2.633,3.724,7.764,1.600,-0.270
+E06000046,Isle of Wight,South East,Safety Valve,0.095,2,Low (< 25%),0.000,47.700,3.533,0.588,4.041,3.700,-0.232
+E09000019,Islington,London,,0.237,5,Low (< 25%),0.000,58.633,4.933,1.541,3.307,2.600,-0.307
+E09000020,Kensington and Chelsea,London,,0.045,1,Low (< 25%),0.000,94.733,6.400,1.629,9.325,1.600,-0.235
+E10000016,Kent,South East,Safety Valve,0.991,10,Critical (> 75%),1.000,30.400,5.800,5.541,8.560,2.200,-0.171
+E09000021,Kingston upon Thames,London,,0.058,1,Low (< 25%),0.000,70.800,3.700,3.257,11.598,2.700,-0.175
+E08000034,Kirklees,Yorkshire and The Humber,Delivering Better Value,0.432,7,Moderate (25–50%),0.000,16.767,2.233,1.629,3.166,0.600,-0.225
+E08000011,Knowsley,North West,Delivering Better Value,0.131,3,Low (< 25%),0.000,55.233,2.467,6.263,5.561,0.500,-0.258
 E09000022,Lambeth,London,,0.215,5,Low (< 25%),0.000,57.433,1.767,1.913,2.102,0.900,-0.243
-E10000017,Lancashire,North West,Delivering Better Value,0.595,8,High (50–75%),0.000,65.433,3.467,3.080,2.918,1.100,-0.253
-E08000035,Leeds,Yorkshire and The Humber,Delivering Better Value,0.043,1,Low (< 25%),0.000,10.000,2.300,0.854,3.449,1.500,-0.334
-E06000016,Leicester,East Midlands,Delivering Better Value,0.634,8,High (50–75%),0.000,48.700,2.533,2.375,3.645,1.600,-0.281
-E10000018,Leicestershire,East Midlands,,0.180,4,Low (< 25%),0.000,4.700,3.533,3.539,14.568,2.300,-0.220
-E09000023,Lewisham,London,,0.723,9,High (50–75%),0.000,53.500,2.567,5.285,3.697,1.300,-0.228
-E10000019,Lincolnshire,East Midlands,Delivering Better Value,0.224,5,Low (< 25%),0.000,91.700,1.767,1.391,6.735,1.000,-0.277
-E08000012,Liverpool,North West,Delivering Better Value,0.775,10,Critical (> 75%),0.000,96.067,5.000,1.798,2.549,2.700,-0.361
-E06000032,Luton,East of England,Delivering Better Value,0.414,7,Moderate (25–50%),0.000,29.400,1.000,0.759,2.688,0.700,-0.300
-E08000003,Manchester,North West,Delivering Better Value,0.383,6,Moderate (25–50%),0.000,54.533,1.233,1.472,5.301,0.600,-0.248
-E06000035,Medway,South East,Safety Valve,0.734,9,High (50–75%),1.000,33.833,5.233,5.765,24.436,3.700,-0.297
+E10000017,Lancashire,North West,Delivering Better Value,0.615,8,High (50–75%),0.000,65.433,3.467,3.080,2.918,1.100,-0.253
+E08000035,Leeds,Yorkshire and The Humber,Delivering Better Value,0.051,1,Low (< 25%),0.000,10.000,2.300,0.854,3.449,1.500,-0.334
+E06000016,Leicester,East Midlands,Delivering Better Value,0.646,8,High (50–75%),0.000,48.700,2.533,2.375,3.645,1.600,-0.281
+E10000018,Leicestershire,East Midlands,,0.228,5,Low (< 25%),0.000,4.700,3.533,3.539,14.568,2.300,-0.220
+E09000023,Lewisham,London,,0.685,9,High (50–75%),0.000,53.500,2.567,5.285,3.697,1.300,-0.228
+E10000019,Lincolnshire,East Midlands,Delivering Better Value,0.249,5,Low (< 25%),0.000,91.700,1.767,1.391,6.735,1.000,-0.277
+E08000012,Liverpool,North West,Delivering Better Value,0.765,10,Critical (> 75%),0.000,96.067,5.000,1.798,2.549,2.700,-0.361
+E06000032,Luton,East of England,Delivering Better Value,0.428,7,Moderate (25–50%),0.000,29.400,1.000,0.759,2.688,0.700,-0.300
+E08000003,Manchester,North West,Delivering Better Value,0.391,6,Moderate (25–50%),0.000,54.533,1.233,1.472,5.301,0.600,-0.248
+E06000035,Medway,South East,Safety Valve,0.723,9,High (50–75%),1.000,33.833,5.233,5.765,24.436,3.700,-0.297
 E09000024,Merton,London,,0.352,6,Moderate (25–50%),0.000,56.833,1.400,8.492,14.154,0.500,-0.203
-E06000002,Middlesbrough,North East,Delivering Better Value,0.032,1,Low (< 25%),0.000,84.867,0.867,3.090,5.089,0.400,-0.305
-E06000042,Milton Keynes,South East,Delivering Better Value,0.095,2,Low (< 25%),0.000,63.600,4.433,1.140,4.047,1.600,-0.282
-E08000021,Newcastle upon Tyne,North East,Delivering Better Value,0.743,9,High (50–75%),0.000,9.367,0.933,0.874,6.133,0.300,-0.326
-E09000025,Newham,London,Delivering Better Value,0.863,10,Critical (> 75%),0.000,66.100,6.967,0.374,8.035,1.800,-0.458
-E10000020,Norfolk,East of England,Safety Valve,0.980,10,Critical (> 75%),1.000,48.950,4.333,6.780,12.317,2.700,-0.227
-E06000012,North East Lincolnshire,Yorkshire and The Humber,Delivering Better Value,0.595,8,High (50–75%),1.000,33.833,0.533,5.749,18.954,0.200,-0.252
-E06000013,North Lincolnshire,Yorkshire and The Humber,Delivering Better Value,0.064,2,Low (< 25%),0.000,43.933,0.533,3.511,5.325,0.500,-0.308
-E06000024,North Somerset,South West,Delivering Better Value,0.110,3,Low (< 25%),0.000,45.933,3.600,3.718,13.350,2.000,-0.290
-E08000022,North Tyneside,North East,,0.447,7,Moderate (25–50%),0.000,64.267,3.633,1.018,2.307,0.900,-0.235
-E10000023,North Yorkshire,Yorkshire and The Humber,Safety Valve,0.503,7,High (50–75%),1.000,34.200,4.267,1.623,4.767,1.400,-0.261
-E06000018,Nottingham,East Midlands,Delivering Better Value,0.108,3,Low (< 25%),0.000,47.500,2.733,0.517,1.077,1.300,-0.452
-E10000024,Nottinghamshire,East Midlands,Delivering Better Value,0.469,7,Moderate (25–50%),0.000,24.767,3.367,2.133,5.296,2.200,-0.322
-E08000004,Oldham,North West,Delivering Better Value,0.063,2,Low (< 25%),0.000,91.533,2.233,1.151,4.017,1.000,-0.247
-E10000025,Oxfordshire,South East,Safety Valve,0.759,9,Critical (> 75%),1.000,32.067,5.900,2.487,12.378,2.900,-0.282
-E06000031,Peterborough,East of England,Safety Valve,0.166,4,Low (< 25%),0.000,75.433,1.867,0.000,7.179,0.900,-0.263
-E06000026,Plymouth,South West,Delivering Better Value,0.653,9,High (50–75%),1.000,22.633,5.450,2.063,3.808,3.600,-0.264
-E06000044,Portsmouth,South East,Delivering Better Value,0.024,1,Low (< 25%),0.000,31.800,2.233,0.663,3.975,0.600,-0.226
-E06000038,Reading,South East,Delivering Better Value,0.148,4,Low (< 25%),0.000,70.567,2.800,2.508,3.071,2.300,-0.193
-E09000026,Redbridge,London,,0.152,4,Low (< 25%),0.000,46.500,1.250,0.363,1.710,1.300,-0.264
-E06000003,Redcar and Cleveland,North East,Delivering Better Value,0.071,2,Low (< 25%),0.000,41.167,3.333,4.002,9.864,0.400,-0.285
-E09000027,Richmond upon Thames,London,,0.127,3,Low (< 25%),0.000,70.833,3.000,3.249,10.091,2.500,-0.198
-E08000005,Rochdale,North West,Delivering Better Value,0.063,2,Low (< 25%),0.000,58.633,1.367,3.461,2.579,0.300,-0.222
-E08000018,Rotherham,Yorkshire and The Humber,Delivering Better Value,0.384,6,Moderate (25–50%),0.000,69.133,2.367,2.330,11.698,1.300,-0.292
-E06000017,Rutland,East Midlands,,0.133,3,Low (< 25%),0.000,58.900,4.133,2.644,22.442,7.000,-0.287
-E08000006,Salford,North West,Delivering Better Value,0.080,2,Low (< 25%),0.000,49.867,3.000,3.405,3.420,1.300,-0.276
-E08000028,Sandwell,West Midlands,Delivering Better Value,0.209,5,Low (< 25%),0.000,34.700,2.133,2.294,2.201,0.400,-0.360
-E08000014,Sefton,North West,Delivering Better Value,0.503,7,High (50–75%),0.000,40.333,2.033,3.997,4.577,0.900,-0.226
-E08000019,Sheffield,Yorkshire and The Humber,Delivering Better Value,0.344,6,Moderate (25–50%),0.000,60.400,4.900,1.083,3.231,2.100,-0.343
-E06000051,Shropshire,West Midlands,Safety Valve,0.153,4,Low (< 25%),0.000,40.367,1.433,3.745,5.546,1.000,-0.239
-E06000039,Slough,South East,Delivering Better Value,0.646,9,High (50–75%),1.000,13.000,6.767,1.006,4.243,0.900,-0.271
-E08000029,Solihull,West Midlands,,0.655,9,High (50–75%),0.000,69.767,5.867,2.103,7.186,3.200,-0.319
-E10000027,Somerset,South West,Safety Valve,0.800,10,Critical (> 75%),1.000,48.333,5.567,4.948,7.947,4.700,-0.308
-E06000025,South Gloucestershire,South West,,0.559,8,High (50–75%),0.000,39.300,3.767,2.332,6.304,1.800,-0.247
-E08000023,South Tyneside,North East,Delivering Better Value,0.049,1,Low (< 25%),0.000,68.333,2.600,2.473,3.029,1.600,-0.290
-E06000045,Southampton,South East,Delivering Better Value,0.067,2,Low (< 25%),0.000,90.567,4.100,0.948,3.344,2.600,-0.318
-E06000033,Southend-on-Sea,East of England,Safety Valve,0.030,1,Low (< 25%),0.000,30.533,2.633,0.459,2.823,1.500,-0.226
-E09000028,Southwark,London,,0.532,8,High (50–75%),0.000,34.767,3.767,2.330,6.567,1.900,-0.282
-E08000013,St. Helens,North West,,0.126,3,Low (< 25%),0.000,22.833,3.967,3.431,5.151,3.000,-0.371
-E10000028,Staffordshire,West Midlands,,0.686,9,High (50–75%),1.000,33.467,5.333,4.654,7.675,2.100,-0.251
-E08000007,Stockport,North West,Delivering Better Value,0.131,3,Low (< 25%),0.000,22.333,2.233,3.167,4.352,1.300,-0.217
-E06000004,Stockton-on-Tees,North East,Delivering Better Value,0.157,4,Low (< 25%),0.000,82.067,2.533,4.216,9.317,0.800,-0.274
+E06000002,Middlesbrough,North East,Delivering Better Value,0.036,1,Low (< 25%),0.000,84.867,0.867,3.090,5.089,0.400,-0.305
+E06000042,Milton Keynes,South East,Delivering Better Value,0.105,3,Low (< 25%),0.000,63.600,4.433,1.140,4.047,1.600,-0.282
+E08000021,Newcastle upon Tyne,North East,Delivering Better Value,0.755,9,Critical (> 75%),0.000,9.367,0.933,0.874,6.133,0.300,-0.326
+E09000025,Newham,London,Delivering Better Value,0.861,10,Critical (> 75%),0.000,66.100,6.967,0.374,8.035,1.800,-0.458
+E10000020,Norfolk,East of England,Safety Valve,0.978,10,Critical (> 75%),1.000,48.950,4.333,6.780,12.317,2.700,-0.227
+E06000012,North East Lincolnshire,Yorkshire and The Humber,Delivering Better Value,0.603,8,High (50–75%),1.000,33.833,0.533,5.749,18.954,0.200,-0.252
+E06000013,North Lincolnshire,Yorkshire and The Humber,Delivering Better Value,0.068,2,Low (< 25%),0.000,43.933,0.533,3.511,5.325,0.500,-0.308
+E06000024,North Somerset,South West,Delivering Better Value,0.122,3,Low (< 25%),0.000,45.933,3.600,3.718,13.350,2.000,-0.290
+E08000022,North Tyneside,North East,,0.432,7,Moderate (25–50%),0.000,64.267,3.633,1.018,2.307,0.900,-0.235
+E10000023,North Yorkshire,Yorkshire and The Humber,Safety Valve,0.533,8,High (50–75%),1.000,34.200,4.267,1.623,4.767,1.400,-0.261
+E06000018,Nottingham,East Midlands,Delivering Better Value,0.120,3,Low (< 25%),0.000,47.500,2.733,0.517,1.077,1.300,-0.452
+E10000024,Nottinghamshire,East Midlands,Delivering Better Value,0.494,7,Moderate (25–50%),0.000,24.767,3.367,2.133,5.296,2.200,-0.322
+E08000004,Oldham,North West,Delivering Better Value,0.064,2,Low (< 25%),0.000,91.533,2.233,1.151,4.017,1.000,-0.247
+E10000025,Oxfordshire,South East,Safety Valve,0.788,10,Critical (> 75%),1.000,32.067,5.900,2.487,12.378,2.900,-0.282
+E06000031,Peterborough,East of England,Safety Valve,0.174,4,Low (< 25%),0.000,75.433,1.867,0.000,7.179,0.900,-0.263
+E06000026,Plymouth,South West,Delivering Better Value,0.658,9,High (50–75%),1.000,22.633,5.450,2.063,3.808,3.600,-0.264
+E06000044,Portsmouth,South East,Delivering Better Value,0.027,1,Low (< 25%),0.000,31.800,2.233,0.663,3.975,0.600,-0.226
+E06000038,Reading,South East,Delivering Better Value,0.147,3,Low (< 25%),0.000,70.567,2.800,2.508,3.071,2.300,-0.193
+E09000026,Redbridge,London,,0.150,4,Low (< 25%),0.000,46.500,1.250,0.363,1.710,1.300,-0.264
+E06000003,Redcar and Cleveland,North East,Delivering Better Value,0.075,2,Low (< 25%),0.000,41.167,3.333,4.002,9.864,0.400,-0.285
+E09000027,Richmond upon Thames,London,,0.135,3,Low (< 25%),0.000,70.833,3.000,3.249,10.091,2.500,-0.198
+E08000005,Rochdale,North West,Delivering Better Value,0.067,2,Low (< 25%),0.000,58.633,1.367,3.461,2.579,0.300,-0.222
+E08000018,Rotherham,Yorkshire and The Humber,Delivering Better Value,0.380,6,Moderate (25–50%),0.000,69.133,2.367,2.330,11.698,1.300,-0.292
+E06000017,Rutland,East Midlands,,0.146,3,Low (< 25%),0.000,58.900,4.133,2.644,22.442,7.000,-0.287
+E08000006,Salford,North West,Delivering Better Value,0.092,2,Low (< 25%),0.000,49.867,3.000,3.405,3.420,1.300,-0.276
+E08000028,Sandwell,West Midlands,Delivering Better Value,0.230,5,Low (< 25%),0.000,34.700,2.133,2.294,2.201,0.400,-0.360
+E08000014,Sefton,North West,Delivering Better Value,0.486,7,Moderate (25–50%),0.000,40.333,2.033,3.997,4.577,0.900,-0.226
+E08000019,Sheffield,Yorkshire and The Humber,Delivering Better Value,0.365,6,Moderate (25–50%),0.000,60.400,4.900,1.083,3.231,2.100,-0.343
+E06000051,Shropshire,West Midlands,Safety Valve,0.162,4,Low (< 25%),0.000,40.367,1.433,3.745,5.546,1.000,-0.239
+E06000039,Slough,South East,Delivering Better Value,0.648,8,High (50–75%),1.000,13.000,6.767,1.006,4.243,0.900,-0.271
+E08000029,Solihull,West Midlands,,0.656,9,High (50–75%),0.000,69.767,5.867,2.103,7.186,3.200,-0.319
+E10000027,Somerset,South West,Safety Valve,0.794,10,Critical (> 75%),1.000,48.333,5.567,4.948,7.947,4.700,-0.308
+E06000025,South Gloucestershire,South West,,0.573,8,High (50–75%),0.000,39.300,3.767,2.332,6.304,1.800,-0.247
+E08000023,South Tyneside,North East,Delivering Better Value,0.054,1,Low (< 25%),0.000,68.333,2.600,2.473,3.029,1.600,-0.290
+E06000045,Southampton,South East,Delivering Better Value,0.076,2,Low (< 25%),0.000,90.567,4.100,0.948,3.344,2.600,-0.318
+E06000033,Southend-on-Sea,East of England,Safety Valve,0.032,1,Low (< 25%),0.000,30.533,2.633,0.459,2.823,1.500,-0.226
+E09000028,Southwark,London,,0.510,7,High (50–75%),0.000,34.767,3.767,2.330,6.567,1.900,-0.282
+E08000013,St. Helens,North West,,0.128,3,Low (< 25%),0.000,22.833,3.967,3.431,5.151,3.000,-0.371
+E10000028,Staffordshire,West Midlands,,0.689,9,High (50–75%),1.000,33.467,5.333,4.654,7.675,2.100,-0.251
+E08000007,Stockport,North West,Delivering Better Value,0.140,3,Low (< 25%),0.000,22.333,2.233,3.167,4.352,1.300,-0.217
+E06000004,Stockton-on-Tees,North East,Delivering Better Value,0.163,4,Low (< 25%),0.000,82.067,2.533,4.216,9.317,0.800,-0.274
 E06000021,Stoke-on-Trent,West Midlands,Delivering Better Value,0.888,10,Critical (> 75%),0.000,48.033,3.133,6.352,17.465,0.900,-0.242
-E10000029,Suffolk,East of England,Safety Valve,0.301,5,Moderate (25–50%),0.000,17.333,3.433,3.479,6.452,1.600,-0.205
-E08000024,Sunderland,North East,Delivering Better Value,0.388,6,Moderate (25–50%),0.000,69.800,3.300,2.106,5.704,1.500,-0.323
-E10000030,Surrey,South East,Safety Valve,0.905,10,Critical (> 75%),1.000,27.733,4.650,6.031,13.460,4.100,-0.191
-E09000029,Sutton,London,,0.054,2,Low (< 25%),0.000,73.600,3.333,3.243,9.180,3.500,-0.229
-E06000030,Swindon,South West,Safety Valve,0.370,6,Moderate (25–50%),0.000,64.167,3.367,0.585,6.414,2.300,-0.252
-E08000008,Tameside,North West,Delivering Better Value,0.540,8,High (50–75%),0.000,38.900,1.500,2.872,3.656,0.800,-0.274
-E06000020,Telford and Wrekin,West Midlands,,0.031,1,Low (< 25%),0.000,88.500,3.933,1.577,3.069,1.200,-0.288
-E06000034,Thurrock,East of England,Safety Valve,0.076,2,Low (< 25%),0.000,65.500,1.700,1.230,6.739,1.000,-0.208
+E10000029,Suffolk,East of England,Safety Valve,0.295,5,Moderate (25–50%),0.000,17.333,3.433,3.479,6.452,1.600,-0.205
+E08000024,Sunderland,North East,Delivering Better Value,0.410,6,Moderate (25–50%),0.000,69.800,3.300,2.106,5.704,1.500,-0.323
+E10000030,Surrey,South East,Safety Valve,0.895,10,Critical (> 75%),1.000,27.733,4.650,6.031,13.460,4.100,-0.191
+E09000029,Sutton,London,,0.060,2,Low (< 25%),0.000,73.600,3.333,3.243,9.180,3.500,-0.229
+E06000030,Swindon,South West,Safety Valve,0.365,6,Moderate (25–50%),0.000,64.167,3.367,0.585,6.414,2.300,-0.252
+E08000008,Tameside,North West,Delivering Better Value,0.551,8,High (50–75%),0.000,38.900,1.500,2.872,3.656,0.800,-0.274
+E06000020,Telford and Wrekin,West Midlands,,0.034,1,Low (< 25%),0.000,88.500,3.933,1.577,3.069,1.200,-0.288
+E06000034,Thurrock,East of England,Safety Valve,0.082,2,Low (< 25%),0.000,65.500,1.700,1.230,6.739,1.000,-0.208
 E06000027,Torbay,South West,,0.379,6,Moderate (25–50%),0.000,46.700,1.833,1.751,6.559,0.500,-0.222
-E09000030,Tower Hamlets,London,Delivering Better Value,0.750,9,Critical (> 75%),0.000,42.950,1.500,2.000,1.164,0.400,-0.228
-E08000009,Trafford,North West,Delivering Better Value,0.182,4,Low (< 25%),0.000,49.000,1.067,1.470,2.998,0.200,-0.227
-E08000036,Wakefield,Yorkshire and The Humber,Delivering Better Value,0.087,2,Low (< 25%),0.000,85.500,1.967,2.145,3.392,0.700,-0.309
-E08000030,Walsall,West Midlands,Delivering Better Value,0.586,8,High (50–75%),0.000,51.133,2.200,3.038,3.979,1.200,-0.258
-E09000031,Waltham Forest,London,,0.311,5,Moderate (25–50%),0.000,75.300,1.050,0.797,4.276,0.600,-0.329
-E09000032,Wandsworth,London,,0.392,6,Moderate (25–50%),0.000,90.433,2.733,4.866,7.027,0.700,-0.238
-E06000007,Warrington,North West,,0.559,8,High (50–75%),0.000,45.867,1.433,2.678,7.961,0.300,-0.245
-E10000031,Warwickshire,West Midlands,Safety Valve,0.149,4,Low (< 25%),0.000,40.133,3.500,3.234,7.266,2.400,-0.247
-E06000037,West Berkshire,South East,,0.178,4,Low (< 25%),0.000,55.500,4.733,2.749,3.908,2.000,-0.321
-E10000032,West Sussex,South East,Safety Valve,0.785,10,Critical (> 75%),1.000,10.500,4.933,3.944,7.066,3.400,-0.291
-E09000033,Westminster,London,,0.052,1,Low (< 25%),0.000,94.500,6.367,1.857,8.090,2.300,-0.304
-E08000010,Wigan,North West,Delivering Better Value,0.067,2,Low (< 25%),0.000,58.567,1.300,3.151,3.478,0.800,-0.318
-E06000054,Wiltshire,South West,Safety Valve,0.657,9,High (50–75%),1.000,24.467,2.367,3.996,8.238,1.600,-0.247
-E06000040,Windsor and Maidenhead,South East,,0.050,1,Low (< 25%),0.000,94.567,7.867,2.859,10.993,2.900,-0.307
-E08000015,Wirral,North West,Delivering Better Value,0.948,10,Critical (> 75%),1.000,26.933,4.533,1.300,3.299,2.300,-0.281
-E06000041,Wokingham,South East,,0.520,7,High (50–75%),1.000,57.700,4.933,3.661,9.120,1.200,-0.246
-E08000031,Wolverhampton,West Midlands,Delivering Better Value,0.416,7,Moderate (25–50%),0.000,50.267,0.800,1.548,6.360,0.300,-0.320
-E10000034,Worcestershire,West Midlands,Safety Valve,0.359,6,Moderate (25–50%),1.000,31.933,2.100,4.290,3.985,2.000,-0.283
-E06000014,York,Yorkshire and The Humber,,0.114,3,Low (< 25%),0.000,83.100,1.867,0.216,9.766,0.600,-0.279
-E06000047,County Durham,North East,,0.449,7,Moderate (25–50%),0.000,15.067,,1.039,2.956,,-0.278
-E06000019,"Herefordshire, County of",West Midlands,,0.056,2,Low (< 25%),0.000,73.067,,1.875,5.558,,-0.362
-E06000010,"Kingston upon Hull, City of",Yorkshire and The Humber,,0.311,5,Moderate (25–50%),0.000,21.100,,0.589,4.323,,-0.316
+E09000030,Tower Hamlets,London,Delivering Better Value,0.737,9,High (50–75%),0.000,42.950,1.500,2.000,1.164,0.400,-0.228
+E08000009,Trafford,North West,Delivering Better Value,0.187,4,Low (< 25%),0.000,49.000,1.067,1.470,2.998,0.200,-0.227
+E08000036,Wakefield,Yorkshire and The Humber,Delivering Better Value,0.095,2,Low (< 25%),0.000,85.500,1.967,2.145,3.392,0.700,-0.309
+E08000030,Walsall,West Midlands,Delivering Better Value,0.596,8,High (50–75%),0.000,51.133,2.200,3.038,3.979,1.200,-0.258
+E09000031,Waltham Forest,London,,0.306,5,Moderate (25–50%),0.000,75.300,1.050,0.797,4.276,0.600,-0.329
+E09000032,Wandsworth,London,,0.373,6,Moderate (25–50%),0.000,90.433,2.733,4.866,7.027,0.700,-0.238
+E06000007,Warrington,North West,,0.554,8,High (50–75%),0.000,45.867,1.433,2.678,7.961,0.300,-0.245
+E10000031,Warwickshire,West Midlands,Safety Valve,0.174,4,Low (< 25%),0.000,40.133,3.500,3.234,7.266,2.400,-0.247
+E06000037,West Berkshire,South East,,0.182,4,Low (< 25%),0.000,55.500,4.733,2.749,3.908,2.000,-0.321
+E10000032,West Sussex,South East,Safety Valve,0.783,10,Critical (> 75%),1.000,10.500,4.933,3.944,7.066,3.400,-0.291
+E09000033,Westminster,London,,0.056,1,Low (< 25%),0.000,94.500,6.367,1.857,8.090,2.300,-0.304
+E08000010,Wigan,North West,Delivering Better Value,0.080,2,Low (< 25%),0.000,58.567,1.300,3.151,3.478,0.800,-0.318
+E06000054,Wiltshire,South West,Safety Valve,0.675,9,High (50–75%),1.000,24.467,2.367,3.996,8.238,1.600,-0.247
+E06000040,Windsor and Maidenhead,South East,,0.053,1,Low (< 25%),0.000,94.567,7.867,2.859,10.993,2.900,-0.307
+E08000015,Wirral,North West,Delivering Better Value,0.944,10,Critical (> 75%),1.000,26.933,4.533,1.300,3.299,2.300,-0.281
+E06000041,Wokingham,South East,,0.489,7,Moderate (25–50%),1.000,57.700,4.933,3.661,9.120,1.200,-0.246
+E08000031,Wolverhampton,West Midlands,Delivering Better Value,0.461,7,Moderate (25–50%),0.000,50.267,0.800,1.548,6.360,0.300,-0.320
+E10000034,Worcestershire,West Midlands,Safety Valve,0.342,6,Moderate (25–50%),1.000,31.933,2.100,4.290,3.985,2.000,-0.283
+E06000014,York,Yorkshire and The Humber,,0.125,3,Low (< 25%),0.000,83.100,1.867,0.216,9.766,0.600,-0.279
+E06000019,"Herefordshire, County of",West Midlands,,0.060,2,Low (< 25%),0.000,73.067,,1.875,5.558,,-0.362
+E06000010,"Kingston upon Hull, City of",Yorkshire and The Humber,,0.322,5,Moderate (25–50%),0.000,21.100,,0.589,4.323,,-0.316

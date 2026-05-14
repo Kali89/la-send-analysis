@@ -478,10 +478,19 @@ for col_idx, val in enumerate(year_row):
         elif 'rate' in sub:
             year_cols.setdefault(current_year, {})[2] = col_idx
 
+_TRIB_NAME_MAP = {
+    'Kingston upon Hull, City of': 'Kingston upon Hull',
+    'Kingston Upon Hull, City of': 'Kingston upon Hull',
+    'Herefordshire, County of':    'Herefordshire',
+    'Bristol, City of':            'Bristol, City of',
+    'Durham, County':              'County Durham',
+    'Durham':                      'County Durham',
+}
+
 trib_rows = []
 for i in range(5, len(trib_raw)):
     row = trib_raw.iloc[i, :]
-    la_name = str(row.iloc[0]).strip()
+    la_name = _TRIB_NAME_MAP.get(str(row.iloc[0]).strip(), str(row.iloc[0]).strip())
     la_code_str = str(row.iloc[1]).strip()
     if not la_name or la_name in ('nan','') or not la_code_str.isdigit():
         continue
@@ -617,6 +626,10 @@ for ax, (var, label, sv_color) in zip(axes, outcomes_avail):
                 transform=ax.transAxes, va='top', fontsize=9,
                 color='#555', bbox=dict(fc='white', alpha=0.8, pad=2))
 
+fig.text(0.5, -0.04,
+         "Note: SV LAs entering in 2024 (Wiltshire, Devon, Dorset, Shropshire, Warwickshire) "
+         "contribute only t=0. Post-entry means (t+1 to t+3) reflect 2022–23 entrants only.",
+         ha='center', fontsize=8, color='#666', style='italic', wrap=True)
 plt.tight_layout()
 plt.savefig(OUT_FIGS / '08_event_study.png', dpi=150, bbox_inches='tight')
 plt.close()

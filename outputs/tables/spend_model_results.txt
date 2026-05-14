@@ -6,8 +6,8 @@ S251 line 1.2.3, 2023/24
 Dep. Variable:     log_indep_per_ehcp   R-squared:                       0.270
 Model:                            OLS   Adj. R-squared:                  0.173
 Method:                 Least Squares   F-statistic:                     3.690
-Date:                Tue, 12 May 2026   Prob (F-statistic):           1.02e-05
-Time:                        14:07:03   Log-Likelihood:                -69.879
+Date:                Thu, 14 May 2026   Prob (F-statistic):           1.02e-05
+Time:                        21:36:57   Log-Likelihood:                -69.879
 No. Observations:                 146   AIC:                             175.8
 Df Residuals:                     128   BIC:                             229.5
 Df Model:                          17                                         

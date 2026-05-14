@@ -267,9 +267,9 @@ for pattern, label in spend_lines.items():
     spend = tmp if spend is None else spend.merge(tmp, on=['la_code','cal_year'], how='outer')
 
 # Total high-needs placement spend = 1.2.1 + 1.2.2 + 1.2.3
-for col in ['topup_maintained','topup_academies','topup_independent']:
-    spend[col] = spend[col].fillna(0)
-spend['topup_total'] = spend['topup_maintained'] + spend['topup_academies'] + spend['topup_independent']
+# min_count=1 keeps NaN for LAs entirely absent from S251 (rather than treating them as £0)
+spend['topup_total'] = (spend[['topup_maintained','topup_academies','topup_independent']]
+                        .sum(axis=1, min_count=1))
 
 print(f"  S251 spend rows: {len(spend)}  |  years: {sorted(spend['cal_year'].dropna().unique())}")
 # Sanity check: top independent spenders 2024
