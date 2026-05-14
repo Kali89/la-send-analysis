@@ -6,6 +6,8 @@ Two analyses are published here:
 
 2. **[The collapse was foreseeable — and the next one already is](article_forecastability.md)** — Using only data available in 2016, tribunal appeal rates and independent placement spend could already identify which councils would hit systemic failure. The same signals are now visible in a new set of authorities.
 
+**For journalists and policymakers:** a ready-to-use [evidence pack](press_pack/) is available, including a 500-word explainer, methodology summary, policy asks, anticipated challenges, and recommended figures.
+
 ---
 
 ## Key findings at a glance
