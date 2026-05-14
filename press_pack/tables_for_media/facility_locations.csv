@@ -1,0 +1,41 @@
+priority_rank,la_name,region,need_type,facility_type,lead_time,gap_abs_children,demand_growth_to_2030,nearest_place,nearest_school_name,rec_lat,rec_lon,rec_easting,rec_northing,pct_la_currently_beyond,n_lsoas_within_threshold,pct_lsoas_within_threshold,mean_dist_worst_km,max_dist_worst_km
+1,Hampshire,South East,SEMH,Resourced provision unit / SEN unit,1–2 years,3602,2.05,Winchester,Itchen Abbas Primary School,49.3,-1.229,455944.0,133416.0,32.5,58.0,6.7,21.9,34.9
+2,Essex,East of England,ASD,Resourced provision unit / SEN unit,1–2 years,2766,2.05,Braintree,White Court School,50.073,0.464,576047.0,219485.0,14.3,237.0,26.2,20.4,39.6
+3,Norfolk,East of England,SEMH,Resourced provision unit / SEN unit,1–2 years,2663,2.05,King's Lynn,Castle Acre Church of England Primary Academy,50.967,0.579,580832.0,318931.0,50.7,21.0,3.8,37.3,52.5
+4,Norfolk,East of England,ASD,Resourced provision unit / SEN unit,1–2 years,2422,2.05,King's Lynn,Castle Acre Church of England Primary Academy,50.943,0.579,580884.0,316282.0,54.7,89.0,16.1,39.3,54.9
+5,Cornwall,South West,ASD,New maintained special school,4–6 years,1420,2.05,Hayle,Leedstown Community Primary School,48.414,-5.234,161072.0,34820.0,88.7,126.0,37.5,94.1,120.3
+6,Norfolk,East of England,MLD,New maintained special school,4–6 years,1470,2.05,Dereham,Swanton Morley VC Primary School,50.971,0.873,601372.0,319437.0,88.6,99.0,17.9,51.1,73.4
+7,Lancashire,North West,ASD,Resourced provision unit / SEN unit,1–2 years,3517,2.04,Lancaster,Cawthorne's Endowed School,52.14,-2.59,359666.0,449506.0,32.8,146.0,19.2,26.8,41.1
+8,Suffolk,East of England,ASD,New maintained special school,4–6 years,1952,1.75,Bury St Edmunds,Westgate Community Primary School and Nursery,50.473,0.61,584935.0,263951.0,77.7,87.0,19.4,42.1,51.4
+9,Essex,East of England,SEMH,New maintained special school,4–6 years,1938,2.05,Witham,White Notley Church of England Voluntary Controlled Primary School,50.047,0.495,578360.0,216600.0,49.2,195.0,21.6,25.2,35.3
+10,Hertfordshire,East of England,MLD,Resourced provision unit / SEN unit,1–2 years,2429,1.61,Hertford,Heath Mount School,50.08,-0.16,531411.0,220258.0,43.8,388.0,54.4,26.0,33.2
+11,Worcestershire,West Midlands,SEMH,New maintained special school,4–6 years,1596,2.05,Worcester,Norton Juxta Kempsey CofE Primary School,50.332,-2.168,388067.0,248271.0,71.4,138.0,36.9,37.0,45.1
+12,Cornwall,South West,SEMH,New maintained special school,4–6 years,1074,2.05,Hayle,Leedstown Community Primary School,48.42,-5.238,160743.0,35426.0,91.7,82.0,24.4,88.5,114.5
+13,Bradford,Yorkshire and The Humber,SEMH,New maintained special school,4–6 years,1746,2.05,Colne,Laneshaw Bridge Primary,52.058,-1.795,414036.0,440430.0,100.0,312.0,100.0,41.7,48.1
+14,Buckinghamshire,South East,ASD,New maintained special school,4–6 years,2302,1.39,Aylesbury,Great Kimble Church of England School,49.954,-0.838,483203.0,206206.0,50.3,256.0,76.6,23.8,27.0
+15,Surrey,South East,SEMH,Resourced provision unit / SEN unit,1–2 years,2156,1.5,Dorking,St Martin's CofE Primary School,49.464,-0.403,515536.0,151638.0,19.6,276.0,38.4,15.5,20.2
+16,Kent,South East,ASD,Resourced provision unit / SEN unit,1–2 years,3355,1.08,Faversham,Eastling Primary School,49.481,0.713,596247.0,153554.0,8.1,244.0,26.0,17.5,26.6
+17,Wiltshire,South West,SEMH,New maintained special school,4–6 years,1487,2.05,Salisbury,Great Wishford CofE (VA) Primary School,49.332,-1.917,406002.0,137012.0,47.2,66.0,21.5,26.8,47.0
+18,Worcestershire,West Midlands,ASD,New maintained special school,4–6 years,1359,2.05,Worcester,Cherry Orchard Primary School,50.359,-2.205,385450.0,251286.0,56.1,173.0,46.3,29.7,36.4
+19,Nottinghamshire,East Midlands,ASD,Resourced provision unit / SEN unit,1–2 years,1761,2.05,Newark,Maun Infant and Nursery School,51.427,-1.073,464342.0,370140.0,8.5,200.0,39.6,16.2,40.6
+20,West Sussex,South East,SEMH,New maintained special school,4–6 years,1538,1.88,Pulborough,Storrington Primary School,49.117,-0.531,507015.0,113050.0,23.7,179.0,33.6,16.8,24.2
+21,Gloucestershire,South West,ASD,New maintained special school,4–6 years,1180,2.05,Gloucester,Churchdown Parton Manor Infant School,50.091,-2.169,387953.0,221505.0,89.6,271.0,69.0,38.9,41.4
+22,Kent,South East,SEMH,New maintained special school,4–6 years,2647,1.08,Dover,Nonington Church of England Primary School,49.469,1.118,625593.0,152163.0,61.2,128.0,13.6,48.9,63.3
+23,Lincolnshire,East Midlands,ASD,New maintained special school,4–6 years,2431,1.08,Louth,The Donington-on-Bain School,51.515,-0.206,524252.0,379995.0,61.1,35.0,8.0,43.0,70.5
+24,Worcestershire,West Midlands,MLD,New maintained special school,4–6 years,1143,2.05,Worcestershire,The King's School,50.381,-2.212,384969.0,253730.0,55.6,183.0,48.9,31.9,42.4
+25,Derbyshire,East Midlands,SEMH,New maintained special school,4–6 years,1243,2.05,Derbyshire,Alderwasley Hall School,51.264,-1.56,430673.0,352028.0,29.3,127.0,25.5,17.0,24.5
+26,Shropshire,West Midlands,SEMH,New maintained special school,4–6 years,911,2.05,Shrewsbury,St Thomas and St Anne CofE Primary School,50.883,-2.808,343266.0,309642.0,99.5,71.0,35.9,51.7,66.3
+27,Leicester,East Midlands,ASD,New maintained special school,4–6 years,1124,2.05,Leicester,Merrydale Junior School,50.846,-1.12,461828.0,305540.0,100.0,200.0,100.0,29.6,32.1
+28,Suffolk,East of England,SEMH,New maintained special school,4–6 years,1377,1.75,Eye,Gislingham Church of England Primary School,50.515,0.937,607917.0,268664.0,46.3,49.0,10.9,23.4,35.6
+29,Central Bedfordshire,East of England,ASD,Resourced provision unit / SEN unit,1–2 years,1255,2.05,Dunstable,Houstone School,50.124,-0.546,503765.0,225176.0,11.4,139.0,79.4,18.6,21.0
+30,West Sussex,South East,MLD,New maintained special school,4–6 years,1042,1.88,Steyning,Upper Beeding Primary School,49.093,-0.329,521812.0,110355.0,81.8,242.0,45.5,40.7,47.5
+31,Birmingham,West Midlands,ASD,Resourced provision unit / SEN unit,1–2 years,2543,1.71,Birmingham,E-ACT Nechells Academy,50.702,-1.869,409243.0,289446.0,0.0,659.0,100.0,5.2,6.6
+32,Cambridgeshire,East of England,ASD,Resourced provision unit / SEN unit,1–2 years,1770,1.29,Cambridge,Waterbeach Community Primary School,50.518,0.148,552058.0,269028.0,57.5,198.0,50.1,30.5,45.6
+33,Gloucestershire,South West,SEMH,New maintained special school,4–6 years,1044,2.05,Cheltenham,Cleeve School,50.13,-2.031,397758.0,225784.0,79.1,156.0,39.7,32.7,44.6
+34,Warwickshire,West Midlands,ASD,Resourced provision unit / SEN unit,1–2 years,2021,1.83,Southam,Long Itchington CofE Academy,50.477,-1.445,439296.0,264409.0,1.7,180.0,50.8,15.6,21.3
+35,North Somerset,South West,SEMH,New maintained special school,4–6 years,968,2.05,Weston-super-Mare,Ashcombe Primary School,49.546,-2.92,333568.0,160813.0,63.8,93.0,67.4,26.6,29.4
+36,Rotherham,Yorkshire and The Humber,ASD,Resourced provision unit / SEN unit,1–2 years,1283,1.93,Worksop,Langold Dyscarr Community School,51.668,-1.336,445849.0,396955.0,81.8,170.0,100.0,27.3,30.6
+37,Buckinghamshire,South East,SEMH,New maintained special school,4–6 years,1378,1.39,Princes Risborough,Longwick Church of England Combined School,49.951,-0.882,480075.0,205890.0,60.5,160.0,47.9,20.9,33.7
+38,Sheffield,Yorkshire and The Humber,SEMH,Resourced provision unit / SEN unit,1–2 years,1250,2.05,Sheffield,Ridgeway Primary School,51.633,-1.512,433733.0,393055.0,31.2,337.0,98.3,18.1,26.6
+39,"Bournemouth, Christchurch and Poole",South West,SEMH,Resourced provision unit / SEN unit,1–2 years,1095,2.0,,,,,,,,,,,
+40,Cornwall,South West,MLD,New maintained special school,4–6 years,525,2.05,Hayle,Leedstown Community Primary School,48.421,-5.233,161153.0,35574.0,100.0,126.0,37.5,133.7,159.6

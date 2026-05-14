@@ -16,34 +16,36 @@ For every local authority and every primary need type (ASD, SEMH, MLD, SLD), a p
 
 **Facility type**: if the nearest maintained provision of that type is within 20km (15km for SEMH), a resourced provision unit (RPU) in an existing school is recommended. Beyond that threshold, a new maintained special school is needed.
 
-Full code: `facility_planning.py` in the repository.
+Full code: `facility_planning.py` (priority scoring) and `facility_location.py` (LSOA-level location drill-down) in the repository.
 
 ---
 
 ## Top 20 priorities
 
-| Rank | LA | Region | Need type | Facility type | Lead time | Gap (children) | Demand growth to 2030 |
-|---|---|---|---|---|---|---|---|
-| 1 | Hampshire | South East | SEMH | Resourced provision unit | 1–2 yrs | 3,602 | ×2.1 |
-| 2 | Essex | East of England | ASD | Resourced provision unit | 1–2 yrs | 2,766 | ×2.1 |
-| 3 | Norfolk | East of England | SEMH | Resourced provision unit | 1–2 yrs | 2,663 | ×2.1 |
-| 4 | Norfolk | East of England | ASD | Resourced provision unit | 1–2 yrs | 2,422 | ×2.1 |
-| 5 | Cornwall | South West | ASD | **New special school** | 4–6 yrs | 1,420 | ×2.1 |
-| 6 | Norfolk | East of England | MLD | **New special school** | 4–6 yrs | 1,470 | ×2.1 |
-| 7 | Lancashire | North West | ASD | Resourced provision unit | 1–2 yrs | 3,517 | ×2.0 |
-| 8 | Suffolk | East of England | ASD | **New special school** | 4–6 yrs | 1,952 | ×1.8 |
-| 9 | Essex | East of England | SEMH | **New special school** | 4–6 yrs | 1,938 | ×2.1 |
-| 10 | Hertfordshire | East of England | MLD | Resourced provision unit | 1–2 yrs | 2,429 | ×1.6 |
-| 11 | Worcestershire | West Midlands | SEMH | **New special school** | 4–6 yrs | 1,596 | ×2.1 |
-| 12 | Cornwall | South West | SEMH | **New special school** | 4–6 yrs | 1,074 | ×2.1 |
-| 13 | Bradford | Yorkshire and The Humber | SEMH | **New special school** | 4–6 yrs | 1,746 | ×2.1 |
-| 14 | Buckinghamshire | South East | ASD | **New special school** | 4–6 yrs | 2,302 | ×1.4 |
-| 15 | Surrey | South East | SEMH | Resourced provision unit | 1–2 yrs | 2,156 | ×1.5 |
-| 16 | Kent | South East | ASD | Resourced provision unit | 1–2 yrs | 3,355 | ×1.1 |
-| 17 | Wiltshire | South West | SEMH | **New special school** | 4–6 yrs | 1,487 | ×2.1 |
-| 18 | Worcestershire | West Midlands | ASD | **New special school** | 4–6 yrs | 1,359 | ×2.1 |
-| 19 | Nottinghamshire | East Midlands | ASD | Resourced provision unit | 1–2 yrs | 1,761 | ×2.1 |
-| 20 | West Sussex | South East | SEMH | **New special school** | 4–6 yrs | 1,538 | ×1.9 |
+Recommended areas are derived from LSOA-level distance analysis: the distance-weighted centroid of the worst-served third of LSOAs within the LA, named by the nearest open school in the GIAS register.
+
+| Rank | LA | Region | Need type | Facility type | Recommended area | Lead time | Gap (children) | Demand growth to 2030 |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Hampshire | South East | SEMH | Resourced provision unit | **Winchester** | 1–2 yrs | 3,602 | ×2.1 |
+| 2 | Essex | East of England | ASD | Resourced provision unit | **Braintree** | 1–2 yrs | 2,766 | ×2.1 |
+| 3 | Norfolk | East of England | SEMH | Resourced provision unit | **King's Lynn** | 1–2 yrs | 2,663 | ×2.1 |
+| 4 | Norfolk | East of England | ASD | Resourced provision unit | **King's Lynn** | 1–2 yrs | 2,422 | ×2.1 |
+| 5 | Cornwall | South West | ASD | **New special school** | **Hayle / west Cornwall** | 4–6 yrs | 1,420 | ×2.1 |
+| 6 | Norfolk | East of England | MLD | **New special school** | **Dereham** | 4–6 yrs | 1,470 | ×2.1 |
+| 7 | Lancashire | North West | ASD | Resourced provision unit | **Lancaster** | 1–2 yrs | 3,517 | ×2.0 |
+| 8 | Suffolk | East of England | ASD | **New special school** | **Bury St Edmunds** | 4–6 yrs | 1,952 | ×1.8 |
+| 9 | Essex | East of England | SEMH | **New special school** | **Witham** | 4–6 yrs | 1,938 | ×2.1 |
+| 10 | Hertfordshire | East of England | MLD | Resourced provision unit | **Hertford** | 1–2 yrs | 2,429 | ×1.6 |
+| 11 | Worcestershire | West Midlands | SEMH | **New special school** | **Worcester** | 4–6 yrs | 1,596 | ×2.1 |
+| 12 | Cornwall | South West | SEMH | **New special school** | **Hayle / west Cornwall** | 4–6 yrs | 1,074 | ×2.1 |
+| 13 | Bradford | Yorkshire and The Humber | SEMH | **New special school** | **North Bradford / Keighley corridor** | 4–6 yrs | 1,746 | ×2.1 |
+| 14 | Buckinghamshire | South East | ASD | **New special school** | **Aylesbury** | 4–6 yrs | 2,302 | ×1.4 |
+| 15 | Surrey | South East | SEMH | Resourced provision unit | **Dorking** | 1–2 yrs | 2,156 | ×1.5 |
+| 16 | Kent | South East | ASD | Resourced provision unit | **Faversham** | 1–2 yrs | 3,355 | ×1.1 |
+| 17 | Wiltshire | South West | SEMH | **New special school** | **Salisbury** | 4–6 yrs | 1,487 | ×2.1 |
+| 18 | Worcestershire | West Midlands | ASD | **New special school** | **Worcester** | 4–6 yrs | 1,359 | ×2.1 |
+| 19 | Nottinghamshire | East Midlands | ASD | Resourced provision unit | **Newark** | 1–2 yrs | 1,761 | ×2.1 |
+| 20 | West Sussex | South East | SEMH | **New special school** | **Pulborough / Storrington area** | 4–6 yrs | 1,538 | ×1.9 |
 
 ---
 
@@ -66,12 +68,14 @@ Full code: `facility_planning.py` in the repository.
 ## Caveats
 
 - **Gap scores measure designation mismatch**, not the absolute number of children needing a specialist placement. Many EHCP children, including those with ASD and SEMH, are educated in mainstream schools with support. The gap reflects misalignment between what the maintained sector is set up to serve and what it is being asked to serve.
-- **Distance is measured from LA centroid**, not from the child's home. Rural LAs in particular may have access problems the LA-level distance understates for specific communities.
+- **Distance is computed at LSOA level** (33,755 areas) using OS National Grid coordinates from GIAS and ONS LSOA 2021 centroids — not from LA centroids. This gives a much more accurate picture of which communities are underserved. Recommended build locations are derived from the distance-weighted centroid of the worst-served third of LSOAs within each LA, then named using the nearest open school in the GIAS register as a place reference.
+- **Place names are approximate.** The recommended area is the nearest school town to the geometric centroid — it indicates the part of the LA to target, not a specific site. Detailed site selection requires local planning input.
+- **SEN designation data** from GIAS records what schools are designated to provide, which may not match what they actually deliver day-to-day. Maintained schools sometimes admit pupils outside their designation. The distance to "nearest maintained ASD school" is a proxy for the access gap, not a precise count of available places.
 - **Independent sector concentration** is used as a cost-pressure proxy, not a measure of quality or appropriateness.
 - **Demand projections** are sensitivity scenarios, not forecasts. The continuation scenario assumes current trends persist without policy intervention.
 
 ---
 
 *Analysis: Matt Sharpe, Oxford Internet Institute / Automattic*  
-*Data: DfE SEN2 2025, GIAS May 2026, S251 2024-25, ONS LSOA centroids*  
-*Code: github.com/Kali89/la-send-analysis (`facility_planning.py`)*
+*Data: DfE SEN2 2025 (outcomes to academic year 2024/25), GIAS school register snapshot 12 May 2026, S251 2024-25, ONS LSOA 2021 centroids. School supply is current to May 2026; demand and outcome data is current to 2024/25. This represents the best available published evidence as of mid-2026.*  
+*Code: github.com/Kali89/la-send-analysis (`facility_planning.py`, `facility_location.py`)*

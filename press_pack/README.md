@@ -37,4 +37,6 @@ Do not lead with risk scores unless the recipient already understands the method
 | `tables_for_media/high_risk_councils.csv` | The six high-risk councils: risk score, timeliness, appeal rate, independent placements |
 | `tables_for_media/headline_comparison.csv` | The three headline statistics comparing Safety Valve vs no-intervention LAs |
 | `tables_for_media/facility_priority_top20.csv` | Top 20 LA × need-type facility priorities: gap, growth, facility type, lead time |
+| `tables_for_media/facility_locations.csv` | Top 40 priorities with specific recommended area (LSOA-level drill-down) |
 | `figures_for_media/44_facility_priority.png` | Top 30 facility priorities ranked by urgency score (ASD/SEMH/MLD, new school vs RPU) |
+| `figures_for_media/45_facility_location_maps.png` | Within-LA LSOA distance maps for top 12 priorities, with recommended build location |
