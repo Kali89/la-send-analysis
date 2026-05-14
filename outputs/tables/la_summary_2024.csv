@@ -75,7 +75,7 @@ E06000058,"Bournemouth, Christchurch and Poole",South West,None,1230.0,295.0,376
 E10000017,Lancashire,North West,Delivering Better Value,3658.0,876.0,11258.0,1720.0,23.947512301804263,17.3,5032.0,,6.6,,27.3,False,False,False
 E08000003,Manchester,North West,Delivering Better Value,2305.0,546.0,7798.0,1657.0,23.68763557483731,63.5,5110.0,,2.1,530.0,42.1,False,False,False
 E09000019,Islington,London,None,511.0,121.0,2035.0,295.0,23.679060665362034,78.6,1548.0,,7.5,,34.5,False,False,False
-E06000010,"Kingston upon Hull, City of",Yorkshire and The Humber,None,811.0,192.0,2982.0,500.0,23.674475955610358,5.8,,,,,,False,False,False
+E06000010,"Kingston upon Hull, City of",Yorkshire and The Humber,None,811.0,192.0,2982.0,500.0,23.674475955610358,5.8,1209.0,,5.6,,,False,False,False
 E06000005,Darlington,North East,Delivering Better Value,245.0,58.0,1026.0,172.0,23.6734693877551,72.1,700.0,,1.1,,28.3,False,False,False
 E06000018,Nottingham,East Midlands,Delivering Better Value,579.0,137.0,2115.0,294.0,23.661485319516405,29.9,1451.0,,3.6,490.0,40.8,False,False,False
 E10000015,Hertfordshire,East of England,Safety Valve,3343.0,775.0,11897.0,1781.0,23.182769967095425,55.2,2195.0,,27.9,950.0,13.8,False,False,False

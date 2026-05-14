@@ -21,7 +21,7 @@ The capacity ceiling figure tells this story most directly. Safety Valve council
 
 **The collapse was foreseeable**
 
-Using only data published before the Safety Valve programme existed, predictive models trained on 2016 data could identify the councils that would enter crisis — with leave-one-out cross-validated accuracy of up to AUC 0.71. By 2021, the same models achieved AUC 0.88. The warning signals — rising tribunal appeal rates and growing independent placement spend — were in the public data. They were not acted on.
+Using only data published before the Safety Valve programme existed, predictive models trained on 2016 data could identify the councils that would enter crisis — with leave-one-out cross-validated accuracy of up to AUC 0.70. By 2021, the same models achieved AUC 0.88. The warning signals — rising tribunal appeal rates and growing independent placement spend — were in the public data. They were not acted on.
 
 **The councils at risk now**
 
@@ -30,9 +30,9 @@ Six councils currently show the same pre-crisis signatures as those that entered
 | Council | Risk score | Mean timeliness 2022–24 |
 |---|---|---|
 | Bristol, City of | 0.90 | 37.5% |
-| Birmingham | 0.82 | 49.4% |
+| Birmingham | 0.86 | 49.4% |
 | Bromley | 0.77 | 33.7% |
-| Lewisham | 0.72 | 53.5% |
+| Lewisham | 0.69 | 53.5% |
 | Staffordshire | 0.69 | 33.5% |
 | Central Bedfordshire | 0.64 | 26.5% |
 

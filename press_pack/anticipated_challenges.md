@@ -45,9 +45,9 @@
 
 ---
 
-## "The AUC values aren't that impressive — 0.71 isn't much better than random"
+## "The AUC values aren't that impressive — 0.70 isn't much better than random"
 
-**Short answer**: AUC 0.71 is from 2016 data — six years before the collapse outcome. At training year 2021 (three years before the collapse window), the best model achieves AUC 0.88. For context, medical early-warning tools with AUC in the 0.70–0.80 range are routinely used to trigger clinical interventions. The relevant standard is not perfection but whether the signal was actionable — and at AUC 0.71 in 2016, it was.
+**Short answer**: AUC 0.70 is from 2016 data — six years before the collapse outcome. At training year 2021 (three years before the collapse window), the best model achieves AUC 0.88. For context, medical early-warning tools with AUC in the 0.70–0.80 range are routinely used to trigger clinical interventions. The relevant standard is not perfection but whether the signal was actionable — and at AUC 0.70 in 2016, it was.
 
 ---
 

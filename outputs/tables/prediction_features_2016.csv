@@ -8,6 +8,7 @@ E06000006,Halton,North West,Delivering Better Value,1.000,-0.350,10.427,32.325,4
 E06000007,Warrington,North West,,0.500,-0.000,12.963,18.942,2.881,0
 E06000008,Blackburn with Darwen,North West,Delivering Better Value,0.100,-0.450,14.243,36.013,3.584,0
 E06000009,Blackpool,North West,,0.100,0.050,17.367,45.039,7.387,0
+E06000010,"Kingston upon Hull, City of",Yorkshire and The Humber,,0.900,0.200,3.140,40.564,4.765,0
 E06000011,East Riding of Yorkshire,Yorkshire and The Humber,Delivering Better Value,1.000,0.150,9.395,15.605,2.367,0
 E06000012,North East Lincolnshire,Yorkshire and The Humber,Delivering Better Value,0.900,0.100,9.043,31.335,3.420,0
 E06000013,North Lincolnshire,Yorkshire and The Humber,Delivering Better Value,0.000,-0.050,20.053,22.096,2.021,0
@@ -41,6 +42,7 @@ E06000043,Brighton and Hove,South East,,0.800,-0.550,7.547,20.761,1.609,0
 E06000044,Portsmouth,South East,Delivering Better Value,0.700,-0.150,4.586,26.899,6.314,0
 E06000045,Southampton,South East,Delivering Better Value,2.900,0.250,8.472,26.876,5.959,0
 E06000046,Isle of Wight,South East,Safety Valve,1.300,0.200,3.279,23.294,5.819,1
+E06000047,County Durham,North East,,0.400,-0.450,4.631,26.793,3.689,0
 E06000049,Cheshire East,North West,Safety Valve,1.500,-0.050,10.719,14.475,2.591,1
 E06000050,Cheshire West and Chester,North West,,0.600,-0.300,2.822,18.083,2.536,0
 E06000051,Shropshire,West Midlands,Safety Valve,0.100,-0.400,15.184,17.153,3.255,1
@@ -117,7 +119,7 @@ E09000030,Tower Hamlets,London,Delivering Better Value,0.200,0.050,6.750,27.913,
 E09000031,Waltham Forest,London,,0.500,-0.350,4.135,25.209,4.814,0
 E09000032,Wandsworth,London,,1.700,-0.450,19.205,16.611,5.390,0
 E09000033,Westminster,London,,3.600,0.600,11.905,20.339,2.603,0
-E10000002,Buckinghamshire,South East,,1.300,0.200,6.184,10.700,,0
+E10000002,Buckinghamshire,South East,,1.300,0.200,6.184,10.700,4.318,0
 E10000003,Cambridgeshire,East of England,Safety Valve,1.600,-0.450,10.953,15.400,4.400,1
 E10000007,Derbyshire,East Midlands,Safety Valve,1.700,0.150,7.699,22.100,3.199,1
 E10000008,Devon,South West,Safety Valve,0.900,0.100,15.132,18.000,3.916,1

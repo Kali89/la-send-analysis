@@ -55,6 +55,7 @@ E06000046,Isle of Wight,South East,Safety Valve,0.095,2,Low (< 25%),0.000,47.700
 E09000019,Islington,London,,0.237,5,Low (< 25%),0.000,58.633,4.933,1.541,3.307,2.600,-0.307
 E09000020,Kensington and Chelsea,London,,0.045,1,Low (< 25%),0.000,94.733,6.400,1.629,9.325,1.600,-0.235
 E10000016,Kent,South East,Safety Valve,0.991,10,Critical (> 75%),1.000,30.400,5.800,5.541,8.560,2.200,-0.171
+E06000010,"Kingston upon Hull, City of",Yorkshire and The Humber,,0.322,5,Moderate (25–50%),0.000,21.100,2.900,0.589,4.323,1.200,-0.316
 E09000021,Kingston upon Thames,London,,0.058,1,Low (< 25%),0.000,70.800,3.700,3.257,11.598,2.700,-0.175
 E08000034,Kirklees,Yorkshire and The Humber,Delivering Better Value,0.432,7,Moderate (25–50%),0.000,16.767,2.233,1.629,3.166,0.600,-0.225
 E08000011,Knowsley,North West,Delivering Better Value,0.131,3,Low (< 25%),0.000,55.233,2.467,6.263,5.561,0.500,-0.258
@@ -141,4 +142,3 @@ E08000031,Wolverhampton,West Midlands,Delivering Better Value,0.461,7,Moderate (
 E10000034,Worcestershire,West Midlands,Safety Valve,0.342,6,Moderate (25–50%),1.000,31.933,2.100,4.290,3.985,2.000,-0.283
 E06000014,York,Yorkshire and The Humber,,0.125,3,Low (< 25%),0.000,83.100,1.867,0.216,9.766,0.600,-0.279
 E06000019,"Herefordshire, County of",West Midlands,,0.060,2,Low (< 25%),0.000,73.067,,1.875,5.558,,-0.362
-E06000010,"Kingston upon Hull, City of",Yorkshire and The Humber,,0.322,5,Moderate (25–50%),0.000,21.100,,0.589,4.323,,-0.316

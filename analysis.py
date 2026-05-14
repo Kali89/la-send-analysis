@@ -314,8 +314,8 @@ def normalise_la_name(name):
     if not isinstance(name, str): return name
     replacements = {
         'Bristol, City of':               'Bristol, City of',
-        'Kingston upon Hull, City of':    'Kingston upon Hull',
-        'Kingston Upon Hull, City of':    'Kingston upon Hull',   # capital-U variant in tribunal CSV
+        'Kingston upon Hull, City of':    'Kingston upon Hull, City of',
+        'Kingston Upon Hull, City of':    'Kingston upon Hull, City of',  # capital-U variant in tribunal CSV
         'Herefordshire, County of':       'Herefordshire',
         'Durham, County':                 'County Durham',
         'Durham':                         'County Durham',        # tribunal CSV omits ", County"

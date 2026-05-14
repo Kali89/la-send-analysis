@@ -8,7 +8,7 @@ Dep. Variable:       refusal_rate_pct   R-squared:                       0.124
 Model:                            OLS   Adj. R-squared:                 -0.069
 Method:                 Least Squares   F-statistic:                    0.6428
 Date:                Thu, 14 May 2026   Prob (F-statistic):              0.754
-Time:                        21:36:39   Log-Likelihood:                -197.23
+Time:                        21:42:00   Log-Likelihood:                -197.23
 No. Observations:                  51   AIC:                             414.5
 Df Residuals:                      41   BIC:                             433.8
 Df Model:                           9                                         
@@ -48,7 +48,7 @@ Dep. Variable:         timeliness_pct   R-squared:                       0.367
 Model:                            OLS   Adj. R-squared:                  0.228
 Method:                 Least Squares   F-statistic:                     2.637
 Date:                Thu, 14 May 2026   Prob (F-statistic):             0.0165
-Time:                        21:36:39   Log-Likelihood:                -226.18
+Time:                        21:42:00   Log-Likelihood:                -226.18
 No. Observations:                  51   AIC:                             472.4
 Df Residuals:                      41   BIC:                             491.7
 Df Model:                           9                                         
@@ -88,7 +88,7 @@ Dep. Variable:     la_official_appeal_rate_pct   R-squared:                     
 Model:                                     OLS   Adj. R-squared:                  0.088
 Method:                          Least Squares   F-statistic:                     1.505
 Date:                         Thu, 14 May 2026   Prob (F-statistic):              0.182
-Time:                                 21:36:39   Log-Likelihood:                -130.79
+Time:                                 21:42:00   Log-Likelihood:                -130.79
 No. Observations:                           48   AIC:                             281.6
 Df Residuals:                               38   BIC:                             300.3
 Df Model:                                    9                                         

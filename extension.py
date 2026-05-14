@@ -479,8 +479,8 @@ for col_idx, val in enumerate(year_row):
             year_cols.setdefault(current_year, {})[2] = col_idx
 
 _TRIB_NAME_MAP = {
-    'Kingston upon Hull, City of': 'Kingston upon Hull',
-    'Kingston Upon Hull, City of': 'Kingston upon Hull',
+    'Kingston upon Hull, City of': 'Kingston upon Hull, City of',
+    'Kingston Upon Hull, City of': 'Kingston upon Hull, City of',  # capital-U variant
     'Herefordshire, County of':    'Herefordshire',
     'Bristol, City of':            'Bristol, City of',
     'Durham, County':              'County Durham',

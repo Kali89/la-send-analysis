@@ -7,7 +7,7 @@ Dep. Variable:     log_indep_per_ehcp   R-squared:                       0.270
 Model:                            OLS   Adj. R-squared:                  0.173
 Method:                 Least Squares   F-statistic:                     3.690
 Date:                Thu, 14 May 2026   Prob (F-statistic):           1.02e-05
-Time:                        21:36:57   Log-Likelihood:                -69.879
+Time:                        21:42:52   Log-Likelihood:                -69.879
 No. Observations:                 146   AIC:                             175.8
 Df Residuals:                     128   BIC:                             229.5
 Df Model:                          17                                         

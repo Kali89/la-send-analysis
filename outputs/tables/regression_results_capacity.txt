@@ -10,7 +10,7 @@ Dep. Variable:     pct_special_independent   R-squared:                       0.
 Model:                                 OLS   Adj. R-squared:                  0.136
 Method:                      Least Squares   F-statistic:                     3.260
 Date:                     Thu, 14 May 2026   Prob (F-statistic):           0.000853
-Time:                             21:36:14   Log-Likelihood:                -468.99
+Time:                             21:42:58   Log-Likelihood:                -468.99
 No. Observations:                      144   AIC:                             960.0
 Df Residuals:                          133   BIC:                             992.6
 Df Model:                               10                                         
@@ -48,7 +48,7 @@ Dep. Variable:         timeliness_pct   R-squared:                       0.175
 Model:                            OLS   Adj. R-squared:                  0.112
 Method:                 Least Squares   F-statistic:                     2.796
 Date:                Thu, 14 May 2026   Prob (F-statistic):            0.00359
-Time:                        21:36:14   Log-Likelihood:                -668.01
+Time:                        21:42:58   Log-Likelihood:                -668.01
 No. Observations:                 143   AIC:                             1358.
 Df Residuals:                     132   BIC:                             1391.
 Df Model:                          10                                         
@@ -86,7 +86,7 @@ Dep. Variable:         timeliness_pct   R-squared:                       0.163
 Model:                            OLS   Adj. R-squared:                  0.100
 Method:                 Least Squares   F-statistic:                     2.570
 Date:                Thu, 14 May 2026   Prob (F-statistic):            0.00714
-Time:                        21:36:14   Log-Likelihood:                -669.03
+Time:                        21:42:58   Log-Likelihood:                -669.03
 No. Observations:                 143   AIC:                             1360.
 Df Residuals:                     132   BIC:                             1393.
 Df Model:                          10                                         
@@ -118,33 +118,33 @@ Notes:
 Model B: DSG deficit ~ % independent + IMD + region
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:         dsg_deficit_pp   R-squared:                       0.321
-Model:                            OLS   Adj. R-squared:                  0.156
-Method:                 Least Squares   F-statistic:                     1.947
-Date:                Thu, 14 May 2026   Prob (F-statistic):             0.0751
-Time:                        21:36:14   Log-Likelihood:                -321.68
-No. Observations:                  47   AIC:                             663.4
-Df Residuals:                      37   BIC:                             681.9
+Dep. Variable:         dsg_deficit_pp   R-squared:                       0.304
+Model:                            OLS   Adj. R-squared:                  0.139
+Method:                 Least Squares   F-statistic:                     1.843
+Date:                Thu, 14 May 2026   Prob (F-statistic):             0.0919
+Time:                        21:42:58   Log-Likelihood:                -332.00
+No. Observations:                  48   AIC:                             684.0
+Df Residuals:                      38   BIC:                             702.7
 Df Model:                           9                                         
 Covariance Type:            nonrobust                                         
 ===========================================================================================================
                                               coef    std err          t      P>|t|      [0.025      0.975]
 -----------------------------------------------------------------------------------------------------------
-Intercept                                 347.3682    283.055      1.227      0.227    -226.155     920.891
-C(region_f)[T.East of England]            176.2295    189.162      0.932      0.358    -207.049     559.508
-C(region_f)[T.London]                    -515.9800    260.242     -1.983      0.055   -1043.281      11.321
-C(region_f)[T.North West]                 -91.1968    212.222     -0.430      0.670    -521.199     338.805
-C(region_f)[T.South East]                 134.2880    186.596      0.720      0.476    -243.791     512.367
-C(region_f)[T.South West]                 -12.3606    202.746     -0.061      0.952    -423.164     398.443
-C(region_f)[T.West Midlands]             -123.0951    167.674     -0.734      0.467    -462.834     216.644
-C(region_f)[T.Yorkshire and The Humber]  -119.1210    187.475     -0.635      0.529    -498.980     260.739
-pct_special_independent                     0.7303      6.102      0.120      0.905     -11.633      13.093
-imd_average_score                           5.0499      6.897      0.732      0.469      -8.924      19.024
+Intercept                                 367.9617    303.374      1.213      0.233    -246.187     982.110
+C(region_f)[T.East of England]            169.5745    202.803      0.836      0.408    -240.978     580.127
+C(region_f)[T.London]                    -527.2319    278.995     -1.890      0.066   -1092.029      37.565
+C(region_f)[T.North West]                 -88.7987    227.544     -0.390      0.699    -549.438     371.840
+C(region_f)[T.South East]                 126.0442    200.041      0.630      0.532    -278.917     531.006
+C(region_f)[T.South West]                -140.9796    210.743     -0.669      0.508    -567.606     285.647
+C(region_f)[T.West Midlands]             -124.7549    179.780     -0.694      0.492    -488.701     239.191
+C(region_f)[T.Yorkshire and The Humber]  -119.9610    201.012     -0.597      0.554    -526.888     286.966
+pct_special_independent                     0.6183      6.542      0.095      0.925     -12.625      13.862
+imd_average_score                           4.3890      7.390      0.594      0.556     -10.570      19.349
 ==============================================================================
-Omnibus:                        4.570   Durbin-Watson:                   1.951
-Prob(Omnibus):                  0.102   Jarque-Bera (JB):                5.187
-Skew:                          -0.071   Prob(JB):                       0.0748
-Kurtosis:                       4.621   Cond. No.                         349.
+Omnibus:                        4.546   Durbin-Watson:                   1.987
+Prob(Omnibus):                  0.103   Jarque-Bera (JB):                3.991
+Skew:                          -0.350   Prob(JB):                        0.136
+Kurtosis:                       4.227   Cond. No.                         351.
 ==============================================================================
 
 Notes:
@@ -153,34 +153,34 @@ Notes:
 Model D: tribunal ~ % independent + IMD + region
                                  OLS Regression Results                                
 =======================================================================================
-Dep. Variable:     la_official_appeal_rate_pct   R-squared:                       0.149
-Model:                                     OLS   Adj. R-squared:                  0.078
-Method:                          Least Squares   F-statistic:                     2.100
-Date:                         Thu, 14 May 2026   Prob (F-statistic):             0.0294
-Time:                                 21:36:14   Log-Likelihood:                -349.64
-No. Observations:                          131   AIC:                             721.3
-Df Residuals:                              120   BIC:                             752.9
+Dep. Variable:     la_official_appeal_rate_pct   R-squared:                       0.141
+Model:                                     OLS   Adj. R-squared:                  0.071
+Method:                          Least Squares   F-statistic:                     2.002
+Date:                         Thu, 14 May 2026   Prob (F-statistic):             0.0386
+Time:                                 21:42:58   Log-Likelihood:                -355.63
+No. Observations:                          133   AIC:                             733.3
+Df Residuals:                              122   BIC:                             765.1
 Df Model:                                   10                                         
 Covariance Type:                     nonrobust                                         
 ===========================================================================================================
                                               coef    std err          t      P>|t|      [0.025      0.975]
 -----------------------------------------------------------------------------------------------------------
-Intercept                                   7.0525      2.105      3.350      0.001       2.884      11.221
-C(region_f)[T.East of England]              0.0356      1.831      0.019      0.985      -3.589       3.660
-C(region_f)[T.London]                      -1.0734      1.551     -0.692      0.490      -4.144       1.997
-C(region_f)[T.North East]                  -2.3560      1.778     -1.325      0.188      -5.876       1.164
-C(region_f)[T.North West]                  -2.4035      1.612     -1.491      0.138      -5.594       0.787
-C(region_f)[T.South East]                   1.9450      1.679      1.158      0.249      -1.380       5.270
-C(region_f)[T.South West]                  -2.0617      1.830     -1.126      0.262      -5.686       1.562
-C(region_f)[T.West Midlands]               -1.1096      1.712     -0.648      0.518      -4.500       2.281
-C(region_f)[T.Yorkshire and The Humber]    -2.6570      1.713     -1.551      0.124      -6.049       0.735
-pct_special_independent                    -0.0236      0.050     -0.470      0.639      -0.123       0.076
-imd_average_score                          -0.0039      0.053     -0.074      0.941      -0.108       0.100
+Intercept                                   7.2025      2.104      3.423      0.001       3.037      11.368
+C(region_f)[T.East of England]              0.0064      1.838      0.003      0.997      -3.632       3.645
+C(region_f)[T.London]                      -1.0503      1.557     -0.675      0.501      -4.132       2.032
+C(region_f)[T.North East]                  -1.8272      1.756     -1.041      0.300      -5.302       1.648
+C(region_f)[T.North West]                  -2.3855      1.618     -1.474      0.143      -5.588       0.817
+C(region_f)[T.South East]                   1.9522      1.685      1.159      0.249      -1.383       5.288
+C(region_f)[T.South West]                  -2.0353      1.837     -1.108      0.270      -5.671       1.601
+C(region_f)[T.West Midlands]               -1.0978      1.720     -0.638      0.524      -4.502       2.306
+C(region_f)[T.Yorkshire and The Humber]    -2.5441      1.701     -1.496      0.137      -5.911       0.823
+pct_special_independent                    -0.0322      0.050     -0.644      0.521      -0.131       0.067
+imd_average_score                          -0.0058      0.052     -0.111      0.912      -0.109       0.097
 ==============================================================================
-Omnibus:                       88.470   Durbin-Watson:                   2.029
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              617.015
-Skew:                           2.317   Prob(JB):                    1.04e-134
-Kurtosis:                      12.569   Cond. No.                         375.
+Omnibus:                       86.495   Durbin-Watson:                   2.027
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              570.774
+Skew:                           2.241   Prob(JB):                    1.14e-124
+Kurtosis:                      12.106   Cond. No.                         378.
 ==============================================================================
 
 Notes:
