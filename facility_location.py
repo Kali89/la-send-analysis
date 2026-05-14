@@ -25,9 +25,12 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from scipy.spatial import cKDTree
+from pyproj import Transformer
 from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
+
+_bng_to_wgs84 = Transformer.from_crs('EPSG:27700', 'EPSG:4326', always_xy=True)
 
 ROOT      = Path(__file__).parent
 FIG_DIR   = ROOT / 'outputs' / 'figures'
@@ -56,7 +59,7 @@ KEY_SEN = ['ASD', 'SEMH', 'MLD', 'SLD', 'SLCN']
 
 EN_REGIONS = [
     'East Midlands', 'East of England', 'London', 'North East', 'North West',
-    'South East', 'South West', 'West Midlands', 'Yorkshire and The Humber',
+    'South East', 'South West', 'West Midlands', 'Yorkshire and the Humber',
 ]
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -126,7 +129,7 @@ print("\nFinding recommended build locations...")
 
 priorities = pd.read_csv(TABLE_DIR / 'facility_priority_list.csv')
 
-def recommended_location(la_code, need_type, lsoa_df, all_tree_ref, all_schools_ref,
+def recommended_location(la_code, la_name, need_type, lsoa_df, all_tree_ref, all_schools_ref,
                           thresh_km, worst_pct=WORST_PCT):
     """
     For a given (LA, need type), find the distance-weighted centroid of the
@@ -164,11 +167,20 @@ def recommended_location(la_code, need_type, lsoa_df, all_tree_ref, all_schools_
     lsoas_within   = (dists_from_rec <= thresh_km).sum()
     lsoas_total    = len(la_lsoas)
 
-    # Name the location using nearest open school (any type) as place proxy
-    _, nearest_idx = all_tree_ref.query([[rec_e, rec_n]])
-    nearest_row     = all_schools_ref.iloc[nearest_idx[0]]
-    place_town      = nearest_row.get('town', '')
-    place_name      = nearest_row.get('establishmentname', '')
+    # Name the location: prefer a school within the same LA, fall back to any school
+    la_schools = all_schools_ref[all_schools_ref['la (name)'] == la_name]
+    if len(la_schools) > 0:
+        la_xy = la_schools[['easting', 'northing']].values
+        dists_to_la = np.sqrt((la_xy[:, 0] - rec_e)**2 + (la_xy[:, 1] - rec_n)**2)
+        nearest_la_idx = np.argmin(dists_to_la)
+        nearest_row = la_schools.iloc[nearest_la_idx]
+    else:
+        _, nearest_idx = all_tree_ref.query([[rec_e, rec_n]])
+        nearest_row = all_schools_ref.iloc[nearest_idx[0]]
+    town_raw = nearest_row.get('town', '')
+    place_town = (town_raw if (pd.notna(town_raw) and str(town_raw).strip())
+                  else nearest_row.get('locality', ''))
+    place_name = nearest_row.get('establishmentname', '')
 
     # Mean distance of worst-served LSOAs (before hypothetical new school)
     mean_dist_worst = worst[dist_col].mean()
@@ -177,18 +189,15 @@ def recommended_location(la_code, need_type, lsoa_df, all_tree_ref, all_schools_
     # What fraction of the LA is currently beyond the threshold?
     pct_beyond_thresh = (la_lsoas[dist_col] > thresh_km).mean() * 100
 
-    # Convert BNG to approximate lat/lon (accuracy ~500m, sufficient for area-level planning)
-    # Using Helmert transformation approximation
-    E, N = rec_e, rec_n
-    lat = 49.00 + (N - 100000) / 111320
-    lon = -2.00 + (E - 400000) / (111320 * np.cos(np.radians(lat)))
+    # Convert BNG (EPSG:27700) to WGS84 (EPSG:4326) using pyproj
+    lon, lat = _bng_to_wgs84.transform(rec_e, rec_n)
 
     return {
         'rec_easting':         round(rec_e),
         'rec_northing':        round(rec_n),
         'rec_lat':             round(lat, 3),
         'rec_lon':             round(lon, 3),
-        'nearest_place':       place_town if pd.notna(place_town) and place_town else 'Unknown',
+        'nearest_place':       str(place_town).strip() if (pd.notna(place_town) and str(place_town).strip()) else 'Unknown',
         'nearest_school_name': place_name,
         'n_lsoas_worst_served':       len(worst),
         'n_lsoas_within_threshold':   int(lsoas_within),
@@ -199,32 +208,18 @@ def recommended_location(la_code, need_type, lsoa_df, all_tree_ref, all_schools_
     }
 
 
-location_rows = []
 top_n = 40
-for _, row in priorities.head(top_n).iterrows():
-    thresh = THRESH_KM.get(row['need_type'], 20)
-    loc = recommended_location(
-        row['la_code'] if 'la_code' in priorities.columns else None,
-        row['need_type'], lsoa, all_tree, all_schools, thresh
-    )
-    combined = {**row.to_dict(), **loc}
-    location_rows.append(combined)
-    if loc:
-        print(f"  #{int(row['priority_rank']):>2}  {row['la_name']:<28} {row['need_type']:<5}  "
-              f"→ {loc.get('nearest_place','?'):<20}  "
-              f"{loc.get('pct_la_currently_beyond',0):.0f}% of LA beyond threshold  "
-              f"{loc.get('n_lsoas_within_threshold',0)} LSOAs within {thresh}km of rec. point")
 
-# Need la_code in priorities — merge it in if missing
-if 'la_code' not in priorities.columns:
-    risk = pd.read_csv(TABLE_DIR / 'la_risk_scores_2024.csv')[['la_name','la_code']]
-    priorities = priorities.merge(risk, on='la_name', how='left')
+# la_code not saved in facility_priority_list.csv — merge from mismatch table
+# (using mismatch rather than risk_scores because risk_scores excludes some LAs e.g. BCP)
+mismatch_codes = pd.read_csv(TABLE_DIR / 'la_mismatch_2024.csv')[['la_name', 'la_code']]
+priorities = priorities.merge(mismatch_codes, on='la_name', how='left')
 
 location_rows = []
 for _, row in priorities.head(top_n).iterrows():
     thresh = THRESH_KM.get(row['need_type'], 20)
     loc = recommended_location(
-        row['la_code'], row['need_type'], lsoa, all_tree, all_schools, thresh
+        row['la_code'], row['la_name'], row['need_type'], lsoa, all_tree, all_schools, thresh
     )
     combined = {**row.to_dict(), **loc}
     location_rows.append(combined)
