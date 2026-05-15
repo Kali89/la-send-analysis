@@ -17,7 +17,7 @@ When the Department for Education launched its "Safety Valve" programme in 2022,
 
 ## What the data show
 
-The gatekeeping hypothesis does not survive contact with the published data. Safety Valve councils refuse EHCP applications at 25.3%; councils with no intervention refuse at 25.1%. The difference is statistically indistinguishable (Mann-Whitney p = 0.76). These councils are not saying yes to too many children. They are saying yes and then failing — on a legal statutory duty — to deliver the plan within 20 weeks.
+The gatekeeping hypothesis does not survive contact with the published data. Safety Valve councils refuse EHCP applications at 25.3%; councils with no intervention refuse at 25.1%. The difference is statistically indistinguishable (Mann-Whitney p = 0.76). The published data do not show Safety Valve councils formally refusing more or accepting fewer children at the front door. They are failing — on a legal statutory duty — to deliver the plan within 20 weeks of accepting the case.
 
 Safety Valve councils issued only 35.8% of new EHCPs within the 20-week legal limit in 2024, against 57.0% for non-intervention councils. They face tribunal challenge rates of 7.5% of live EHCPs against 5.4% elsewhere. They place 37% more children per 1,000 pupils in independent specialist schools than non-intervention councils (0.89 vs 0.65 per 1,000), at a median cost of £97,322 per child per year.
 
@@ -29,7 +29,7 @@ This is a throughput failure, not a gatekeeping failure. The queue grows; the ca
 
 The Safety Valve programme treated the symptom — DSG deficits — rather than the cause. The deficits exist because councils do not have enough maintained special school places in the right locations for the right need types. When a child cannot access a maintained place locally, they are placed in an independent school. That placement costs the local authority roughly four times more than a maintained place. The deficit deepens. Councils cut support services. Plans worsen. Families go to tribunal. Legal costs rise. The cycle continues.
 
-Predictive models trained only on data available before the Safety Valve programme existed could identify — from 2021 data — which councils would enter crisis, with cross-validated accuracy of AUC 0.88. The signals were in the public data: rising tribunal appeal rates, growing independent placement spend, flat timely-throughput against rising demand. They were not acted on.
+Predictive models trained only on data available before the Safety Valve programme existed could identify — from 2021 data — which councils would enter crisis, with cross-validated accuracy of AUC 0.88. The signals were in the public data: rising tribunal appeal rates, growing independent placement spend, flat timely-throughput against rising demand. They were not acted on through any public early-warning framework visible in the published record.
 
 ---
 

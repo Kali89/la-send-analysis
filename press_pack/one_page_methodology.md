@@ -45,6 +45,20 @@ The current risk scores use Model E (need-type counts + timeliness trend) at tra
 
 ---
 
+## Facility planning model (Articles 3–4)
+
+For every local authority and primary need type (ASD, SEMH, MLD, SLD), a priority score is computed as: unmet demand (children with that need type exceeding the maintained sector's designated capacity share) × projected demand growth to 2030 × independent placement pressure (% of current special placements in the independent sector) × log-distance to the nearest maintained school of that type. This ranks 467 LA × need-type combinations by urgency.
+
+**Facility type threshold**: if the nearest maintained provision of that type is within 20km (15km for SEMH), a resourced provision unit (RPU) programme is recommended; beyond that threshold, a new maintained special school. Location recommendations are derived from the distance-weighted centroid of the worst-served third of LSOAs within each LA, cross-referenced to the nearest named school as a place indicator.
+
+---
+
+## Cost-benefit model (Article 5)
+
+The top 30 priority facilities are modelled over a 15-year horizon (2025–2040). Capital benchmarks follow the ESFA free school programme: £20 million per new 100-place maintained special school, £2 million per 15-place resourced provision unit. Revenue savings assume £75,000 per child per year diverted from independent to maintained provision (conservatively discounted from the S251 2023/24 median of £97,322). A base 40% diversion rate is adjusted upward proportionally for LAs with high existing independent placement rates and capped at 65%. Lead times and occupancy ramp-up are modelled explicitly (new schools: 4-year build, then 50%/100% occupancy in years 5/6; RPUs: 2-year lead, then 60%/100% in years 3/4). Cashflows are discounted at HMT Green Book rate (3.5%). The model has not been formally optimism-bias adjusted, but a full sensitivity table (4 saving assumptions × 3 capital overrun scenarios) is published in `cost_benefit_sensitivity.csv`.
+
+---
+
 ## Key limitations
 
 1. **Refusal rates understate gatekeeping**: councils with large backlogs show lower apparent refusal rates because many decisions are still pending. Gatekeeping via delay is not captured.

@@ -4,6 +4,8 @@
 
 ## The investment case
 
+This is not an argument for moving children out of appropriate independent provision; it is an argument for preventing avoidable independent placements where suitable maintained provision could have existed locally.
+
 Thirty priority facilities — twenty new maintained special schools and ten resourced provision units added to existing schools — require a combined capital outlay of £420 million. Based on a conservative saving of £75,000 per year for each child diverted from an independent placement to a maintained school, those thirty facilities generate cumulative avoided costs that cross the £420 million threshold in 2034: nine years after the capital is committed. By 2040, on the same conservative assumptions, the portfolio has saved £887 million in avoided independent placement costs against a £420 million investment — a net return of £467 million over fifteen years, or roughly £1.10 saved for every £1 spent, before discounting.
 
 Applying a Green Book-style discount rate of 3.5%, the fifteen-year net present value of the portfolio is £220 million. For the highest-efficiency facilities — those serving LAs with the greatest distance to maintained provision and the highest independent placement pressure — the discounted NPV exceeds £13 million per school.

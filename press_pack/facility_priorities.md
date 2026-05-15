@@ -1,5 +1,5 @@
-# Where to build: a national facility priority list
-### Ordered by urgency across need type, demand growth, access, and independent placement pressure
+# Priority areas for SEND provision planning
+### Ranked by urgency across need type, demand growth, access, and independent placement pressure
 
 ---
 
@@ -59,7 +59,7 @@ Recommended areas are derived from LSOA-level distance analysis: the distance-we
 
 **Cornwall requires three new special schools** (ASD, SEMH, MLD) because the geography means no maintained school is within reasonable daily travel distance. This is the clearest case for new-build — and given 4–6 year lead times, the decisions need to be made now.
 
-**Norfolk appears in the top 10 three times** (SEMH rank 3, ASD rank 4, MLD rank 6) — suggesting systemic under-supply across all need types, not just one. This is consistent with Norfolk being a Safety Valve LA with one of the highest risk scores in the country (0.98).
+**Norfolk appears in the top 10 three times** (SEMH rank 3, ASD rank 4, MLD rank 6) — suggesting systemic under-supply across all need types, not just one. This is consistent with Norfolk's position as a Safety Valve council with one of the largest absolute designation mismatches in the country.
 
 **MLD is a quiet crisis.** Moderate learning difficulties provision has been crowded out by ASD/SEMH expansion. The MLD designation mismatch in Norfolk (47.7km to nearest maintained MLD school), Worcestershire, West Sussex, and Cornwall represents approximately 7,000 children in the top 50 alone whose primary need type is not adequately reflected in the maintained sector's current designated capacity.
 

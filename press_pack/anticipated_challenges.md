@@ -51,5 +51,23 @@
 
 ---
 
+## "Is the £75,000 saving per child too high? Independent placements often reflect genuine specialist need"
+
+**Short answer**: The £75,000 figure is deliberately conservative — well below the S251 median independent placement cost of £97,322 per child per year in 2023/24. It is also not assumed that all independent placements are substitutable. The model applies a 40% base diversion rate (the share of new maintained places assumed to redirect children from the independent sector), adjusted upward for LAs with already-high independent placement rates and capped at 65%. This explicitly builds in the assumption that a substantial proportion of independent placements reflect genuine specialist needs that would not be met in the maintained sector. The sensitivity analysis confirms that the invest-to-save case is robust at £60,000 per child and above, at base capital costs.
+
+---
+
+## "Are you suggesting children should be moved out of independent placements to save money?"
+
+**Short answer**: No. The analysis is about preventing avoidable independent placements where suitable maintained provision could have been built locally — not about moving children currently in appropriate independent settings. When a child ends up in an independent school because no maintained alternative exists within reasonable distance, that is a commissioning failure, not a reflection of individual need. The cost-benefit model captures only this avoidable portion. It does not recommend disrupting existing placements.
+
+---
+
+## "Does the cost-benefit model include optimism bias and capital overruns?"
+
+**Short answer**: It does not include a formal HMT optimism-bias adjustment. However, the sensitivity analysis explicitly models capital cost overruns. A 25% overrun increases total capital from £420 million to £525 million; at the base £75,000 saving assumption, the 15-year discounted NPV remains positive at £116 million. A 40% overrun at the same saving assumption gives an NPV of £53 million — still positive. The case turns negative only if both savings are at the very conservative £60,000 level and capital overruns by 25% or more. The model also includes occupancy ramp-up schedules (no revenue until facilities open, then phased to full capacity) and facility-specific lead times. These are published in `cost_benefit_sensitivity.csv` in the repository.
+
+---
+
 *Contact: Matthew Sharpe, matthew.sharpe@a8c.com*
 *Full analysis: github.com/Kali89/la-send-analysis*

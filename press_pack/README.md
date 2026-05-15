@@ -9,12 +9,14 @@
 
 | File | Who it's for | Use it when |
 |---|---|---|
-| `500_word_explainer.md` | Journalists, editors | First contact; background briefing |
-| `one_page_methodology.md` | Journalists, fact-checkers, researchers | Verifying how the analysis was done |
+| `overview_for_journalists.md` | Journalists, editors, producers | **Best single overview of the whole story** — start here |
+| `500_word_explainer.md` | Journalists, editors | Short briefing; headline numbers; named councils |
+| `cost_benefit_and_comparators.md` | Policy journalists, Treasury/No.10/think-tank audiences | Investment case (£420m → £887m), model LAs, lead-time urgency |
 | `policy_asks.md` | Policy journalists, parliamentary correspondents | Writing about what should happen next |
-| `anticipated_challenges.md` | Journalists expecting official pushback | Preparing for DfE or council responses |
-| `github_link_and_citation.md` | All | Crediting the work; data sourcing |
 | `facility_priorities.md` | Policy journalists, planners, DfE capital teams | Where to build maintained special school provision and what type |
+| `anticipated_challenges.md` | Journalists expecting official pushback | Preparing for DfE or council responses |
+| `one_page_methodology.md` | Journalists, fact-checkers, researchers | Verifying how the analysis was done |
+| `github_link_and_citation.md` | All | Crediting the work; data sourcing |
 
 ---
 
@@ -40,3 +42,4 @@ Do not lead with risk scores unless the recipient already understands the method
 | `tables_for_media/facility_locations.csv` | Top 40 priorities with specific recommended area (LSOA-level drill-down) |
 | `figures_for_media/44_facility_priority.png` | Top 30 facility priorities ranked by urgency score (ASD/SEMH/MLD, new school vs RPU) |
 | `figures_for_media/45_facility_location_maps.png` | Within-LA LSOA distance maps for top 12 priorities, with recommended build location |
+| `figures_for_media/46_cost_benefit.png` | Investment case: cumulative avoided costs vs capital 2025–2040; top 15 facilities by NPV efficiency |
