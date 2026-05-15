@@ -6,7 +6,7 @@
 
 Thirty priority facilities — twenty new maintained special schools and ten resourced provision units added to existing schools — require a combined capital outlay of £420 million. Based on a conservative saving of £75,000 per year for each child diverted from an independent placement to a maintained school, those thirty facilities generate cumulative avoided costs that cross the £420 million threshold in 2034: nine years after the capital is committed. By 2040, on the same conservative assumptions, the portfolio has saved £887 million in avoided independent placement costs against a £420 million investment — a net return of £467 million over fifteen years, or roughly £1.10 saved for every £1 spent, before discounting.
 
-Applying the HMT Green Book discount rate of 3.5%, the fifteen-year net present value of the portfolio is £220 million. For the highest-efficiency facilities — those serving LAs with the greatest distance to maintained provision and the highest independent placement pressure — the discounted NPV exceeds £13 million per school.
+Applying a Green Book-style discount rate of 3.5%, the fifteen-year net present value of the portfolio is £220 million. For the highest-efficiency facilities — those serving LAs with the greatest distance to maintained provision and the highest independent placement pressure — the discounted NPV exceeds £13 million per school.
 
 The £75,000 annual saving figure is deliberately conservative. The S251 outturn data for 2023/24 shows a median independent special school placement cost of £97,322 per child per year. The £75,000 figure discounts this to account for placements at the lower end of the cost range and for cases where cross-boundary maintained placements would have been found anyway. Each new maintained special school (100 places, ESFA free school programme benchmark: £20 million) is modelled as diverting approximately 40% of its places from the independent sector — adjusted upward for LAs where independent placement rates are already high, and capped at 65% to avoid implausible assumptions. Resourced provision units (15 places, ESFA benchmark: £2 million) operate on the same principles, becoming self-financing against avoided placement costs within six years.
 
@@ -35,11 +35,23 @@ The data does not require international comparators to establish what a well-fun
 
 Lincolnshire issues 99% of EHCPs on time, maintains 5.2 maintained special school places per 1,000 pupils, and places just 6.5% of its special school children in the independent sector. Liverpool's rate is 97.9% on time, with 5.8 places per 1,000 and 6.8% independent. Southampton achieves 93.5% timeliness with an independent placement rate of just 3.8%.
 
-These are not unusually wealthy councils. Oldham has an average IMD deprivation score of 33.2 — more deprived than all five of the lowest-timeliness authorities in this analysis. Liverpool's score is 42.4, the highest deprivation of any model LA. The argument that poor SEND performance is driven by concentrated deprivation does not hold against this evidence. Liverpool serves a more deprived population than Devon (IMD 18.0) and yet achieves timeliness nearly thirty times higher.
+These are not unusually wealthy councils. Oldham has an average IMD deprivation score of 33.2 — more deprived than all five of the lowest-timeliness authorities in this analysis. Liverpool's score is 42.4, the highest deprivation of any model LA. Liverpool serves a more deprived population than Devon (IMD 18.0) and yet achieves timeliness nearly thirty times higher. This evidence weakens the argument that poor SEND performance is explained solely by deprivation or hard-to-serve populations — though it does not prove causation, since other factors including commissioning culture and long-standing investment decisions will also matter.
 
 The gap between the model LAs and the five worst-performing councils in this dataset is stark. Devon, Portsmouth, Leicestershire, Kingston upon Hull, and Plymouth issue EHCPs on time for fewer than 6% of children, against 91.7% for model LAs. The at-risk group maintains an average of 4.8 maintained special school places per 1,000 pupils against 6.1 for model LAs. Their average independent placement rate is 12.6% — more than twice the model LA rate of 5.2%.
 
-These councils are not failing because their populations are harder to serve. They are failing because they have less maintained capacity. Devon has only 3.9 maintained special school places per 1,000 pupils, a 28.8% independent placement rate, and timeliness of 3.2%. That is not a demand problem. It is a supply problem, with a long and expensive tail of independent placements as the visible symptom.
+This pattern is consistent with supply constraints — rather than demand or population characteristics alone — as a significant driver of poor performance. Devon has only 3.9 maintained special school places per 1,000 pupils, a 28.8% independent placement rate, and timeliness of 3.2%. The high independent placement rate and low maintained capacity appear structurally linked, though the causal direction is not uniquely identified by this data.
+
+---
+
+## Sensitivity and caveats
+
+The £220 million NPV figure is sensitive to three assumptions. First, the saving per diverted child. If the true net saving is £60,000 rather than £75,000 — reflecting a greater share of lower-cost placements — the portfolio NPV falls to £92 million but remains positive. At £40,000 (a very conservative floor, less than half the S251 median), the 15-year NPV turns negative (−£78 million) — the case at this saving level depends on a longer horizon or higher diversion rates than modelled. At £90,000 (still below the £97,322 median), the NPV reaches £349 million.
+
+Second, capital cost overruns. A 25% overrun on all facilities increases total capital to £525 million. At the base saving assumption of £75,000, the portfolio NPV falls to £116 million — still positive. At £60,000 saving and 25% overrun, the NPV turns marginally negative (−£13 million); the invest-to-save case at that combination is borderline. A 40% overrun at the base £75,000 saving gives an NPV of £53 million — positive but substantially reduced.
+
+Third, diversion rate. Not all children currently in independent placements could appropriately move to maintained settings. The model's 40% base diversion rate — adjusted upward for LAs with high independent placement exposure, capped at 65% — is deliberately conservative. It is not assumed that all independent placements are substitutable.
+
+The model includes lead times and occupancy ramp-up for all facilities. It does not model HMT optimism bias, distributional impacts, or non-monetised benefits (reduced tribunal stress, improved education outcomes). All sensitivity outputs are available in `cost_benefit_sensitivity.csv` in the repository.
 
 ---
 

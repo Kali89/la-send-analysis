@@ -415,6 +415,69 @@ for grp in ['model', 'at-risk']:
     print(f"    imd_average_score:                 {sub['imd_average_score'].mean():.1f}")
     print(f"    n_state_special_schools:           {sub['n_state_special_schools'].mean():.1f}")
 
+# ── Part 4b: Sensitivity analysis ────────────────────────────────────────────
+print("\nRunning sensitivity analysis...")
+
+SAVING_SCENARIOS   = [40_000, 60_000, 75_000, 90_000]   # £/child/yr
+CAPEX_MULTIPLIERS  = [1.0, 1.25, 1.40]                  # capital cost overruns
+
+sensitivity_rows = []
+
+for saving in SAVING_SCENARIOS:
+    for capex_mult in CAPEX_MULTIPLIERS:
+        port_npv = 0.0
+        port_bey = None
+        cum_disc_savings_all = np.zeros(N_YEARS)
+
+        for _, row in top30.iterrows():
+            ftype    = row['facility_type']
+            pct_indep = row['pct_placements_independent']
+            places   = PLACES_NEW_SCHOOL if 'New' in ftype else PLACES_RPU
+            capex_m  = (CAPEX_NEW_SCHOOL_M if 'New' in ftype else CAPEX_RPU_M) * capex_mult
+            dr       = effective_diversion_rate(pct_indep)
+            occ      = occupancy_profile(ftype, places)
+            ann_sav  = occ * dr * saving / 1e6
+            disc_sav = np.array([ann_sav[i] * discount_factor(i) for i in range(N_YEARS)])
+            cum_disc_savings_all += disc_sav
+            port_npv += np.sum(disc_sav) - capex_m
+
+        # Portfolio break-even (undiscounted)
+        total_capex_s = total_capex * capex_mult
+        cum_undisc = np.zeros(N_YEARS)
+        for yi in range(N_YEARS):
+            cum_undisc[yi] = sum(
+                sum(
+                    occupancy_profile(top30.iloc[j]['facility_type'],
+                                      PLACES_NEW_SCHOOL if 'New' in top30.iloc[j]['facility_type'] else PLACES_RPU)[k]
+                    * effective_diversion_rate(top30.iloc[j]['pct_placements_independent'])
+                    * saving / 1e6
+                    for k in range(yi + 1)
+                )
+                for j in range(len(top30))
+            )
+        bey_mask = cum_undisc >= total_capex_s
+        bey = YEARS[int(np.argmax(bey_mask))] if bey_mask.any() else '>2040'
+
+        sensitivity_rows.append({
+            'saving_per_child_gbp':  saving,
+            'capex_multiplier':      capex_mult,
+            'total_capex_m':         round(total_capex * capex_mult, 0),
+            'portfolio_npv_15yr_m':  round(port_npv, 0),
+            'break_even_year':       bey,
+        })
+
+sensitivity = pd.DataFrame(sensitivity_rows)
+sensitivity.to_csv(TABLE_DIR / 'cost_benefit_sensitivity.csv', index=False)
+
+print("  Sensitivity table (portfolio 15yr NPV, £m):")
+print(f"  {'Saving/child':>15s}  {'Base capex':>12s}  {'+25% overrun':>13s}  {'+40% overrun':>13s}")
+for saving in SAVING_SCENARIOS:
+    vals = {row['capex_multiplier']: row['portfolio_npv_15yr_m']
+            for _, row in sensitivity[sensitivity['saving_per_child_gbp'] == saving].iterrows()}
+    print(f"  £{saving:>12,.0f}  {vals[1.00]:>+12.0f}  {vals[1.25]:>+13.0f}  {vals[1.40]:>+13.0f}")
+
+print(f"  Saved cost_benefit_sensitivity.csv")
+
 # ── Key numbers summary for press pack ───────────────────────────────────────
 print("\n\n=== KEY NUMBERS FOR PRESS PACK ===")
 print(f"  Total capital (top 30):             £{total_capex:.0f}m")
