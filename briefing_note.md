@@ -58,4 +58,4 @@ Three substantive articles are published in the repository: the original queue-v
 
 *Matt Sharpe is a staff data scientist at Automattic and a part-time DPhil candidate in Social Data Science at the Oxford Internet Institute. This analysis was conducted independently using publicly available data.*
 
-*Correspondence: matthew.sharpe@a8c.com*
+*Correspondence: matthew.sharpe@oii.ox.ac.uk*

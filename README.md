@@ -229,4 +229,4 @@ The `forecastability_analysis.py` script predicts system collapse in 2022–2024
 
 Code: MIT. Data outputs in `outputs/` are derived from Crown Copyright data (Open Government Licence v3.0).
 
-*Author: Matt Sharpe, Oxford Internet Institute / Automattic — matthew.sharpe@a8c.com*
+*Author: Matt Sharpe, Oxford Internet Institute / Automattic — matthew.sharpe@oii.ox.ac.uk*

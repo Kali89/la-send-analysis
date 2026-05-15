@@ -1,6 +1,6 @@
 # Press pack — England's SEND crisis: LA-level analysis
 
-**Contact:** Matt Sharpe · matthew.sharpe@a8c.com  
+**Contact:** Matt Sharpe · matthew.sharpe@oii.ox.ac.uk  
 **Repository:** github.com/Kali89/la-send-analysis
 
 ---

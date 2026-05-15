@@ -40,4 +40,4 @@ Several of these councils are already in de facto failure on timeliness. The leg
 
 **Full analysis, data and code:** github.com/Kali89/la-send-analysis
 
-*Matt Sharpe, Oxford Internet Institute / Automattic. Correspondence: matthew.sharpe@a8c.com*
+*Matt Sharpe, Oxford Internet Institute / Automattic. Correspondence: matthew.sharpe@oii.ox.ac.uk*

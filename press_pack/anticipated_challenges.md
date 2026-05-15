@@ -69,5 +69,5 @@
 
 ---
 
-*Contact: Matthew Sharpe, matthew.sharpe@a8c.com*
+*Contact: Matthew Sharpe, matthew.sharpe@oii.ox.ac.uk*
 *Full analysis: github.com/Kali89/la-send-analysis*

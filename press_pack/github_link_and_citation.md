@@ -35,7 +35,7 @@ All outputs are derived from Crown Copyright data published under the Open Gover
 Staff data scientist, Automattic
 Part-time DPhil candidate, Social Data Science, Oxford Internet Institute
 
-Correspondence: matthew.sharpe@a8c.com
+Correspondence: matthew.sharpe@oii.ox.ac.uk
 
 This analysis was conducted independently, using publicly available data, and does not represent the views of Automattic or the University of Oxford.
 

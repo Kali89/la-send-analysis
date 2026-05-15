@@ -75,7 +75,7 @@ Six councils currently show the pre-crisis structural signatures of Safety Valve
 ## Contact and access
 
 **Author**: Matt Sharpe, Oxford Internet Institute / Automattic
-**Email**: matthew.sharpe@a8c.com
+**Email**: matthew.sharpe@oii.ox.ac.uk
 **Full analysis, data and code**: github.com/Kali89/la-send-analysis
 
 *All underlying data is Crown Copyright (DfE). Methodology, code, and outputs are fully open and reproducible.*
