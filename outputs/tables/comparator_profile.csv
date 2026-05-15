@@ -1,0 +1,11 @@
+group,la_name,timeliness_pct,maintained_special_capacity_per1000,indep_placements_per1000,pct_special_independent,imd_average_score,n_state_special_schools
+model,Lincolnshire,99.0,5.19,0.348,6.5,20.5,17.0
+model,Liverpool,97.9,5.79,0.45,6.8,42.41,12.0
+model,Southampton,93.5,5.96,0.237,3.8,26.88,6.0
+model,Oldham,85.8,7.85,0.288,4.5,33.16,5.0
+model,Gateshead,82.3,5.63,0.28,4.2,28.22,6.0
+at-risk,Devon,3.2,3.92,1.768,28.8,18.0,12.0
+at-risk,Portsmouth,4.3,6.31,0.166,3.0,26.9,5.0
+at-risk,Leicestershire,4.3,4.45,0.885,16.9,15.6,9.0
+at-risk,"Kingston upon Hull, City of",5.8,4.76,0.147,3.3,40.56,6.0
+at-risk,Plymouth,6.0,4.57,0.516,10.9,26.62,7.0
