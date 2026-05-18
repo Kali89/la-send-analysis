@@ -1,34 +1,39 @@
 # England's SEND Crisis: LA-Level Analysis
 
-A data-driven analysis of England's Special Educational Needs and Disability (SEND) system, examining why the DfE's "Safety Valve" financial intervention programme has not reversed the underlying structural deterioration — and what a forward-looking supply-side response would look like.
+A data-driven analysis of England's Special Educational Needs and Disability (SEND) system. The analysis identifies what is driving the system-wide timeliness failure, tests whether the collapse was foreseeable from publicly available data, and makes the data-driven case for a forward capital programme of maintained specialist provision.
 
 **Published outputs:**
 
-1. **[The queue problem, not gatekeeping](article.md)** — Safety Valve councils are not refusing more EHCP applications; they are failing on 20-week timeliness, producing poor-quality plans, and driving higher tribunal rates through capacity collapse.
+1. **[System-wide timeliness failure: what the data show and why](article.md)** — 59 of 151 councils failed the 20-week legal standard in more than 60% of cases in 2024. The failure cuts across all council types and is driven by a structural mismatch between SEMH provision and need — not by which DfE programme a council belongs to.
 
-2. **[The collapse was foreseeable — and the next one already is](article_forecastability.md)** — Using only data available in 2016, tribunal appeal rates and independent placement spend could already identify which councils would hit systemic failure. The same signals are now visible in a new set of authorities.
+2. **[The collapse was foreseeable — and the next one already is](article_forecastability.md)** — Using only data available in 2016, tribunal appeal rates and independent placement spend could already identify which councils would hit systemic failure (AUC 0.70). By 2021 the same signals achieved AUC 0.88. The warning was in the public data.
 
-3. **[A data-driven post-mortem](article_postmortem.md)** — Four questions about what the data showed at each decision point: what was happening, what was knowable, what was done, and what should have happened.
+3. **[A data-driven post-mortem](article_postmortem.md)** — What the data showed at each decision point, when it should have prompted action, and what a data-literate government should have done differently.
 
 4. **[Policy briefing note](briefing_note.md)** — One-page summary for ministers and officials.
 
 5. **[Literature review](literature_review.md)** — Positioning this analysis against existing academic and policy evidence on SEND system performance.
 
-**For journalists and policymakers:** a ready-to-use [evidence pack](press_pack/) is available, including a master overview for journalists, 500-word explainer, facility priority planning, invest-to-save cost-benefit analysis, policy asks, methodology summary, and anticipated challenges.
+**For journalists and policymakers:** a ready-to-use [evidence pack](press_pack/) is available, including a master overview, 500-word explainer, facility priority planning, invest-to-save cost-benefit analysis, policy asks, methodology summary, and anticipated challenges.
 
 ---
 
 ## Key findings at a glance
 
-### Article 1: Queue problem, not gatekeeping
+### System-wide timeliness failure (Article 1)
 
-| Outcome | Safety Valve LAs | No-intervention LAs | p-value |
-|---|---|---|---|
-| Refusal rate | 25.3% | 25.1% | 0.76 (ns) |
-| 20-week compliance | **35.8%** | **57.0%** | 0.001 ** |
-| Official tribunal appeal rate | **7.5%** | **5.4%** | 0.045 * |
+| Metric | Value |
+|---|---|
+| National 20-week compliance, 2024 | 51.8% |
+| Councils below 40% compliance | 59 of 151 (39%) |
+| Councils below 20% compliance | 24 of 151 |
+| SEMH share of EHCP caseload, 2015/16 → 2024/25 | 12.7% → 20.7% |
+| SEMH schools as share of new maintained openings, pre/post 2016 | 21.6% → 11.2% |
+| Distance to nearest maintained SEMH school → independent spend | β=+0.016/km, p=0.003 |
 
-### Article 2: Forecastability (eight model families A–H)
+The worst performers span all council types: Devon (Safety Valve, 3.2%), Portsmouth (no programme, 4.3%), Leicestershire (DBV, 4.3%), Cornwall (DBV, 7.4%), Slough (Safety Valve, 7.4%). Programme membership does not predict timeliness (SV vs no-programme Mann-Whitney p=0.904).
+
+### Forecastability (Article 2 — eight model families A–H)
 
 | Forecast year | Model | Target | LOO-CV AUC |
 |---|---|---|---|
@@ -39,13 +44,32 @@ A data-driven analysis of England's Special Educational Needs and Disability (SE
 | 2021 | E: Counts + timeliness | Composite collapse | **0.82** |
 | 2021 | G: Signals only | Legal-pressure collapse | **0.88** |
 
-**Key finding:** Need-type growth (Model B) predicted timeliness collapse as well as or better than system-failure signals (AUC 0.66 vs 0.50 at the 2020 training year); but for legal-pressure and placement collapse, tribunal rates and independent spend dominated.
+**Key finding:** Need-type growth (Model B) predicted timeliness collapse as well as or better than system-failure signals; for legal-pressure and placement collapse, tribunal rates and independent spend dominated. Proportional need-type shares (Model C) are near-useless for prediction (AUC ~0.50) — the informative signal is absolute volume.
 
-**High-risk councils with no current DfE intervention:** Bristol (risk score 0.90), Birmingham (0.86), Bromley (0.77), Lewisham (0.69), Staffordshire (0.69), Central Bedfordshire (0.66). These are model outputs indicating structural similarity to councils already in collapse; they are not official classifications.
+**Councils with no current DfE programme showing elevated risk scores:**
+
+| Council | Risk score | Mean timeliness 2022–24 |
+|---|---|---|
+| Essex | 0.83 | 9.3% |
+| Newcastle upon Tyne | 0.75 | 9.4% |
+| Bromley | 0.75 | 33.7% |
+| Hertfordshire | 0.73 | 43.0% |
+| Staffordshire | 0.69 | 33.5% |
+| Derby | 0.67 | 20.6% |
+
+Essex and Newcastle are not approaching crisis — they are already in it with fewer than one in ten plans issued on time. These are model outputs indicating structural similarity to councils already in collapse; they are not official designations.
 
 ### Facility planning and cost-benefit
 
 **467 LA × need-type provision gaps** identified and ranked by urgency (designation mismatch × demand growth × independent placement pressure × access distance). Top 30 priority facilities — 20 new maintained special schools and 10 resourced provision units — require **£420 million** of capital investment and generate an estimated **£76 million per year** in avoided independent placement costs at full operation. 15-year Green Book-style discounted NPV: **£220 million**. Undiscounted break-even: **2034**.
+
+---
+
+## Programme membership
+
+Safety Valve and Delivering Better Value programme lists are sourced from:
+- **Safety Valve (38 councils, 4 waves, 2021–2024):** [gov.uk/government/publications/dedicated-schools-grant-very-high-deficit-intervention](https://www.gov.uk/government/publications/dedicated-schools-grant-very-high-deficit-intervention). Programme closed to new entrants December 2024; agreements no longer binding from April 2026.
+- **Delivering Better Value (~54 councils, 3 tranches, 2022–2023):** [dbvinsend.com/participating-local-authorities](https://www.dbvinsend.com/participating-local-authorities)
 
 ---
 
@@ -64,7 +88,7 @@ A data-driven analysis of England's Special Educational Needs and Disability (SE
 ├── facility_location.py           # LSOA-level within-LA location drill-down
 ├── cost_benefit.py                # 15-year invest-to-save cost-benefit model (top 30)
 ├── mapping_analysis.py            # Interactive maps (requires folium)
-├── article.md                     # Article 1: Queue problem
+├── article.md                     # Article 1: System-wide timeliness failure
 ├── article_forecastability.md     # Article 2: Forecastability
 ├── article_postmortem.md          # Article 3: Data-driven post-mortem
 ├── briefing_note.md               # One-page policy briefing
@@ -83,7 +107,7 @@ A data-driven analysis of England's Special Educational Needs and Disability (SE
 │   └── tables_for_media/          # Recommended tables (4 CSVs)
 ├── outputs/
 │   ├── FINDINGS.md                # Detailed statistical findings
-│   ├── figures/                   # 46 PNG charts (150 dpi)
+│   ├── figures/                   # 49 PNG charts (150 dpi)
 │   └── tables/
 │       ├── la_summary_2024_extended.csv     # 151-LA 2024 cross-section
 │       ├── panel_timeseries.csv             # 1,741 LA-year rows (2014–2024)
@@ -121,7 +145,7 @@ A data-driven analysis of England's Special Educational Needs and Disability (SE
 | LSOA 2021 centroids | ONS ArcGIS | Spend model, facility location |
 | IMD 2019 | MHCLG IoD2019 Table 10 | All regression models |
 
-Safety Valve and Delivering Better Value programme membership from DfE programme announcements (2022–2025).
+Safety Valve programme membership: [gov.uk](https://www.gov.uk/government/publications/dedicated-schools-grant-very-high-deficit-intervention) (38 councils, 4 waves, 2021–2024). Delivering Better Value programme membership: [dbvinsend.com](https://www.dbvinsend.com/participating-local-authorities) (~54 councils, 3 tranches, 2022–2023).
 
 ---
 
@@ -214,12 +238,12 @@ The `forecastability_analysis.py` script predicts system collapse in 2022–2024
 
 ## Caveats
 
-1. **Refusal rates understate gatekeeping:** LAs with large backlogs show lower apparent refusal rates because many decisions are still pending. Gatekeeping via delay is not captured.
-2. **Timeliness clock-stopping:** LAs can pause the statutory 20-week clock during mediation/tribunal proceedings.
-3. **Forecastability ≠ causation:** High AUC from early tribunal rates partly reflects autocorrelation in persistent structural conditions.
-4. **DSG balance ≠ operational capacity:** End-of-year DSG carry-forward is an accounting figure.
-5. **Scenario projections are sensitivity illustrations**, not forecasts. Policy interventions and capital programmes are not modelled.
-6. **Selection into Safety Valve:** SV LAs were already performing worse before programme entry (pre-entry timeliness gap: −11.6 pp). Causal inference from cross-sectional comparisons should be treated with caution.
+1. **Programme membership ≠ performance cause:** SV and DBV LAs were selected into programmes on financial criteria, not timeliness. Cross-sectional comparisons between groups should not be read as programme effects.
+2. **Refusal rates understate gatekeeping:** LAs with large backlogs show lower apparent refusal rates because many decisions are still pending. Gatekeeping via delay is not captured.
+3. **Timeliness clock-stopping:** LAs can pause the statutory 20-week clock during mediation/tribunal proceedings.
+4. **Forecastability ≠ causation:** High AUC from early tribunal rates partly reflects autocorrelation in persistent structural conditions.
+5. **DSG balance ≠ operational capacity:** End-of-year DSG carry-forward is an accounting figure.
+6. **Scenario projections are sensitivity illustrations**, not forecasts. Policy interventions and capital programmes are not modelled.
 7. **Cost-benefit model is indicative:** No formal optimism-bias adjustment. Full sensitivity table (4 saving assumptions × 3 capital overrun scenarios) in `cost_benefit_sensitivity.csv`.
 8. **Facility recommendations are planning-level,** not site-specific. Recommended locations indicate the part of an LA to target; detailed site selection requires local planning input.
 
@@ -229,4 +253,4 @@ The `forecastability_analysis.py` script predicts system collapse in 2022–2024
 
 Code: MIT. Data outputs in `outputs/` are derived from Crown Copyright data (Open Government Licence v3.0).
 
-*Author: Matt Sharpe, Oxford Internet Institute / Automattic — matthew.sharpe@oii.ox.ac.uk*
+*Author: Matt Sharpe, Oxford Internet Institute — matthew.sharpe@oii.ox.ac.uk*
