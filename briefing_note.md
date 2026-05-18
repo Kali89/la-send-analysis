@@ -1,4 +1,4 @@
-# England's SEND system: what the data predicted, and what it predicts now
+# England's SEND system: what the data shows, what it predicted, and what to do now
 
 **Briefing note | Matt Sharpe, Oxford Internet Institute / Automattic | May 2026**
 
@@ -6,36 +6,48 @@
 
 ### What this analysis does
 
-Using ten years of publicly available Crown data — DfE SEN2 statistics, S251 local authority expenditure returns, and SEND Tribunal records — this analysis tests whether the collapse of EHCP services in England's most financially stressed councils was foreseeable, and identifies which councils currently show the same pre-crisis signatures.
+Using ten years of publicly available Crown data — DfE SEN2 statistics, S251 local authority expenditure returns, and SEND Tribunal records — this analysis identifies what is driving England's SEND timeliness crisis, tests whether the collapse was foreseeable from public data, and makes the data-driven case for a forward capital programme.
 
 ---
 
 ### Three findings
 
-**1. The collapse was foreseeable — but different failure types had different warning signals.**
+**1. The timeliness failure is system-wide and structurally driven.**
 
-Eight predictive models were validated against 140+ local authorities. Timeliness failure (councils falling below 40% on-time EHCPs) was predicted by absolute growth in ASD and SEMH caseloads from as early as 2019 — *before* financial or legal-pressure data added meaningful signal. Legal-pressure and placement-cost failure were predicted from 2016 by tribunal appeal rates and independent-provider spending. These are distinct early warning signals, for distinct failure modes. No single indicator captures both.
+In 2024, 51.8% of EHCPs were issued within the legal 20-week limit nationally. 59 of 151 councils — nearly 40% — issued fewer than 40% of plans on time. The worst performers span every council type: Devon (Safety Valve, 3.2%), Portsmouth (no programme, 4.3%), Leicestershire (DBV, 4.3%), Plymouth (no programme, 6.0%), Cornwall (DBV, 7.4%), Slough (Safety Valve, 7.4%).
 
-**2. Official monitoring was watching the wrong measure.**
+The primary driver is a structural mismatch: Social, Emotional and Mental Health (SEMH) need has grown from 12.7% to 20.7% of all EHCP children since 2015/16. Over the same period, new maintained SEMH school openings have halved as a share of all new special school openings. Councils whose populations live further from maintained SEMH provision spend significantly more on independent placements (p=0.003, n=146). Independent placements — median £97,322 per child per year — drive DSG deficits, which cut staffing, which slows assessment throughput, which compounds the crisis.
 
-Published tracking — by DfE, IFS, and IfG — reports ASD and SEMH as a *percentage* of total EHCPs. This analysis shows that proportional share is near-useless for prediction (AUC ~0.50, equivalent to chance). Absolute volume — the raw number of ASD and SEMH EHCPs growing year on year — is the informative signal. Monitoring systems designed around shares missed the throughput-capacity squeeze before it became visible in timeliness statistics.
+**2. The collapse was foreseeable — but different failure types had different warning signals.**
 
-**3. Six councils currently show pre-crisis signatures with no formal DfE intervention.**
+Eight predictive models were validated against 140+ local authorities using only data available at each year from 2016 to 2021. Timeliness failure was predicted by absolute growth in ASD and SEMH caseloads from 2019 onward. Legal-pressure and placement-cost failure were predicted from 2016 by tribunal appeal rates and independent-provider spending — achieving AUC 0.70 from 2016 data and AUC 0.88 from 2021.
 
-A predictive model trained on 2021 features — with no knowledge of Safety Valve or DBV programme membership — identifies the following councils as structurally similar to those that entered systemic failure:
+These are distinct signals for distinct failure modes. Published tracking by DfE, IFS, and IfG reports ASD and SEMH as a *percentage* of total EHCPs. This analysis shows that proportional share is near-useless for prediction (AUC ~0.50). The informative signal is absolute volume — the raw count of ASD and SEMH EHCPs growing year on year. Official monitoring was watching the wrong measure.
+
+**3. Several councils with no formal DfE programme are already failing.**
+
+A predictive model trained on 2021 features — with no knowledge of programme membership — identifies the following councils with no current DfE intervention as showing structural similarity to councils that entered systemic failure:
 
 | Council | Risk score | Mean timeliness 2022–24 | Appeal rate | Indep./1,000 pupils |
 |---|---|---|---|---|
-| Bristol, City of | 0.90 | 37.5% | 2.9% | 2.55 |
-| Birmingham | 0.82 | 49.4% | 5.6% | 1.05 |
-| Bromley | 0.77 | 33.7% | 4.0% | 3.86 |
-| Lewisham | 0.72 | 53.5% | 2.6% | 5.28 |
-| Staffordshire | 0.69 | 33.5% | 5.3% | 4.65 |
-| Central Bedfordshire | 0.64 | 26.5% | 2.5% | 1.0 |
+| Essex | 0.83 | 9.3% | 5.2% | 1.6 |
+| Newcastle upon Tyne | 0.75 | 9.4% | 0.9% | 0.9 |
+| Bromley | 0.75 | 33.7% | 4.0% | 3.9 |
+| Hertfordshire | 0.73 | 43.0% | 11.7% | 1.0 |
+| Staffordshire | 0.69 | 33.5% | 5.3% | 4.7 |
+| Derby | 0.67 | 20.6% | 5.7% | 2.9 |
 
-Several are already in collapse on individual indicators. Central Bedfordshire's 26.5% mean timeliness is among the worst of any council nationally. These are observations, not predictions: the crisis is present, not merely approaching.
+Essex and Newcastle are not approaching crisis — they are already in it, with fewer than one in ten plans issued on time. Bromley, Staffordshire, and Derby are below the 40% threshold that defined collapse in this analysis. None has a formal DfE engagement framework.
 
-*Risk scores are model outputs reflecting structural similarity to councils that entered collapse — not official designations. Enfield (score 0.69) is excluded from this shortlist because its 20-week timeliness is 89.7% — no crisis signal on any individual indicator.*
+*Risk scores are model outputs reflecting structural similarity to councils that entered collapse — not official designations.*
+
+---
+
+### The invest-to-save case
+
+This analysis identifies 467 LA × need-type provision gaps across England, ranked by urgency. The top 30 priorities — 20 new maintained special schools and 10 resourced provision units — require approximately **£420 million** of capital investment and generate an estimated **£76 million per year** in avoided independent placement costs at full operation. The 15-year Green Book-style discounted net present value is **£220 million**. Undiscounted break-even: **2034**.
+
+The urgency is created by lead times. New maintained special schools take four to six years from planning to first pupils. A capital decision deferred to 2027 delivers no new places before 2033, locking in three further years of independent placement costs accumulating at current rates.
 
 ---
 
@@ -52,10 +64,10 @@ The data to build such a framework is already published. The question is whether
 All code, data, and methodology are publicly available and fully reproducible:
 **github.com/Kali89/la-send-analysis**
 
-Three substantive articles are published in the repository: the original queue-vs-gatekeeping analysis, the forecastability study, and a structured post-mortem of the policy failure.
+Two substantive articles are published in the repository: an analysis of the system-wide timeliness failure and its structural causes, and a structured post-mortem examining what the public data should have prompted and when.
 
 ---
 
-*Matt Sharpe is a staff data scientist at Automattic and a part-time DPhil candidate in Social Data Science at the Oxford Internet Institute. This analysis was conducted independently using publicly available data.*
+*Matt Sharpe is a part-time DPhil candidate in Social Data Science at the Oxford Internet Institute. This analysis was conducted independently using publicly available data.*
 
 *Correspondence: matthew.sharpe@oii.ox.ac.uk*

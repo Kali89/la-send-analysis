@@ -1,7 +1,7 @@
-Council,Risk score,Mean timeliness 2022-24 (%),Mean tribunal appeal rate (%),Independent placements per 1000 pupils
-"Bristol, City of",0.91,37.47,2.90,2.55
-Birmingham,0.82,49.43,5.57,1.05
-Bromley,0.77,33.70,4.00,3.87
-Lewisham,0.72,53.50,2.57,5.29
-Staffordshire,0.69,33.47,5.33,4.65
-Central Bedfordshire,0.64,26.47,2.50,0.98
+council,risk_score,mean_timeliness_2022_24,mean_appeal_rate,indep_per_1000_pupils
+Essex,0.825,9.267,5.233,1.632
+Newcastle upon Tyne,0.755,9.367,0.933,0.874
+Bromley,0.746,33.7,4.0,3.865
+Hertfordshire,0.73,43.0,11.733,1.046
+Staffordshire,0.689,33.467,5.333,4.654
+Derby,0.674,20.633,5.733,2.852

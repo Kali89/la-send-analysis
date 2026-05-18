@@ -16,7 +16,7 @@ The data to understand how this happened, and to have partially prevented it, wa
 
 The SEND system came under sustained pressure from multiple directions simultaneously. Understanding what failed requires separating three distinct crisis types, because they had different causes, different warning signals, and different solutions.
 
-**Timeliness collapse** is the most visible failure. In 2024, the national 20-week compliance rate was 45.9%. Among the councils in the government's Safety Valve programme — those with the most acute financial pressure — it was 35.8%. Forty-seven councils, nearly a third of all upper-tier local authorities in England, had mean compliance rates below 40% across 2022–2024. These are councils where, on average, more than six in ten children waited longer than the legal deadline for their plan.
+**Timeliness collapse** is the most visible failure. In 2024, the national 20-week compliance rate was 45.9%. The failure was not concentrated in any single type of council — councils in the government's Safety Valve financial intervention programme, those in the related Delivering Better Value programme, and councils with no formal DfE intervention all appeared among the worst performers. Fifty-nine councils — nearly 40% of all upper-tier local authorities — had 20-week compliance below 40% in 2024. These are councils where, on average, more than six in ten children waited longer than the legal deadline for their plan.
 
 **Legal-pressure collapse** is a different pattern. Thirty-five councils had mean SEND Tribunal appeal rates above the 75th percentile nationally over 2022–2024. High appeal rates are expensive in officer time, legal costs, and — critically — tribunal outcomes, which often force higher-cost placements than the council had originally proposed. Some of the councils with the highest appeal rates were not the same as those with the worst timeliness. These are partly distinct failure modes.
 
@@ -124,14 +124,14 @@ A predictive model trained on 2021 features — combining need-type caseload gro
 
 | Council | Risk score | Mean timeliness 2022–24 | Mean appeal rate | Indep./1,000 pupils |
 |---|---|---|---|---|
-| Bristol, City of | 0.90 | 37.5% | 2.9% | 2.55 |
-| Birmingham | 0.82 | 49.4% | 5.6% | 1.05 |
-| Bromley | 0.77 | 33.7% | 4.0% | 3.86 |
-| Lewisham | 0.72 | 53.5% | 2.6% | 5.28 |
-| Staffordshire | 0.69 | 33.5% | 5.3% | 4.65 |
-| Central Bedfordshire | 0.64 | 26.5% | 2.5% | 1.0 |
+| Essex | 0.83 | 9.3% | 5.2% | 1.6 |
+| Newcastle upon Tyne | 0.75 | 9.4% | 0.9% | 0.9 |
+| Bromley | 0.75 | 33.7% | 4.0% | 3.9 |
+| Hertfordshire | 0.73 | 43.0% | 11.7% | 1.0 |
+| Staffordshire | 0.69 | 33.5% | 5.3% | 4.7 |
+| Derby | 0.67 | 20.6% | 5.7% | 2.9 |
 
-Several of these councils are not in the *risk* of collapse — they are already in it on individual indicators. Bristol's mean timeliness over 2022–2024 was 37.5%, below the 40% threshold used throughout this analysis. Bromley's was 33.7%. Staffordshire's was 33.5%. Central Bedfordshire's was 26.5%, among the worst in the country. These are not predictions of future failure. They are observations about a present that is already in crisis, in councils without a formal DfE intervention framework around them.
+Essex and Newcastle are already failing on timeliness — 9.3% and 9.4% respectively, meaning fewer than one in ten children received their plan within the legal limit. Bromley, Staffordshire, and Derby are below the 40% threshold. Hertfordshire at 43% is borderline. None has a formal DfE intervention programme. These are not predictions — they are observations about councils that are already struggling without a formal framework around them.
 
 These risk scores are model outputs, not official designations. They reflect structural similarity to councils that entered collapse — not a prediction of programme entry.
 
@@ -161,7 +161,7 @@ The councils now showing the same risk signatures that predicted earlier failure
 
 ## Data and methodology notes
 
-All analysis uses publicly available data. Safety Valve and Delivering Better Value programme status are used as comparison variables only — they do not enter any predictive model as features or targets. The forecastability models use logistic regression with L2 regularisation, evaluated by leave-one-out cross-validation (LOO-CV AUC) to avoid overfitting with N≈140 local authorities. Eight model families were tested, ranging from a total-demand baseline to a full specification combining need-type counts, tribunal history, S251 spend, and timeliness trends. Collapse is defined from observable 2022–2024 outcomes, with configurable thresholds. Full methodology, code, and output data are available at [github.com/Kali89/la-send-analysis](https://github.com/Kali89/la-send-analysis).
+All analysis uses publicly available data. Safety Valve and Delivering Better Value programme status are used as comparison variables only — they do not enter any predictive model as features or targets. The Safety Valve programme comprised 38 councils across four waves (2021–2024) and is now closed; the Delivering Better Value programme comprised approximately 54 councils across three tranches (2022–2023). The forecastability models use logistic regression with L2 regularisation, evaluated by leave-one-out cross-validation (LOO-CV AUC) to avoid overfitting with N≈140 local authorities. Eight model families were tested, ranging from a total-demand baseline to a full specification combining need-type counts, tribunal history, S251 spend, and timeliness trends. Collapse is defined from observable 2022–2024 outcomes, with configurable thresholds. Full methodology, code, and output data are available at [github.com/Kali89/la-send-analysis](https://github.com/Kali89/la-send-analysis).
 
 ---
 

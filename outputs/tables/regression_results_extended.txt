@@ -7,8 +7,8 @@ DV: refusal_rate_pct (extended DSG sample)
 Dep. Variable:       refusal_rate_pct   R-squared:                       0.018
 Model:                            OLS   Adj. R-squared:                 -0.054
 Method:                 Least Squares   F-statistic:                    0.2486
-Date:                Thu, 14 May 2026   Prob (F-statistic):              0.990
-Time:                        21:42:16   Log-Likelihood:                -573.80
+Date:                Mon, 18 May 2026   Prob (F-statistic):              0.990
+Time:                        21:38:13   Log-Likelihood:                -573.80
 No. Observations:                 148   AIC:                             1170.
 Df Residuals:                     137   BIC:                             1203.
 Df Model:                          10                                         
@@ -48,8 +48,8 @@ DV: timeliness_pct (extended DSG sample)
 Dep. Variable:         timeliness_pct   R-squared:                       0.138
 Model:                            OLS   Adj. R-squared:                  0.075
 Method:                 Least Squares   F-statistic:                     2.177
-Date:                Thu, 14 May 2026   Prob (F-statistic):             0.0227
-Time:                        21:42:16   Log-Likelihood:                -689.44
+Date:                Mon, 18 May 2026   Prob (F-statistic):             0.0227
+Time:                        21:38:13   Log-Likelihood:                -689.44
 No. Observations:                 147   AIC:                             1401.
 Df Residuals:                     136   BIC:                             1434.
 Df Model:                          10                                         
@@ -89,8 +89,8 @@ DV: la_official_appeal_rate_pct (extended DSG sample)
 Dep. Variable:     la_official_appeal_rate_pct   R-squared:                       0.140
 Model:                                     OLS   Adj. R-squared:                  0.071
 Method:                          Least Squares   F-statistic:                     2.045
-Date:                         Thu, 14 May 2026   Prob (F-statistic):             0.0339
-Time:                                 21:42:16   Log-Likelihood:                -365.64
+Date:                         Mon, 18 May 2026   Prob (F-statistic):             0.0339
+Time:                                 21:38:13   Log-Likelihood:                -365.64
 No. Observations:                          137   AIC:                             753.3
 Df Residuals:                              126   BIC:                             785.4
 Df Model:                                   10                                         

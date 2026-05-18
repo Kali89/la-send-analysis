@@ -5,19 +5,19 @@
 
 ## "These are just model outputs — you can't say these councils are at risk"
 
-**Short answer**: The risk scores are corroborated by the observed data. Bristol's mean 20-week compliance was 37.5% over 2022–2024 — below the 40% collapse threshold used in the model. Bromley's was 33.7%. Staffordshire's was 33.5%. Central Bedfordshire's was 26.5%. These councils are not merely flagged by a model — they are already failing on the legal standard. The model is confirming what the raw timeliness data already shows.
+**Short answer**: For two of the six named councils, "at risk" understates what the data shows. Essex issued 9.3% of EHCPs on time over 2022–2024; Newcastle upon Tyne issued 9.4%. These councils are not flagged as potentially failing in the future — they are failing now, on the statutory legal standard, by a wide margin. Bromley (33.7%), Staffordshire (33.5%), and Derby (20.6%) are below the 40% threshold used throughout this analysis. Hertfordshire (43.0%) is borderline. The model risk scores are corroborated by the observed timeliness data. The model is confirming what the raw numbers already show.
 
 ---
 
-## "The government is already acting — the 2026 white paper addresses this"
+## "The 2026 white paper addresses the structural problems — why does the operational picture matter?"
 
-**Short answer**: The white paper is the right long-run structural response. The question is what is happening now for the councils already in crisis. The white paper does not address the immediate operational situation of Bristol, Birmingham, Bromley, Lewisham, Staffordshire, or Central Bedfordshire, nor does it create a public early-warning framework. Structural reform on a five-year timescale and proactive engagement with failing councils now are not mutually exclusive.
+**Short answer**: The white paper's structural redesign — the four-tier system, national price bands for independent school fees, and EHCP restrictions from 2030 — is the right long-run response. But structural reform operating on a five-year legislative and implementation timescale does not address what is happening now in councils that are already failing and have no formal DfE programme around them. Essex and Newcastle have timeliness below 10%. Hertfordshire's appeal rate is 11.7%. These councils are deteriorating while the structural framework is still being built. Proactive data-driven engagement with failing councils — using the kind of early-warning monitoring this analysis sets out — and structural legislative reform are not mutually exclusive. Both tracks can run simultaneously.
 
 ---
 
 ## "You're unfairly targeting specific councils"
 
-**Short answer**: The councils are identified by their own published data — timeliness statistics, tribunal rates, and spend figures that DfE publishes annually. Nothing in this analysis is derived from non-public information. Any council can verify its own numbers. The six councils are named because their situation warrants public transparency, not because of any editorial judgement about their leadership or intent.
+**Short answer**: The councils are identified by their own published data — timeliness statistics, tribunal rates, and spend figures that DfE publishes annually. Nothing in this analysis is derived from non-public information. Any council can verify its own numbers. Essex, Newcastle, Bromley, Hertfordshire, Staffordshire, and Derby are named because their situation warrants public transparency, not because of any editorial judgement about their leadership or intent.
 
 ---
 
@@ -35,7 +35,7 @@
 
 ## "Your refusal rate finding is misleading — councils use delays to gatekeep, not refusals"
 
-**Short answer**: This is a valid limitation, stated explicitly in the methodology. Councils with large backlogs have lower apparent refusal rates because many decisions are still pending. The analysis notes that "gatekeeping via delay rather than formal refusal is not captured by refusal rates." The finding is that, on the measure DfE actually publishes, there is no significant difference — which directly contradicts the implicit gatekeeping framing of the Safety Valve programme. The delay-as-gatekeeping hypothesis is a further concern that reinforces, not undermines, the overall argument.
+**Short answer**: This is a valid limitation, stated explicitly in the methodology. The refusal rate comparison shows that Safety Valve councils refuse 26.7% of applications versus 22.9% for no-programme councils — a difference that is not statistically significant (p=0.126). Programme status is not a reliable predictor of refusal rate: councils in all categories show both high and low refusal rates. The headline finding is not that one group gatekeeps more aggressively than another; it is that the gatekeeping framing as applied to programme entry does not hold in the published data. The delay-as-gatekeeping hypothesis is a separate and valid concern — where councils with large backlogs have lower apparent refusal rates because many decisions are still pending — and is noted in the methodology. That further concern reinforces, not undermines, the overall argument about throughput failure.
 
 ---
 

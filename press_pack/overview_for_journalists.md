@@ -5,61 +5,70 @@
 
 ## The one-sentence finding
 
-England's councils are not refusing too many children with special educational needs — they are legally required to process them but structurally unable to do so on time, and the government's five-year intervention programme has not fixed the underlying cause.
+England's SEND system is in systemic failure: fewer than half of all new Education, Health and Care Plans were issued within the legal 20-week limit in 2024, the failure cuts across all council types, and the structural cause — a shortage of the right kind of maintained provision — has been visible in the published data for a decade.
 
 ---
 
-## What everyone thought
+## The scale of the failure
 
-When the Department for Education launched its "Safety Valve" programme in 2022, placing 29 local authorities under financial supervision, the implicit diagnosis was that these councils were too generous — issuing too many Education, Health and Care Plans and failing to push back on families making unreasonable demands. The framing suggested that tighter gatekeeping would reduce costs and restore financial balance.
+In 2024, the national 20-week compliance rate for EHCPs was 51.8%. Fifty-nine of 151 upper-tier local authorities — nearly 40% — issued fewer than 40% of new plans on time. Approximately 49,000 children received their plan outside the legal time limit.
 
----
-
-## What the data show
-
-The gatekeeping hypothesis does not survive contact with the published data. Safety Valve councils refuse EHCP applications at 25.3%; councils with no intervention refuse at 25.1%. The difference is statistically indistinguishable (Mann-Whitney p = 0.76). The published data do not show Safety Valve councils formally refusing more or accepting fewer children at the front door. They are failing — on a legal statutory duty — to deliver the plan within 20 weeks of accepting the case.
-
-Safety Valve councils issued only 35.8% of new EHCPs within the 20-week legal limit in 2024, against 57.0% for non-intervention councils. They face tribunal challenge rates of 7.5% of live EHCPs against 5.4% elsewhere. They place 37% more children per 1,000 pupils in independent specialist schools than non-intervention councils (0.89 vs 0.65 per 1,000), at a median cost of £97,322 per child per year.
-
-This is a throughput failure, not a gatekeeping failure. The queue grows; the capacity to process it does not.
+This is not a problem confined to councils that have received formal DfE intervention. Devon, in the government's Safety Valve programme, issued only 3.2% of plans on time. Portsmouth, with no formal DfE programme, issued 4.3%. Cornwall, in the Delivering Better Value programme, issued 7.4%. The failure is distributed across all council types.
 
 ---
 
-## Why Safety Valve failed
+## The structural cause
 
-The Safety Valve programme treated the symptom — DSG deficits — rather than the cause. The deficits exist because councils do not have enough maintained special school places in the right locations for the right need types. When a child cannot access a maintained place locally, they are placed in an independent school. That placement costs the local authority roughly four times more than a maintained place. The deficit deepens. Councils cut support services. Plans worsen. Families go to tribunal. Legal costs rise. The cycle continues.
+The problem is not that councils are assessing the wrong children or spending recklessly. It is that the right type of maintained provision does not exist in the right places.
 
-Predictive models trained only on data available before the Safety Valve programme existed could identify — from 2021 data — which councils would enter crisis, with cross-validated accuracy of AUC 0.88. The signals were in the public data: rising tribunal appeal rates, growing independent placement spend, flat timely-throughput against rising demand. They were not acted on through any public early-warning framework visible in the published record.
+SEMH (social, emotional and mental health) need has grown from 12.7% to 20.7% of the national EHCP caseload between 2015/16 and 2024/25. Over the same period, new maintained SEMH school openings halved as a share of all new special school openings since 2016. The maintained sector did not keep pace with the fastest-growing need type.
 
----
-
-## What should happen now
-
-The solution is not another retrospective bailout programme. It is a forward capital plan: build the right maintained provision, in the right places, for the right need types, before independent placements and tribunal pressure overwhelm more councils.
-
-This analysis identifies 467 LA × need-type gaps across England, ranked by urgency. The top 30 alone — 20 new maintained special schools and 10 resourced provision units — address the most acute structural deficits in Hampshire, Essex, Norfolk, Cornwall, Suffolk, Lancashire, Bradford, Hertfordshire, and elsewhere. Each recommendation includes a specific location within the authority, derived from LSOA-level access modelling.
+The consequence is measurable. Councils whose populations live further from maintained SEMH provision spend significantly more on independent specialist placements (p=0.003). Independent placements are the primary driver of DSG deficits: the median cost of an independent special school placement is £97,322 per child per year, roughly four times the cost of a maintained place. As deficits accumulate, councils cut support services, plans worsen, families go to tribunal, and legal costs compound the problem. This is a structural cycle, not a series of individual commissioning failures.
 
 ---
 
-## The costed case
+## The forecastability finding
 
-Thirty priority facilities require approximately £420 million of capital investment (ESFA free school programme benchmarks: £20 million per new special school, £2 million per resourced provision unit). Against the S251-derived saving of £75,000 per year for each child redirected from independent to maintained provision — conservative relative to the £97,322 median independent placement cost — the portfolio generates cumulative avoided costs that cross the £420 million threshold in 2034. By 2040, avoided costs reach £887 million against a £420 million investment. The 15-year Green Book-style discounted net present value is £220 million.
+Using only data published before the current crisis, predictive models trained on 2016 information could identify which councils would enter systemic failure — with leave-one-out cross-validated accuracy of AUC 0.70. By 2021, the same models achieved AUC 0.88.
 
-The urgency is created by lead times. New maintained special schools take four to six years from planning to first pupils. A capital decision deferred to 2027 delivers no new places before 2033 — and locks in three further years of independent placement costs accumulating at current rates.
+The warning signals were tribunal appeal rates and independent placement spend as a share of the high-needs block. Both are published annually and have been since 2015/16. A council running above-average tribunal rates in 2016 was structurally more likely to be in serious difficulty by 2022–2024. These signals were in the public data. They were not assembled into any early-warning framework that produced action.
+
+A public monitoring dashboard tracking five signals — need-type growth, timeliness trend, independent placement share, tribunal pressure, and DSG carry-forward — would give substantially better early warning than currently exists. The data for all five signals is already in the published record.
+
+---
+
+## The invest-to-save case
+
+This analysis identifies 467 LA x need-type provision gaps across England, ranked by urgency. The top 30 priorities — 20 new maintained special schools and 10 resourced provision units — address the most acute structural deficits in Hampshire, Essex, Norfolk, Cornwall, Suffolk, Lancashire, Bradford, Hertfordshire, and elsewhere.
+
+The capital cost is approximately £420 million (ESFA free school benchmarks: £20 million per new special school, £2 million per resourced provision unit). Against a conservative saving of £75,000 per year for each child redirected from independent to maintained provision, avoided costs cross the £420 million threshold by 2034. The 15-year Green Book-style discounted net present value is £220 million.
+
+Lead times determine urgency. New maintained special schools take four to six years from planning to first pupils. A capital decision deferred to 2027 delivers no new places before 2033 — and locks in three further years of independent placement costs at current rates.
+
+---
+
+## The councils failing now with no DfE programme
+
+Six councils currently show elevated risk scores and no formal DfE intervention:
+
+| Council | Risk score | Mean timeliness 2022–24 | Mean appeal rate | Indep./1,000 pupils |
+|---|---|---|---|---|
+| Essex | 0.83 | 9.3% | 5.2% | 1.6 |
+| Newcastle upon Tyne | 0.75 | 9.4% | 0.9% | 0.9 |
+| Bromley | 0.75 | 33.7% | 4.0% | 3.9 |
+| Hertfordshire | 0.73 | 43.0% | 11.7% | 1.0 |
+| Staffordshire | 0.69 | 33.5% | 5.3% | 4.7 |
+| Derby | 0.67 | 20.6% | 5.7% | 2.9 |
+
+Essex and Newcastle are not "at risk of future failure" — they are already failing, with fewer than one in ten plans issued on time. Bromley, Staffordshire, and Derby are below the 40% threshold. Hertfordshire at 43% is borderline. None has a formal DfE programme around it. The question is whether DfE is engaging these councils proactively or waiting for their deficits to become unmanageable.
+
+Risk scores are model outputs reflecting structural similarity to councils that entered systemic collapse — not official designations.
 
 ---
 
 ## What good looks like
 
-Five English councils demonstrate that high-performing SEND systems are achievable within existing structures: Lincolnshire (99% of EHCPs issued on time), Liverpool (97.9%), Southampton (93.5%), Oldham (85.8%), and Gateshead (82.3%). All maintain more than 5 maintained special school places per 1,000 pupils and place fewer than 7% of children in the independent sector.
-
-These are not wealthy councils. Liverpool's average deprivation score (IMD 42.4) is among the highest in the dataset — substantially higher than Devon's (IMD 18.0), yet Liverpool achieves timeliness nearly 30 times higher than Devon's 3.2%. This evidence weakens the argument that poor performance is explained solely by deprivation or hard-to-serve populations. It suggests that maintained supply, throughput capacity, and system design matter considerably.
-
----
-
-## The six councils to watch now
-
-Six councils currently show the pre-crisis structural signatures of Safety Valve entrants, with no formal DfE intervention: Bristol (risk score 0.90, mean timeliness 37.5%), Birmingham (0.86), Bromley (0.77), Lewisham (0.69), Staffordshire (0.69), and Central Bedfordshire (0.66, timeliness 26.5%). Several are already in de facto collapse on the statutory standard. The question for DfE is whether it is engaging them before, or after, deficits become unmanageable.
+High performance is achievable within existing structures. Lincolnshire issued 99% of EHCPs on time, Gateshead 82.3%, and Oldham 85.8%. None is a wealthy council with easy demographics. Their performance demonstrates that maintained supply, throughput capacity, and system design matter considerably — more than deprivation alone can explain.
 
 ---
 
@@ -67,7 +76,7 @@ Six councils currently show the pre-crisis structural signatures of Safety Valve
 
 - The cost-benefit model is indicative. It uses a Green Book-style discount rate (3.5%) and conservative diversion assumptions, but has not been subject to formal HMT optimism-bias adjustment. A 25% capital cost overrun would extend break-even by approximately two years without changing the sign of the 15-year NPV.
 - Not all children in independent special schools could be served in maintained settings. The model assumes a 40% diversion rate (adjusted upward for LAs with high existing independent placement rates, capped at 65%), reflecting that some independent placements meet genuinely specialist needs unavailable in the maintained sector.
-- The comparator councils (Lincolnshire, Liverpool, Southampton, Oldham, Gateshead) illustrate that better outcomes are achievable under challenging conditions. They do not prove causation between supply levels and timeliness; other factors — commissioning culture, workforce stability, long-standing investment decisions — will also matter.
+- The comparator councils (Lincolnshire, Gateshead, Oldham) illustrate that better outcomes are achievable under challenging conditions. They do not prove causation between supply levels and timeliness; other factors — commissioning culture, workforce stability, long-standing investment decisions — will also matter.
 - All figures are derived from publicly available Crown copyright data (S251, SEN2, GIAS). The analysis applies statistical methods beyond what DfE currently publishes; it does not claim DfE's data is wrong.
 
 ---

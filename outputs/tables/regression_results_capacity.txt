@@ -9,8 +9,8 @@ Model A: % independent ~ maintained capacity + IMD + region
 Dep. Variable:     pct_special_independent   R-squared:                       0.197
 Model:                                 OLS   Adj. R-squared:                  0.136
 Method:                      Least Squares   F-statistic:                     3.260
-Date:                     Thu, 14 May 2026   Prob (F-statistic):           0.000853
-Time:                             21:42:58   Log-Likelihood:                -468.99
+Date:                     Mon, 18 May 2026   Prob (F-statistic):           0.000853
+Time:                             21:38:20   Log-Likelihood:                -468.99
 No. Observations:                      144   AIC:                             960.0
 Df Residuals:                          133   BIC:                             992.6
 Df Model:                               10                                         
@@ -47,8 +47,8 @@ Model C: timeliness ~ % independent + IMD + region
 Dep. Variable:         timeliness_pct   R-squared:                       0.175
 Model:                            OLS   Adj. R-squared:                  0.112
 Method:                 Least Squares   F-statistic:                     2.796
-Date:                Thu, 14 May 2026   Prob (F-statistic):            0.00359
-Time:                        21:42:58   Log-Likelihood:                -668.01
+Date:                Mon, 18 May 2026   Prob (F-statistic):            0.00359
+Time:                        21:38:20   Log-Likelihood:                -668.01
 No. Observations:                 143   AIC:                             1358.
 Df Residuals:                     132   BIC:                             1391.
 Df Model:                          10                                         
@@ -85,8 +85,8 @@ Model E: timeliness ~ maintained capacity + IMD + region
 Dep. Variable:         timeliness_pct   R-squared:                       0.163
 Model:                            OLS   Adj. R-squared:                  0.100
 Method:                 Least Squares   F-statistic:                     2.570
-Date:                Thu, 14 May 2026   Prob (F-statistic):            0.00714
-Time:                        21:42:58   Log-Likelihood:                -669.03
+Date:                Mon, 18 May 2026   Prob (F-statistic):            0.00714
+Time:                        21:38:20   Log-Likelihood:                -669.03
 No. Observations:                 143   AIC:                             1360.
 Df Residuals:                     132   BIC:                             1393.
 Df Model:                          10                                         
@@ -121,8 +121,8 @@ Model B: DSG deficit ~ % independent + IMD + region
 Dep. Variable:         dsg_deficit_pp   R-squared:                       0.304
 Model:                            OLS   Adj. R-squared:                  0.139
 Method:                 Least Squares   F-statistic:                     1.843
-Date:                Thu, 14 May 2026   Prob (F-statistic):             0.0919
-Time:                        21:42:58   Log-Likelihood:                -332.00
+Date:                Mon, 18 May 2026   Prob (F-statistic):             0.0919
+Time:                        21:38:20   Log-Likelihood:                -332.00
 No. Observations:                  48   AIC:                             684.0
 Df Residuals:                      38   BIC:                             702.7
 Df Model:                           9                                         
@@ -156,8 +156,8 @@ Model D: tribunal ~ % independent + IMD + region
 Dep. Variable:     la_official_appeal_rate_pct   R-squared:                       0.141
 Model:                                     OLS   Adj. R-squared:                  0.071
 Method:                          Least Squares   F-statistic:                     2.002
-Date:                         Thu, 14 May 2026   Prob (F-statistic):             0.0386
-Time:                                 21:42:58   Log-Likelihood:                -355.63
+Date:                         Mon, 18 May 2026   Prob (F-statistic):             0.0386
+Time:                                 21:38:20   Log-Likelihood:                -355.63
 No. Observations:                          133   AIC:                             733.3
 Df Residuals:                              122   BIC:                             765.1
 Df Model:                                   10                                         

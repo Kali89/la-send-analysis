@@ -18,9 +18,9 @@ FINDING: Local authorities in the DfE Safety Valve programme refuse a significan
 proportion of EHCP assessment requests than non-intervention LAs — consistent with the
 gatekeeping hypothesis.
 
-EVIDENCE: In 2024, Safety Valve LAs refused 25.3% of requests on average,
-versus 25.1% for non-intervention LAs — a 0.2 pp gap.
-Mann-Whitney U = 792.0, p = 0.756 (not significant).
+EVIDENCE: In 2024, Safety Valve LAs refused 26.7% of requests on average,
+versus 22.9% for non-intervention LAs — a 3.8 pp gap.
+Mann-Whitney U = 1394.0, p = 0.126 (not significant).
 
 CAVEAT: LAs may have entered Safety Valve partly because refusal rates were already rising.
 The DfE also notes that backlogs inflate apparent refusal rates (decisions pending inflate
@@ -33,9 +33,9 @@ denominator). Using "decisions made" as denominator where available partially co
 FINDING: LAs under financial intervention are markedly less likely to issue EHCPs within
 the 20-week statutory limit — indicating systemic capacity strain.
 
-EVIDENCE: Safety Valve LAs issued 35.8% of plans within 20 weeks in 2024,
-vs 57.0% for non-intervention LAs — a 21.2 pp gap.
-Mann-Whitney: p = 0.001 **.
+EVIDENCE: Safety Valve LAs issued 53.2% of plans within 20 weeks in 2024,
+vs 52.3% for non-intervention LAs — a -0.9 pp gap.
+Mann-Whitney: p = 0.904 (not significant).
 
 CAVEAT: LAs with high tribunal rates may pause the statutory clock during legal challenges,
 artificially depressing their timeliness figures independently of capacity.
@@ -90,14 +90,14 @@ Interpretation: LAs with greater DSG deficits complete fewer EHCPs within the
 
 ## Finding 6: Divergence since Safety Valve programme began (DiD)
 
-FINDING: Safety Valve LAs' refusal rates have risen by 0.4 pp since 2022
-(programme entry), compared to 2.0 pp for non-intervention LAs — a
-DiD estimate of -1.68 pp attributable to Safety Valve status.
+FINDING: Safety Valve LAs' refusal rates have risen by 4.4 pp since 2022
+(programme entry), compared to -0.3 pp for non-intervention LAs — a
+DiD estimate of +4.63 pp attributable to Safety Valve status.
 
 EVIDENCE: Simple 2×2 DiD (pre/post 2022, treated = Safety Valve LAs).
-  Treated: pre 24.54% → post 24.90% (Δ = +0.36 pp)
-  Control: pre 22.57% → post 24.61% (Δ = +2.04 pp)
-  DiD: -1.68 pp
+  Treated: pre 20.59% → post 24.97% (Δ = +4.37 pp)
+  Control: pre 21.90% → post 21.65% (Δ = -0.26 pp)
+  DiD: +4.63 pp
 
 CAVEAT: Only 3 pre-intervention years (2019–2021) are available in this release.
 Parallel trends assumption is unverifiable with this data. Safety Valve LAs may
@@ -140,7 +140,7 @@ have been on a steeper pre-existing trajectory. Treat as suggestive, not causal.
 
 - `n_total_appealable_decisions`: 100.0% missing
 - `ehcp_rate_pct`: 100.0% missing
-- `sv_entry_year`: 80.7% missing
+- `sv_entry_year`: 75.0% missing
 - `n_mediations`: 66.9% missing
 - `n_trib_req`: 66.9% missing
 - `n_requests_assess`: 66.8% missing
@@ -152,7 +152,7 @@ analysis and EHCP prevalence rates therefore rely on absolute counts rather than
 
 ---
 
-*Generated: 2026-05-14 21:42 using DfE SEN2 2025 release*
+*Generated: 2026-05-18 21:37 using DfE SEN2 2025 release*
 
 
 ---
@@ -215,10 +215,10 @@ Baron-Kenny results:
 ## Extension 4: Event Study (Pre/Post Safety Valve)
 
 **Pre-entry gap (t-3 to t-1):**
-- Tribunal appeal rate: SV=2.4% vs Control=1.8% (gap=+0.6 pp)
-- 20-week timeliness:   SV=52.6% vs Control=64.2% (gap=-11.6 pp)
+- Tribunal appeal rate: SV=1.6% vs Control=1.6% (gap=+0.1 pp)
+- 20-week timeliness:   SV=57.6% vs Control=66.7% (gap=-9.1 pp)
 
-**FINDING:** Safety Valve LAs showed only a modest gap vs controls before entry (pre-entry tribunal gap +0.6 pp). This weakens the selection-into-programme explanation and leaves open the possibility that the programme entry itself, or concurrent financial pressure, drove subsequent deterioration.
+**FINDING:** Safety Valve LAs showed only a modest gap vs controls before entry (pre-entry tribunal gap +0.1 pp). This weakens the selection-into-programme explanation and leaves open the possibility that the programme entry itself, or concurrent financial pressure, drove subsequent deterioration.
 
 **Caveat:** SEN2 data only begins 2019; for SV LAs entering 2022, we have just 3 pre-entry
 years. The tribunal data extends to 2014 which provides a richer pre-period for the

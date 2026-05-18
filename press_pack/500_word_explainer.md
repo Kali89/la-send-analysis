@@ -3,40 +3,29 @@
 
 ---
 
-England's councils are legally required to assess children for special educational needs and, where eligible, issue an Education, Health and Care Plan (EHCP) within 20 weeks. In 2024, they issued 90,199 new plans — 69% more than in 2019. But the number issued on time grew by only 32%, from 31,000 to 41,000. Nearly 49,000 children — more than half of all new plans that year — received their plan outside the legal time limit. Many waited over a year.
+England's councils are legally required to assess children for special educational needs and, where eligible, issue an Education, Health and Care Plan (EHCP) within 20 weeks. In 2024, the national compliance rate was 51.8% — meaning roughly 49,000 children received their plan outside the legal time limit. Many waited over a year.
 
-That gap between demand and timely capacity is the central story. It is not primarily a story about councils refusing too many applications.
-
-**The gatekeeping myth**
-
-When the government's Safety Valve programme began in 2022, placing 29 councils under financial supervision, the implicit framing was that some local authorities were too generous — issuing too many EHCPs, failing to push back on families.
-
-The data does not support this. Safety Valve councils refuse applications at a rate of 25.3%; councils with no intervention refuse at 25.1%. The difference is statistically indistinguishable (p = 0.76). These councils are not refusing more children. They are simply failing to process the ones they accept within the legal deadline.
+That gap between legal obligation and operational reality is the central story. It is not primarily a story about councils refusing too many applications, and it is not confined to any particular type of council. Devon, in the government's Safety Valve programme, issued just 3.2% of plans on time in 2024. Portsmouth, with no formal government intervention, issued 4.3%. Cornwall, in the related Delivering Better Value programme, issued 7.4%. Cambridgeshire, in Safety Valve, issued 7.7%. The failure cuts across all categories.
 
 **What is actually going wrong**
 
-Safety Valve councils issue only 35.8% of new EHCPs within the 20-week legal limit, against 57.0% for councils with no intervention. They also face significantly higher rates of tribunal challenges — 7.5% of live EHCPs result in a formal appeal, against 5.4% elsewhere.
+The structural cause is a mismatch between where children need provision and where maintained specialist places exist. Social, emotional and mental health (SEMH) need has grown from 12.7% to 20.7% of the national EHCP caseload between 2015/16 and 2024/25. Over the same period, new maintained SEMH school openings halved as a share of all new special school openings. The maintained sector did not keep pace with the fastest-growing need type.
 
-The capacity ceiling figure tells this story most directly. Safety Valve councils have been running at approximately 9,500 timely plans per year since 2019 — flat — while total demand on those same councils has grown by over 60%. The queue grows; the throughput does not. Families who cannot get a timely plan, and who then receive a thin or inadequate plan from an overstretched team, are more likely to challenge at tribunal. Legal costs and independent placements deepen financial deficits. The deficit cuts staffing. Throughput falls further.
+When a child cannot access a maintained place locally, they are placed in an independent school at a median cost of £97,322 per child per year — roughly four times the cost of a maintained place. This spending drives council DSG deficits. Deficits cut support services and staffing. Plans worsen and families go to tribunal. Legal costs compound the problem. The cycle is mechanical, not accidental.
+
+Councils whose populations live further from maintained SEMH provision spend significantly more on independent placements (p=0.003). This is not a deprivation story: Liverpool, one of the most deprived local authorities in England, achieves timeliness close to 98%. The evidence points to provision supply and system design as the key variables.
 
 **The collapse was foreseeable**
 
-Using only data published before the Safety Valve programme existed, predictive models trained on 2016 data could identify the councils that would enter crisis — with leave-one-out cross-validated accuracy of up to AUC 0.70. By 2021, the same models achieved AUC 0.88. The warning signals — rising tribunal appeal rates and growing independent placement spend — were in the public data. They were not acted on.
+Predictive models trained on data available in 2016 — six years before the current crisis peaked — could identify which councils would enter systemic failure with cross-validated accuracy of AUC 0.70. By 2021, the same models achieved AUC 0.88. The warning signals — rising tribunal appeal rates and growing independent placement spend — were in the published data throughout. They were not assembled into any public early-warning framework that produced action.
 
-**The councils at risk now**
+**The councils already failing now**
 
-Six councils currently show the same pre-crisis signatures as those that entered the Safety Valve programme, with no formal DfE intervention in place:
+Six councils with no formal DfE programme currently show the risk signatures identified by the model. Essex (9.3% timeliness) and Newcastle upon Tyne (9.4%) are not at risk of future failure — they are already failing, with fewer than one in ten plans issued on time. Bromley (33.7%), Staffordshire (33.5%), and Derby (20.6%) are below the 40% threshold. Hertfordshire (43.0%) is borderline. None has a formal framework around it.
 
-| Council | Risk score | Mean timeliness 2022–24 |
-|---|---|---|
-| Bristol, City of | 0.90 | 37.5% |
-| Birmingham | 0.86 | 49.4% |
-| Bromley | 0.77 | 33.7% |
-| Lewisham | 0.69 | 53.5% |
-| Staffordshire | 0.69 | 33.5% |
-| Central Bedfordshire | 0.64 | 26.5% |
+The question is whether the monitoring and early-intervention capacity that was absent in 2016 is being built now.
 
-Several of these councils are already in de facto failure on timeliness. The legal limit is 20 weeks. Bristol is meeting it for fewer than 4 in 10 children.
+---
 
 **Full analysis, data and code:** github.com/Kali89/la-send-analysis
 
