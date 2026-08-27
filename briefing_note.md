@@ -18,15 +18,15 @@ In 2024, 51.8% of EHCPs were issued within the legal 20-week limit nationally. 5
 
 The primary driver is a structural mismatch: Social, Emotional and Mental Health (SEMH) need has grown from 12.7% to 20.7% of all EHCP children since 2015/16. Over the same period, new maintained SEMH school openings have halved as a share of all new special school openings. Councils whose populations live further from maintained SEMH provision spend significantly more on independent placements (p=0.003, n=146). Independent placements — median £97,322 per child per year — drive DSG deficits, which cut staffing, which slows assessment throughput, which compounds the crisis.
 
-**2. The collapse was foreseeable — but different failure types had different warning signals.**
+**2. The national crisis was foreseeable from mid-2017 — but which councils would fail was not.**
 
-Eight predictive models were validated against 140+ local authorities using only data available at each year from 2016 to 2021. Timeliness failure was predicted by absolute growth in ASD and SEMH caseloads from 2019 onward. Legal-pressure and placement-cost failure were predicted from 2016 by tribunal appeal rates and independent-provider spending — achieving AUC 0.70 from 2016 data and AUC 0.88 from 2021.
+A publication-vintage backtest — using only statistics actually published by each date, taken from the original releases — shows that a one-line extrapolation of the DfE's own caseload series predicted the 2024 total within 8% from mid-2017, and within 1.3% from mid-2018. The 2014 reform's planning assumption (roughly one-for-one conversion of statements) was 36 standard deviations below the published data by May 2017, and the department's own age tables refuted the "it's just the new 16–25 age range" explanation from 2018. A 36-cell stress test constructible in mid-2017 brackets everything that later happened: actual 2024 caseload, late plans, and independent placement spend all fall inside it, and 58% of its cells double placement spending by 2024.
 
-These are distinct signals for distinct failure modes. Published tracking by DfE, IFS, and IfG reports ASD and SEMH as a *percentage* of total EHCPs. This analysis shows that proportional share is near-useless for prediction (AUC ~0.50). The informative signal is absolute volume — the raw count of ASD and SEMH EHCPs growing year on year. Official monitoring was watching the wrong measure.
+The counterpart finding is a null: no signal genuinely published in 2016–18 identified *which* councils would fail (all perform at chance; council timeliness rank order reshuffled completely, ρ=0.01). The crisis was national, so the necessary response — educational psychologist training, specialist capacity, funding reform — was national, and needed to start in 2017–18 to land in time. Published tracking that reports ASD and SEMH as a *percentage* of total EHCPs also watches the wrong measure: the informative signal is absolute volume growth against planning assumptions.
 
 **3. Several councils with no formal DfE programme are already failing.**
 
-A predictive model trained on 2021 features — with no knowledge of programme membership — identifies the following councils with no current DfE intervention as showing structural similarity to councils that entered systemic failure:
+A model trained on 2021 features — with no knowledge of programme membership — identifies the following councils with no current DfE intervention as structurally similar to councils that entered systemic failure. Given finding 2, this is a support-targeting tool (these councils are *already* deteriorating on observable metrics), not a prediction of future failures:
 
 | Council | Risk score | Mean timeliness 2022–24 | Appeal rate | Indep./1,000 pupils |
 |---|---|---|---|---|
@@ -53,9 +53,9 @@ The urgency is created by lead times. New maintained special schools take four t
 
 ### The policy question
 
-The government's February 2026 white paper addresses the structural design failures of the 2014 Act. This is the right long-run response. But neither the old system nor the new one includes a public, validated early-warning framework that combines absolute need-type growth, timeliness trend, independent-provider exposure, tribunal pressure, and DSG balance.
+The government's February 2026 white paper addresses the structural design failures of the 2014 Act. This is the right long-run response. But the 2014 reform failed in part because its planning assumptions carried no published monitoring triggers — the data breached them by 36σ without institutional consequence. Neither the old system nor the new one publishes its demand assumptions alongside a tracker of national caseload, new-plan flow, throughput, independent-provider exposure, and DSG balance, with explicit tripwires.
 
-The data to build such a framework is already published. The question is whether DfE is using it — and whether the councils above are receiving proactive engagement proportionate to the risk the data shows.
+The data to build that framework is already published, and this analysis demonstrates it (the five series, with thresholds, in `outputs/tables/`). The question is whether DfE will attach it to the white paper's own assumptions — and whether the councils above are receiving proactive engagement proportionate to the deterioration the data already shows.
 
 ---
 

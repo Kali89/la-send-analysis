@@ -1,0 +1,17 @@
+fy_end,scope,ramp,indep_actual,excess_pool,diverted_children,saving_gbp_m
+2020,A_mix_shift_only,0.0,15854,707.9,0.0,0.0
+2020,B_diversion_of_growth,0.0,15854,2110.0,0.0,0.0
+2021,A_mix_shift_only,0.3,17839,1117.0,148.9,11.2
+2021,B_diversion_of_growth,0.3,17839,4095.0,546.0,41.0
+2022,A_mix_shift_only,0.7,20324,1949.7,519.9,39.0
+2022,B_diversion_of_growth,0.7,20324,6580.0,1754.7,131.6
+2023,A_mix_shift_only,1.0,21665,1590.4,636.2,47.7
+2023,B_diversion_of_growth,1.0,21665,7921.0,3168.4,237.6
+2024,A_mix_shift_only,1.0,25620,3238.2,1295.3,97.1
+2024,B_diversion_of_growth,1.0,25620,11876.0,4750.4,356.3
+2025,A_mix_shift_only,1.0,29647,4847.5,1939.0,145.4
+2025,B_diversion_of_growth,1.0,29647,15903.0,6361.2,477.1
+year,plans_issued,late_actual,late_cf_2019_rate,excess_late
+2022,65512,34286,27044.1,7241.9
+2023,80945,41161,33415.0,7746.0
+2024,90392,48944,37314.9,11629.1

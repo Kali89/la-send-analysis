@@ -1,0 +1,13 @@
+signal,vintage,target,auc,n
+Caseload growth 2015-17 (May 2017 tables),2017,y_timeliness,0.567,143
+Caseload growth 2015-17 (May 2017 tables),2017,y_composite,0.392,143
+Mean 20wk timeliness 2015-16 (May 2017 tables),2017,y_timeliness,0.512,143
+Mean 20wk timeliness 2015-16 (May 2017 tables),2017,y_composite,0.548,143
+Caseload growth 2015-19 (May 2019 tables),2019,y_timeliness,0.537,143
+Caseload growth 2015-19 (May 2019 tables),2019,y_composite,0.438,143
+New-plan growth 2015-18 (May 2019 tables),2019,y_timeliness,0.462,143
+New-plan growth 2015-18 (May 2019 tables),2019,y_composite,0.551,143
+Mean 20wk timeliness 2016-18 (May 2019 tables),2019,y_timeliness,0.502,143
+Mean 20wk timeliness 2016-18 (May 2019 tables),2019,y_composite,0.608,143
+Mean 20wk timeliness 2019-21 (crisis underway; pub. by mid-2022),2022,y_timeliness,0.630,149
+Mean 20wk timeliness 2019-21 (crisis underway; pub. by mid-2022),2022,y_composite,0.801,149

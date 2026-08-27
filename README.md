@@ -6,9 +6,9 @@ A data-driven analysis of England's Special Educational Needs and Disability (SE
 
 1. **[System-wide timeliness failure: what the data show and why](article.md)** — 59 of 151 councils failed the 20-week legal standard in more than 60% of cases in 2024. The failure cuts across all council types and is driven by a structural mismatch between SEMH provision and need — not by which DfE programme a council belongs to.
 
-2. **[The collapse was foreseeable — and the next one already is](article_forecastability.md)** — Using only data available in 2016, tribunal appeal rates and independent placement spend could already identify which councils would hit systemic failure (AUC 0.70). By 2021 the same signals achieved AUC 0.88. The warning was in the public data.
+2. **[Which signals carried information about SEND system failure](article_forecastability.md)** — An eight-model study of which data series distinguished failing from non-failing councils: demand growth tracked timeliness failure; tribunal rates and independent spend tracked legal and cost failure. Revised August 2026: the LA-level tribunal series it uses was first published in 2025, so this is a signal-content study, not a foreseeability claim.
 
-3. **[A data-driven post-mortem](article_postmortem.md)** — What the data showed at each decision point, when it should have prompted action, and what a data-literate government should have done differently.
+3. **[A data-driven post-mortem](article_postmortem.md)** — The foreseeability evidence, rebuilt on publication vintages: using only statistics actually published by each date, the national crisis was predictable within 8% from mid-2017 (within 1.3% from mid-2018), the 2014 planning assumption was 36σ wrong by May 2017 — and which specific councils would fail was NOT predictable (chance-level) before 2019. Year-by-year account of what a competent response would have been, by whom.
 
 4. **[Policy briefing note](briefing_note.md)** — One-page summary for ministers and officials.
 
@@ -33,20 +33,37 @@ A data-driven analysis of England's Special Educational Needs and Disability (SE
 
 The worst performers span all council types: Devon (Safety Valve, 3.2%), Portsmouth (no programme, 4.3%), Leicestershire (DBV, 4.3%), Cornwall (DBV, 7.4%), Slough (Safety Valve, 7.4%). Programme membership does not predict timeliness (SV vs no-programme Mann-Whitney p=0.904).
 
-### Forecastability (Article 2 — eight model families A–H)
+### Foreseeability — vintage backtest (Article 3)
 
-| Forecast year | Model | Target | LOO-CV AUC |
+Using only statistics actually published by each date (original SFR/SEN2 releases, parsed from the vintage spreadsheets):
+
+| Analyst's vantage point | EHCP-era extrapolation predicts 2024 caseload | Error vs actual (576,474) |
+|---|---|---|
+| Mid-2016 | 431,000 | −25% |
+| **Mid-2017** | **533,000** | **−7.5%** |
+| **Mid-2018** | **569,000** | **−1.3%** |
+| Mid-2019 | 580,000 | +0.6% |
+| 2014 impact-assessment assumption | 258,000 | **−55%** |
+
+By May 2017 the published caseload was 36σ above the 2014 planning assumption, school-age growth had turned positive (killing the age-extension explanation), and new plans were 24% above any statements-era year. A 36-cell stress test constructible in mid-2017 contains every actual 2024 outcome — caseload, late plans, and independent-placement spend (58% of cells double spend by 2024).
+
+**The counterpart null result:** which *councils* would fail was not predictable from genuinely vintage data — all LA-level signals score AUC 0.39–0.61 (chance), and LA timeliness rank order reshuffled completely (Spearman ρ = 0.01 between 2016–18 and 2022–24). The crisis was national; only national action could have met it.
+
+**The cost of the delay** (`cost_of_delay.py`): the supply-side responses came 4–6 years after the signal (first major capital programme March 2022; real EP expansion March 2023, capacity landing 2027+). Had the 2022 capital programme been decided in mid-2018 — when the evidence already supported it — avoidable independent-placement spend through FY2025 is ~£340m on a deliberately conservative counterfactual and **~£1.24bn** on the central one (sensitivity £0.5–2.4bn), still growing at £145–477m per further year of delay. Roughly 26,600 children's plans issued late in 2022–24 would have been on time had 20-week performance merely held at its 2019 level. Context: DSG deficits >£3.3bn by end-2024; Safety Valve payments >£1bn.
+
+### Signal-content study (Article 2 — eight model families A–H)
+
+| Feature year | Model | Target | LOO-CV AUC |
 |---|---|---|---|
 | 2016 | G: Signals (tribunal + spend) | Legal-pressure collapse | 0.70 |
+| 2016 | best of A–H | Composite collapse | 0.60 |
 | 2019 | B: Need-type counts only | Timeliness collapse | 0.69 |
-| 2019 | B: Need-type counts only | Legal-pressure collapse | 0.77 |
-| 2020 | G: Signals only | Legal-pressure collapse | 0.83 |
 | 2021 | E: Counts + timeliness | Composite collapse | **0.82** |
 | 2021 | G: Signals only | Legal-pressure collapse | **0.88** |
 
-**Key finding:** Need-type growth (Model B) predicted timeliness collapse as well as or better than system-failure signals; for legal-pressure and placement collapse, tribunal rates and independent spend dominated. Proportional need-type shares (Model C) are near-useless for prediction (AUC ~0.50) — the informative signal is absolute volume.
+**Key findings:** Need-type growth (Model B) tracked timeliness collapse where system-failure signals were useless (G: AUC ~0.50); tribunal rates and independent spend dominated for legal-pressure and placement collapse. Proportional need-type shares are near-useless (AUC ~0.50) — the signal is absolute volume. **Caveats:** feature years are data vintages, not publication vintages (the LA tribunal series was published in 2025); the 2016 legal-pressure result is largely persistence of the tribunal rate itself; strong AUCs come from 2020–21 features, when the crisis was already underway.
 
-**Councils with no current DfE programme showing elevated risk scores:**
+**Councils with no current DfE programme showing elevated risk scores** (structural similarity to already-collapsed councils — a support-targeting tool, not an early-warning prediction):
 
 | Council | Risk score | Mean timeliness 2022–24 |
 |---|---|---|
@@ -83,7 +100,9 @@ Safety Valve and Delivering Better Value programme lists are sourced from:
 ├── mismatch_analysis.py           # Need-type vs supply mismatch over time
 ├── timeliness_analysis.py         # Timeliness deep-dive: S251 spend vs compliance
 ├── prediction_analysis.py         # Early prediction of Safety Valve status
-├── forecastability_analysis.py    # Forecastability study, risk scores, scenario projections
+├── forecastability_analysis.py    # Signal-content study (A–H), risk scores, scenario projections
+├── vintage_backtest.py            # Foreseeability: publication-vintage backtest, stress-test replay
+├── cost_of_delay.py               # Action timeline + counterfactual cost of 2017–18 inaction
 ├── facility_planning.py           # LA × need-type facility priority scoring
 ├── facility_location.py           # LSOA-level within-LA location drill-down
 ├── cost_benefit.py                # 15-year invest-to-save cost-benefit model (top 30)
@@ -113,7 +132,16 @@ Safety Valve and Delivering Better Value programme lists are sourced from:
 │       ├── panel_timeseries.csv             # 1,741 LA-year rows (2014–2024)
 │       ├── la_collapse_labels.csv           # Collapse labels per LA (3 definitions)
 │       ├── forecastability_summary.csv      # AUC × model family × year × collapse type (124 evaluations)
-│       ├── forecastability_verdict.csv      # Forecastability verdict per collapse type × year
+│       ├── forecastability_verdict.csv      # Verdict per collapse type × feature year
+│       ├── vintage_national_series.csv      # Verified national series 2010–2025 (from original releases)
+│       ├── vintage_backtest_forecasts.csv   # Vintage × model × target-year predictions vs actuals
+│       ├── vintage_detection_tests.csv      # Per-release-year deviation tests (σ vs 2014 assumption etc.)
+│       ├── vintage_la_signals.csv           # LA-level vintage signal AUCs (the null result)
+│       ├── stress_test_2017.csv             # 36-cell mid-2017 stress-test grid vs 2024 actuals
+│       ├── publication_audit.csv            # What was published when, at what level, with what lag
+│       ├── action_timeline.csv              # Signal dates vs government action dates, 2016–2026
+│       ├── cost_of_delay.csv                # Counterfactual avoidable spend + excess late plans
+│       ├── cost_of_delay_sensitivity.csv    # Diversion × saving sensitivity grid
 │       ├── la_risk_scores_2024.csv          # Current risk scores (143 LAs)
 │       ├── la_scenario_forecasts.csv        # 5-scenario projections to 2030 per LA
 │       ├── la_capacity_2024.csv             # Special school capacity panel (151 LAs)
@@ -141,6 +169,7 @@ Safety Valve and Delivering Better Value programme lists are sourced from:
 | S251 LA & School Expenditure 2015/16–2024/25 | DfE Explore Education Statistics | Extension, forecastability, spend model |
 | SEN pupils 2024–25 | DfE Explore Education Statistics | Capacity analysis |
 | SEN2 historical 2019–20 (need-type 2015/16–2019/20) | DfE archive | Mismatch, forecastability |
+| Vintage releases: SFR 17/2016 tables, SEN2 2019 tables | gov.uk publication archive | Vintage backtest (foreseeability) |
 | GIAS all establishments (May 2026) | get-information-schools.service.gov.uk | Capacity, facility planning, location |
 | LSOA 2021 centroids | ONS ArcGIS | Spend model, facility location |
 | IMD 2019 | MHCLG IoD2019 Table 10 | All regression models |
@@ -181,6 +210,15 @@ python timeliness_analysis.py
 # 7. Forecastability, risk scores, scenario projections
 #    Requires all data/raw/ above; must run after steps 1–2
 python forecastability_analysis.py
+
+# 7b. Publication-vintage backtest and stress-test replay
+#     Requires: data/raw/vintage/ (SFR17_2016_tables.xlsx, SEN2_2019_tables.xlsx
+#     from gov.uk); must run after step 7 (uses la_collapse_labels.csv)
+python vintage_backtest.py
+
+# 7c. Action timeline and counterfactual cost of delay
+#     Must run after 7b (uses vintage_national_series.csv)
+python cost_of_delay.py
 
 # 8. Facility priority scoring (LA × need-type)
 python facility_planning.py
@@ -241,7 +279,7 @@ The `forecastability_analysis.py` script predicts system collapse in 2022–2024
 1. **Programme membership ≠ performance cause:** SV and DBV LAs were selected into programmes on financial criteria, not timeliness. Cross-sectional comparisons between groups should not be read as programme effects.
 2. **Refusal rates understate gatekeeping:** LAs with large backlogs show lower apparent refusal rates because many decisions are still pending. Gatekeeping via delay is not captured.
 3. **Timeliness clock-stopping:** LAs can pause the statutory 20-week clock during mediation/tribunal proceedings.
-4. **Forecastability ≠ causation:** High AUC from early tribunal rates partly reflects autocorrelation in persistent structural conditions.
+4. **Forecastability ≠ causation, and data vintage ≠ publication vintage:** High AUC from early tribunal rates partly reflects autocorrelation in persistent structural conditions, and the forecastability study's feature years describe what the underlying systems had recorded, not what was published (the LA-level tribunal series appeared in 2025). Foreseeability claims rest on `vintage_backtest.py`, which uses only data published by each date.
 5. **DSG balance ≠ operational capacity:** End-of-year DSG carry-forward is an accounting figure.
 6. **Scenario projections are sensitivity illustrations**, not forecasts. Policy interventions and capital programmes are not modelled.
 7. **Cost-benefit model is indicative:** No formal optimism-bias adjustment. Full sensitivity table (4 saving assumptions × 3 capital overrun scenarios) in `cost_benefit_sensitivity.csv`.

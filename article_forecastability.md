@@ -1,14 +1,18 @@
-# England's SEND collapse had multiple early-warning signatures — and different councils now show each one
+# Which signals carried information about SEND system failure — an eight-model study
 
-**An eight-model forecastability study finds that different types of SEND system failure had different predictive signals: timeliness failure was visible in absolute ASD and SEMH caseload growth; legal-pressure and placement-cost failure were visible in tribunal rates and independent-provider spend. The forecasting failure was not a lack of data, but a failure to combine demand, throughput, legal, and placement-market signals.**
+**An eight-model study of which data series contained information about 2022–24 SEND system failure. Different failure types had different signatures: timeliness failure tracked absolute ASD and SEMH caseload growth; legal-pressure and placement-cost failure tracked tribunal rates and independent-provider spend. Important caveat: this is a study of what the signals contained in principle, not of what a contemporaneous analyst could have known — the LA-level tribunal series it uses was first published in 2025. For the question "was the crisis foreseeable at the time?", see the [vintage backtest and post-mortem](article_postmortem.md), which uses only data actually published at each date.**
 
-*Forecastability analysis using DfE SEN2 2025, S251 expenditure 2015/16–2024/25, and SEND Tribunal data 2014–2024 | May 2026*
+*Analysis using DfE SEN2 2025, S251 expenditure 2015/16–2024/25, and SEND Tribunal data 2014–2024 | May 2026, revised August 2026*
 
 ---
 
-The collapse of EHCP services in England's most financially stressed local authorities did not arrive without warning. The data to predict it existed years before the crisis became visible. This analysis tests that claim directly: using only information available at each year from 2016 to 2021, how accurately could we have identified which councils would enter systemic failure by 2022–2024?
+> **Revision note (August 2026).** This article originally claimed that "using only data available in 2016" councils heading for systemic failure could be identified at AUC 0.70, rising to 0.88 by 2021, and that "the warning was in the public data." Three corrections. **(1)** The LA-level tribunal appeal-rate series behind those numbers (DfE supporting file, 2014–2024) was first published in **2025**; a 2016 analyst did not have it. The models remain informative about which series *carried signal*, but not about what was knowable at the time. **(2)** The AUC 0.70-from-2016 figure applies to *legal-pressure* collapse only — predicting future tribunal-rate quartiles largely from current tribunal rates, i.e. persistence. For the composite collapse target, 2016-feature AUC was 0.60; timeliness collapse was unpredictable from 2016 features (AUC ≈ 0.50). The strong results (0.82–0.88) use 2020–21 features, by which point the crisis was underway. **(3)** A companion [vintage backtest](article_postmortem.md) using only genuinely published tables finds council-level prediction performed at chance before 2019 — while the *national* trajectory was predictable within 8% from mid-2017. The earlier headline inverted the true structure of the foreseeability result. The high-risk council table below has also been regenerated from the current pipeline after the Safety Valve programme-list correction; the previous version listed councils as "no intervention" that are in fact programme members.
 
-The headline result is clear, but the detail matters. Eight model families — from a simple total-demand baseline to a full specification combining need-type growth, tribunal history, independent placement spend, and timeliness trends — produce different answers depending on which type of collapse you are trying to predict. There was not one SEND collapse signal. There were at least two, with different causes and different early signatures.
+---
+
+This analysis asks which of the available data series — demand growth by need type, tribunal history, placement spend, throughput — contained information about which councils would show systemic failure by 2022–2024, using features truncated at each year from 2016 to 2021.
+
+Eight model families — from a simple total-demand baseline to a full specification combining need-type growth, tribunal history, independent placement spend, and timeliness trends — produce different answers depending on which type of collapse you are trying to predict. There was not one SEND collapse signal. There were at least two, with different structures.
 
 ---
 
@@ -32,7 +36,7 @@ Each threshold is configurable in the analysis code.
 
 ## The question being tested
 
-The previous version of this analysis asked: *was collapse foreseeable?* The answer was yes — from tribunal rates and independent placement spend available in 2016. The question left unanswered was more specific: *could absolute growth in ASD, SEMH, SLCN, and MLD caseloads — the demand-side shift that drove the crisis — have predicted which councils would fail?*
+The question here is deliberately narrower than foreseeability: *which data series carried information about which councils would fail?* In particular: could absolute growth in ASD, SEMH, SLCN, and MLD caseloads — the demand-side shift that drove the crisis — have distinguished the councils that failed from those that did not? (Whether the series were published in time to act on is a separate question, answered in the [post-mortem](article_postmortem.md).)
 
 This matters for two reasons. First, if need-type growth alone predicted collapse, then the early warning was visible in the demand data without requiring access to tribunal records or placement spending — signals that reflect system deterioration already in progress. Second, if system-failure signals dominated, it suggests that the demand-side shift was not the direct cause of differential collapse: structural and financial factors beyond sheer caseload growth determined which councils failed.
 
@@ -126,20 +130,20 @@ The risk scores presented here use Model E (need-type counts plus timeliness tre
 
 ![Current risk scores](outputs/figures/39_risk_scores_2024.png)
 
-Most of the top-ranked councils are already in DfE intervention programmes, validating the model: without programme status as a feature, it recovers the intervention group with high accuracy. The policy-relevant observation is the high-risk group with **no current DfE intervention**:
+Most of the top-ranked councils are already in DfE intervention programmes, validating the model: without programme status as a feature, it recovers the intervention group with high accuracy. The policy-relevant observation is the high-risk group with **no current DfE intervention** (regenerated August 2026 from `outputs/tables/la_risk_scores_2024.csv` after the programme-list correction):
 
 | Council | Risk score | Mean timeliness 2022–24 | Mean appeal rate | Indep./1,000 |
 |---|---|---|---|---|
-| Bristol, City of | 0.90 (Critical) | 37.5% | 2.9% | 2.55 |
-| Birmingham | 0.82 (Critical) | 49.4% | 5.6% | 1.05 |
-| Bromley | 0.77 (Critical) | 33.7% | 4.0% | 3.86 |
-| Lewisham | 0.72 (High) | 53.5% | 2.6% | 5.28 |
+| Essex | 0.83 (Critical) | 9.3% | 5.2% | 1.63 |
+| Newcastle upon Tyne | 0.76 (Critical) | 9.4% | 0.9% | 0.87 |
+| Bromley | 0.75 (High) | 33.7% | 4.0% | 3.87 |
+| Hertfordshire | 0.73 (High) | 43.0% | 11.7% | 1.05 |
 | Staffordshire | 0.69 (High) | 33.5% | 5.3% | 4.65 |
-| Central Bedfordshire | 0.64 (High) | 26.5% | 2.5% | 1.0 |
+| Derby | 0.67 (High) | 20.6% | 5.7% | 2.85 |
 
-Several of these councils are already showing collapse-level metrics on individual indicators. Bristol's mean timeliness over 2022–2024 was 37.5% (below the 40% collapse threshold), Bromley's was 33.7%, and Staffordshire's was 33.5%. Central Bedfordshire's mean timeliness of 26.5% is among the worst individual performances of any council in the country. These are observations about the current data, not predictions about future programme entry.
+Essex and Newcastle are not approaching crisis — fewer than one in ten of their plans were issued on time over 2022–24. Bromley, Staffordshire, and Derby are below the 40% collapse threshold; Hertfordshire combines borderline timeliness with the highest appeal rate in this group. These are observations about the current data, not predictions about future programme entry.
 
-*Note on selection: Enfield scores 0.69 on the same model but is excluded from this shortlist because its mean 20-week timeliness is 89.7% — the highest of any high-scoring council — and it shows no crisis signal on any individual indicator. The shortlist above shows councils whose model risk score is corroborated by actual deterioration in at least one observable outcome.*
+*Note on selection: Liverpool scores 0.77 on the same model but is excluded from this shortlist because its mean 20-week timeliness is 96.1% — the highest of any high-scoring council — leaving an elevated appeal rate (5.0%) as its only deteriorating indicator. The shortlist above shows councils whose model risk score is corroborated by clear deterioration in observable outcomes. An important caveat from the [vintage backtest](article_postmortem.md) applies to all such lists: risk scores built on current-crisis features identify councils already deteriorating; genuinely early council-level prediction performed at chance before 2019.*
 
 ---
 
@@ -169,11 +173,11 @@ The primary finding is a refinement of the forecastability claim. It was not sim
 
 For **timeliness failure** — the type most directly connected to the capacity collapse that Safety Valve councils experienced — the warning signal was in the demand data. Councils with high and growing absolute caseloads, particularly in ASD and SEMH, were associated with subsequent timeliness failure in a pattern not captured by tribunal or financial data. An early warning system monitoring absolute EHCP growth would have identified this group before the failure became acute — though it is important to note that this signal partly proxies total LA size, and that need-type *composition* (shares) was not useful independently of volume. This distinction matters for monitoring design: the IFS and IfG's published tracking of ASD as a *percentage* of the total EHCP caseload is looking at the wrong measure. The signal was in the absolute number growing, not the proportional mix.
 
-For **legal-pressure and placement failure** — the types most directly connected to DSG deficits and financial intervention — the warning signal was in the financial and legal data. Councils committing a high and rising share of their DSG to independent provider top-ups, while simultaneously attracting higher tribunal rates, were structurally committed to a different failure mode. An early warning system for this pathway could have been built from S251 returns and tribunal data that were both publicly available from 2015/16 onward.
+For **legal-pressure and placement failure** — the types most directly connected to DSG deficits and financial intervention — the warning signal was in the financial and legal data. Councils committing a high and rising share of their DSG to independent provider top-ups, while simultaneously attracting higher tribunal rates, were structurally committed to a different failure mode. One half of this early-warning pair was genuinely public at the time: S251 returns, LA-level, annually from 2015/16. The other half was not: LA-level tribunal appeal rates were only compiled and published by the DfE in 2025 (national volumes were public throughout; partial LA counts appeared in SEN2 releases from around 2018). An LA-level system on this pathway could have been built *inside* government, which held the tribunal data — but not by an outside analyst.
 
 The more immediate implication is for the councils that are now showing the same signals. Bristol, Bromley, and Staffordshire already show system-failure-level timeliness metrics. Central Bedfordshire, with mean timeliness of 26.5% over 2022–2024, is experiencing failure by any reasonable measure. The risk model says these councils look structurally similar to those that entered formal intervention. Whether the DfE is already engaging them is not visible in the public data.
 
-An early warning system using these signals — absolute need-type growth, independent top-up spend as a percentage of DSG, and tribunal appeal rate — could have triggered earlier engagement and potentially prevented the most acute operational deterioration. The signals to build such a system are now publicly available. The question is whether they are being used.
+An early warning system using these signals — absolute need-type growth, independent top-up spend as a percentage of DSG, and tribunal appeal rate — is buildable today: all three series are now published at LA level. But the [vintage backtest](article_postmortem.md) adds a sharp qualification about what such a system can deliver: council-level signals performed at chance before 2019, while the *national* trajectory was predictable within 8% from mid-2017. The primary monitoring design should therefore track national series against explicit planning assumptions, with the LA-level dashboard used to target support at councils already deteriorating — not to predict next failures years ahead.
 
 **What this would have meant operationally.** A useful early-warning dashboard would not have asked only whether EHCP totals were rising. It would have tracked absolute ASD, SEMH, and SLCN caseload growth alongside timely assessment throughput, independent-provider exposure, tribunal pressure, and DSG carry-forward — because these signals warned of different kinds of collapse. Tracking only total demand would have missed the throughput-capacity squeeze before it became visible in timeliness statistics. Tracking only financial stress would have missed the legal-pressure failures in councils that were not yet in deficit. The monitoring failure was not a lack of data but a failure to combine demand, throughput, legal, and placement-market signals into a single picture — and to treat different collapse types as distinct policy problems requiring distinct early responses.
 
@@ -211,7 +215,9 @@ One further caveat on the accountability argument. The government's 2026 white p
 
 ## Limitations
 
-**Cross-sectional training data**: All models are trained on cross-sectional LA-level data. Collapse prediction partially captures autocorrelation (high tribunal rates in 2016 predict high rates in 2022–2024) as well as genuine structural risk.
+**Feature vintage ≠ publication vintage**: Features are constructed by truncating 2025-vintage datasets at each training year — what the underlying systems had *recorded* by that date, not what had been *published*. The LA-level tribunal series (Models G, H) was first published in 2025. Results therefore describe the information content of the signals, not what a contemporaneous analyst could act on. See `vintage_backtest.py` and the [post-mortem](article_postmortem.md) for the publication-vintage analysis.
+
+**Cross-sectional training data**: All models are trained on cross-sectional LA-level data. Collapse prediction partially captures autocorrelation (high tribunal rates in 2016 predict high rates in 2022–2024) as well as genuine structural risk. The 2016-feature AUC of 0.70 for legal-pressure collapse is largely this persistence; composite collapse from 2016 features scores 0.60 and timeliness collapse ~0.50.
 
 **Need-type counts partly proxy LA size**: Absolute ASD and SEMH counts are correlated with total EHCP caseload, which is itself correlated with LA population. Model A (total demand) and Model B (need-type counts) produce similar AUC for timeliness collapse (~0.65–0.69). The cleaner result is that need-type *shares* are near-useless (AUC ~0.50), while absolute counts add signal. Whether need-type composition adds predictive value *beyond* total scale is marginal at most training years.
 

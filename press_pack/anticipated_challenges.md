@@ -23,7 +23,7 @@
 
 ## "Correlation isn't causation — you can't say tribunal rates predict collapse"
 
-**Short answer**: Agreed, and the analysis does not claim causation. The claim is that tribunal appeal rates and independent placement spend were early observable signals of structural conditions that subsequently produced collapse — and that these signals were in the public data and were not acted on. A model that achieves AUC 0.88 from 2021 data does not need to establish causation to be a useful early warning tool.
+**Short answer**: Agreed, and the analysis does not claim causation. The foreseeability claim rests on the national demand and spend trends — a simple extrapolation of the published caseload series that proved accurate to within 8% from mid-2017 — not on any causal model. The cross-sectional signal study (tribunal rates, placement spend) describes which series distinguished failing from non-failing councils; the analysis is explicit that part of that is persistence, that the LA-level tribunal series was only published in 2025, and that council-level signals genuinely available before 2019 perform at chance.
 
 ---
 
@@ -47,7 +47,7 @@
 
 ## "The AUC values aren't that impressive — 0.70 isn't much better than random"
 
-**Short answer**: AUC 0.70 is from 2016 data — six years before the collapse outcome. At training year 2021 (three years before the collapse window), the best model achieves AUC 0.88. For context, medical early-warning tools with AUC in the 0.70–0.80 range are routinely used to trigger clinical interventions. The relevant standard is not perfection but whether the signal was actionable — and at AUC 0.70 in 2016, it was.
+**Short answer**: Correct — and the analysis now says so itself. The revised position is that council-level prediction from genuinely contemporaneous data performed at chance before 2019, and the once-headlined AUC 0.70-from-2016 figure applies only to legal-pressure collapse and largely reflects persistence of the tribunal rate (from a series not published until 2025). The foreseeability claim does not rest on AUCs at all. It rests on the national arithmetic: the published caseload series was 36 standard deviations above the government's planning assumption by May 2017, and simple extrapolation predicted the 2024 total within 8% seven years ahead. That is the actionable signal — and it required no model, only comparing the department's own statistics against its own planning assumption.
 
 ---
 

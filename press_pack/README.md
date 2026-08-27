@@ -26,7 +26,9 @@
 |---|---|---|
 | `figures_for_media/17_capacity_ceiling_aggregate.png` | **Lead figure for news** | Timely throughput flat while total demand rose 69% — the queue that never moves |
 | `figures_for_media/03_la_timeliness_2024.png` | Parents, advocacy, local press | Every council's timeliness in 2024, named — makes the legal delay visceral |
-| `figures_for_media/36_forecastability_auc_heatmap.png` | Policy, research, wonk press | Different failure types had different early warning signals — the case for a dashboard |
+| `figures_for_media/47_vintage_projections.png` | **Foreseeability story** | Simple extrapolation of published data predicted the 2024 caseload within 8% from mid-2017; the 2014 planning assumption missed by 55% |
+| `figures_for_media/49_stress_test_2017.png` | Policy, research, wonk press | The stress test nobody ran: the actual outturn tracks the middle of scenarios constructible in mid-2017 |
+| `figures_for_media/36_forecastability_auc_heatmap.png` | Wonk press (with caveats) | Which data series carried signal about which failure type — note: data vintages, not publication vintages |
 
 Do not lead with risk scores unless the recipient already understands the methodology. Lead with figure 17.
 

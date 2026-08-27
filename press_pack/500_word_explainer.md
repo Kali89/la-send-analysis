@@ -15,9 +15,9 @@ When a child cannot access a maintained place locally, they are placed in an ind
 
 Councils whose populations live further from maintained SEMH provision spend significantly more on independent placements (p=0.003). This is not a deprivation story: Liverpool, one of the most deprived local authorities in England, achieves timeliness close to 98%. The evidence points to provision supply and system design as the key variables.
 
-**The collapse was foreseeable**
+**The national crisis was foreseeable from mid-2017**
 
-Predictive models trained on data available in 2016 — six years before the current crisis peaked — could identify which councils would enter systemic failure with cross-validated accuracy of AUC 0.70. By 2021, the same models achieved AUC 0.88. The warning signals — rising tribunal appeal rates and growing independent placement spend — were in the published data throughout. They were not assembled into any public early-warning framework that produced action.
+A backtest using only statistics actually published by each date shows that a simple extrapolation of the government's own caseload series predicted the 2024 total within 8% from mid-2017 — and within 1.3% from mid-2018. The planning assumption behind the 2014 reform was 36 standard deviations below the published data by May 2017. What was *not* predictable was which individual councils would fail: council-level signals published before 2019 perform no better than chance. The crisis was national; the necessary response — psychologist training, specialist capacity, funding reform, all with multi-year lead times — was national, and needed to start in 2017–18.
 
 **The councils already failing now**
 

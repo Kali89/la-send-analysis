@@ -30,9 +30,13 @@ OLS regressions control for DSG financial stress per pupil, IMD 2019 deprivation
 
 ---
 
-## Forecastability models (Article 2)
+## Foreseeability: publication-vintage backtest (Article 3)
 
-Eight model families (A–H) are trained using logistic regression on features constructed exclusively from data available at each training year (2016–2021). The collapse outcome (2022–2024) is defined from observable data — not programme membership:
+The foreseeability claims rest on a backtest that uses only statistics actually published by each date, parsed from the original releases (SFR 17/2016, published 26 May 2016; SEN2 2019 tables, published 30 May 2019; annual S251 outturns). At each vantage point (mid-2016 to mid-2021), three models are projected to 2024: the 2014 impact-assessment trend (statements-era linear), a linear fit to the last four observations, and an exponential fit to the EHCP-era points. The exponential predicts the actual 2024 caseload within 7.5% from mid-2017 and 1.3% from mid-2018; the impact-assessment assumption misses by 55%. A 36-cell stress-test grid (four demand-growth × three throughput × three cost-inflation scenarios) built from mid-2017 baselines contains all actual 2024 outcomes. LA-level early warning is also tested with genuinely vintage LA tables and performs at chance (AUC 0.39–0.61) before 2019. A per-source publication audit is in `publication_audit.csv`.
+
+## Signal-content models (Article 2)
+
+Eight model families (A–H) are trained using logistic regression on features truncated at each training year (2016–2021). Note: these are data vintages, not publication vintages — the LA-level tribunal series was first published in 2025, so Article 2 describes which series carried signal, not what an analyst could have known at the time. The collapse outcome (2022–2024) is defined from observable data — not programme membership:
 
 - **Timeliness collapse**: mean 20-week compliance < 40% over 2022–2024
 - **Legal-pressure collapse**: mean tribunal appeal rate > 75th percentile

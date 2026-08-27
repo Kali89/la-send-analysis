@@ -353,3 +353,100 @@ which is incompatible with the 2–4 year Safety Valve timescales.
    Some new special schools opened or converted in the intervening period.
 
 *Generated: 2026-05-12 using GIAS, DfE SEN2 2025, S251 2024-25*
+
+---
+
+# Vintage Backtest Findings (vintage_backtest.py, 2026-08-27)
+
+**Question**: When could the SEND crisis have been foreseen, using only statistics
+actually published by each date — and by whom?
+
+Method: all inputs parsed from the original releases (SFR 17/2016, published
+26 May 2016; SEN2 2019 tables, published 30 May 2019; S251 outturns; MoJ-derived
+national tribunal counts), outcomes from SEN2 2025. See
+`outputs/tables/publication_audit.csv` for per-source publication dates and lags.
+
+## Finding 13: The national caseload trajectory was predictable within 8% from mid-2017
+
+EHCP-era exponential extrapolation of the published January caseload series
+predicts the 2024 total (576,474):
+
+| Vintage | Prediction | Error |
+|---|---|---|
+| mid-2016 | 431,150 | −25.2% |
+| mid-2017 | 533,325 | −7.5% |
+| mid-2018 | 568,997 | −1.3% |
+| mid-2019 | 580,010 | +0.6% |
+
+The 2014 impact-assessment assumption (statements-era trend, ~+1%/yr) predicts
+258,220 (−55%). Deviation of the published caseload from that assumption:
++12.7σ (May 2016), +35.9σ (May 2017), +60.2σ (May 2018), +85.9σ (May 2019).
+
+## Finding 14: Both official defences failed on the government's own tables by 2017–18
+
+- Age-extension defence: school-age (0–15) growth was −0.3% in 2016 (defence
+  holds), +3.6% in 2017, +6.3% in 2018, +9.4% in 2019 (defence fails). By 2018
+  most annual growth was school-age.
+- One-off conversion defence: new plans were 27,925 in 2015 (below the 2013
+  statements-era peak), then 36,094 (+24% above peak, 2016), 42,162 (+45%),
+  48,907 (+68%). The statutory transition ended March 2018, after which
+  conversion could explain nothing.
+
+## Finding 15: A mid-2017 stress test brackets everything that happened
+
+36-cell grid (demand growth × throughput mode × cost inflation) from published
+mid-2017 baselines: actual 2024 caseload (576,474), late plans (48,944), and
+independent top-up spend (£2,423m) all fall INSIDE the constructible envelope.
+58% of cells at least double independent top-up spend by 2024. The actual
+outturn tracks the middle of the fan, not the tail.
+
+## Finding 16 (null): Which councils would fail was NOT foreseeable early
+
+All LA-level signals from genuinely vintage tables (caseload growth 2015–17 or
+2015–19, new-plan growth 2015–18, timeliness levels; May 2017/2019 releases)
+predict 2022–24 collapse at AUC 0.39–0.61 ≈ chance. LA timeliness rank order
+reshuffled completely: Spearman rho(2016–18, 2022–24) = 0.01 (Norfolk 9%→49%,
+Leicestershire 98%→5%, Portsmouth 99%→32%). Persistence appears only once the
+crisis is underway: rho(2019–21, 2022–24) = 0.38; timeliness 2019–21 → composite
+collapse AUC = 0.80.
+
+Consequence: the crisis was national; council-targeted early intervention was
+not an available policy in 2016–18, and the correct monitoring design is
+national series tracked against planning assumptions with explicit triggers.
+
+**Correction to earlier forecastability framing**: the LA-level tribunal
+appeal-rate series (Models G/H features) was first published by DfE in 2025 and
+was not available to contemporaneous analysts; the earlier "AUC 0.70 from 2016"
+headline applied to legal-pressure collapse only and largely reflects tribunal
+rate persistence. See revision notes in article_forecastability.md and
+article_postmortem.md.
+
+*Generated: 2026-08-27 using vintage releases (gov.uk archive), DfE SEN2 2025, S251 2024-25*
+
+## Finding 17: The action lag and its cost (cost_of_delay.py, 2026-08-27)
+
+**When action came** (verified timeline in `outputs/tables/action_timeline.csv`):
+first token response Dec 2018 (£250m + £100m capital, 19 months after the 36σ
+breach); demand-following revenue from Sept 2019 (+£700m for 2020-21); statutory
+override Nov 2020; Safety Valve deficit deals from 2021 (>£1bn, 38 councils);
+FIRST major capital programme Mar 2022 (£2.6bn, places 2024-27) — the 2018-window
+decision four years late; real EP expansion Mar 2023 (~400/yr from Sept 2024,
+qualifying 2027+) — capacity a decade after the signal. Supply-side responses
+(long lead times, needed first) systematically came last.
+
+**What the delay cost** (counterfactual: the 2022 capital programme decided
+mid-2018, RPUs online 2020-21, schools 2022+; diversion/saving assumptions from
+cost_benefit.py):
+- Conservative scope (only the rise in independent share 3.9%→4.6% avoidable):
+  ~£340m cumulative avoidable independent-placement spend FY2020-FY2025
+  (sensitivity £136-663m).
+- Central scope (40% of growth in independent placements above 2019 divertible):
+  ~£1,244m cumulative (sensitivity £497m-£2,420m).
+- Running cost of each further year of delay at FY2025 flow: £145-477m/yr.
+- Throughput channel: 26,617 plans issued late 2022-24 that would have been on
+  time at the 2019 rate (7,242 / 7,746 / 11,629 by year).
+- Context, not additive: DSG deficits >£3.3bn end-2024 (override expires Mar
+  2026); Safety Valve payments >£1bn; high-needs revenue ~£6.0bn→£10.7bn
+  2018-19→2024-25 (followed deficits rather than pre-empting visible demand).
+
+*Generated: 2026-08-27*

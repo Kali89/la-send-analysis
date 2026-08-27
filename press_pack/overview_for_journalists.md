@@ -27,13 +27,13 @@ The consequence is measurable. Councils whose populations live further from main
 
 ---
 
-## The forecastability finding
+## The foreseeability finding
 
-Using only data published before the current crisis, predictive models trained on 2016 information could identify which councils would enter systemic failure — with leave-one-out cross-validated accuracy of AUC 0.70. By 2021, the same models achieved AUC 0.88.
+A publication-vintage backtest — every input taken from the original statistical releases, dated to when they actually appeared on gov.uk — shows the *national* crisis was quantitatively predictable years in advance. A one-line extrapolation of the DfE's own published caseload series predicted the 2024 total (576,474 plans) within 8% from mid-2017, and within 1.3% from mid-2018. The 2014 reform's planning assumption was 36 standard deviations below the published data by May 2017. A 36-cell stress test constructible in mid-2017 contains every actual 2024 outcome — caseload, late plans, and independent placement spend — and in 58% of its cells placement spending doubles by 2024.
 
-The warning signals were tribunal appeal rates and independent placement spend as a share of the high-needs block. Both are published annually and have been since 2015/16. A council running above-average tribunal rates in 2016 was structurally more likely to be in serious difficulty by 2022–2024. These signals were in the public data. They were not assembled into any early-warning framework that produced action.
+Equally important is what was **not** foreseeable: which councils would fail. Signals genuinely published in 2016–18 predict 2022–24 council-level failure no better than chance, and council timeliness rank order reshuffled completely (Norfolk went from 9% timely to 49%; Leicestershire from 98% to 5%). The failure — and the missed response — was national: psychologist training, specialist capacity, and funding reform, all with multi-year lead times, needed to start in 2017–18.
 
-A public monitoring dashboard tracking five signals — need-type growth, timeliness trend, independent placement share, tribunal pressure, and DSG carry-forward — would give substantially better early warning than currently exists. The data for all five signals is already in the published record.
+A public monitoring framework tracking national series against explicit planning assumptions — caseload, new-plan flow, throughput, independent placement share, DSG carry-forward — would have fired loudly and correctly from 2017. The data for all five series is in the published record; the analysis reconstructs the dashboard that never existed.
 
 ---
 

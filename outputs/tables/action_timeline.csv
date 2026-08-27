@@ -1,0 +1,16 @@
+date,kind,event,years_after_2017_signal
+2016-05,signal,"First anomaly: caseload +6.7%, but attributable to 16-25 age extension (school-age -0.3%). Genuinely ambiguous.",
+2017-05,signal,THE PIVOT: caseload +12.1% (36 sigma above 2014 planning assumption); school-age growth positive; new plans +24% above any statements-era year. Low-regret window opens.,0.0
+2017-12,signal,"First S251 outturn trend: independent top-ups ~£1bn, rising 8%/yr.",0.6
+2018-03,signal,Statutory transition ends: conversion can no longer explain growth.,0.8
+2018-05,signal,Caseload +11.3% (60 sigma); new plans +45% above statements-era peak. Window for capital decisions.,1.0
+2018-12,action,FIRST RESPONSE: £250m revenue top-up + £100m capital over two years (~4% of high-needs budget/yr); call for evidence.,1.6
+2019-05,signal,Caseload +10.7% (86 sigma); extrapolation now predicts 2024 within 1%. NAO report (Sept) and Education Committee (Oct) publish the diagnosis.,2.0
+2019-09,action,SEND Review launched. Spending round adds >£700m high-needs revenue for 2020-21 (demand-following). First modest EP training expansion announced: intake ~160 to ~200/yr from Sept 2020 (qualify 2023).,2.3
+2020-11,action,"DSG statutory override: deficits moved off council balance sheets (accounting measure, no capacity).",3.5
+2021-03,action,"Safety Valve programme begins: bespoke deficit-recovery deals (38 councils by 2024, >£1bn of DfE payments).",3.8
+2022-03,action,"SEND green paper. FIRST MAJOR CAPITAL PROGRAMME: £2.6bn high-needs capital 2022-25 (announced SR21) - the 2018-window decision, four years late; places land 2024-27.",4.8
+2022-07,action,Delivering Better Value programme (~54 councils).,5.2
+2023-03,action,"SEND & AP Improvement Plan: workforce plan, quality standards. £21m for 2024+2025 EP cohorts (~400/yr intake from Sept 2024; qualify 2027+).",5.8
+2024-12,action,Safety Valve closed to new entrants. Cumulative DSG deficits >£3.3bn; override extended to March 2026.,7.6
+2026-02,action,White paper: structural redesign of the 2014 framework.,8.8

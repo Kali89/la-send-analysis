@@ -1,0 +1,10 @@
+series,geographic_level,first_publication,publication_lag,notes
+EHCP/statement caseload (SEN2),LA + national,Annual since 2011; current-format SFR from May 2015. Jan census published each May.,~4 months,Jan 2016 count published 26 May 2016 (SFR 17/2016). Full LA back-series to 2010 in every release (Table 3).
+New plans per year (SEN2),LA + national,Annual since 2011; LA-level Table 4 in each May release.,~17 months after calendar year start,2016 calendar-year count (the first unambiguous demand signal) published May 2017.
+20-week timeliness (SEN2),LA + national,May 2015 release onward (calendar 2014 data; EHCP volumes small in 2014).,~5 months,"LA-level Table 9 in each May release. First fully meaningful LA year: calendar 2015, published May 2016."
+Refused assessment requests (SEN2),National (LA later),"National from May 2016 release (2015 data, new item).",~5 months,"10,935 refusals in 2015 vs 8,870 in 2014 was in the May 2016 release text."
+S251 high-needs spend incl. line 1.2.3 (independent top-ups),LA,Annual; outturn ~8 months after FY end; budget in-year.,~8 months,"FY2015/16 outturn available from ~Dec 2016. Independent top-up trend computable from Dec 2017 (2 outturns), robust by Dec 2018."
+DSG balances / carry-forward,LA,"S251 outturn + LA accounts, annual.",~8 months,Deficits visible in published outturns from ~2018.
+SEND tribunal appeals: national volume,National,"MoJ Tribunal Statistics Quarterly, since before 2014.",~6 months,Rising registrations visible annually throughout.
+SEND tribunal appeal rate by LA (consistent series),LA,"DfE supporting file, first published 2025.",n/a,NOT available to a contemporaneous analyst. Any early-warning design built on LA-level tribunal rates is anachronistic before 2025; SEN2 Table 10 carried partial LA tribunal counts from ~2018.
+EHCP caseload by primary need type,LA (school-age proxy),"School census ""SEN in England"" each July (school-age only). SEN2 all-age need-type from 2025.",~6 months,ASD/SEMH growth was visible in the school-census series from 2016/17 onward.

@@ -35,9 +35,9 @@ The 2026 SEND white paper is the right long-run response. But structural reform 
 
 ## 4. Publish a public early-warning dashboard
 
-The data to predict local authority collapse already exists and is published annually. Predictive models trained on 2016 data identified the councils that would enter the Safety Valve programme — achieving AUC 0.70 six years in advance, and AUC 0.88 by 2021. DfE's own monitoring has focused on proportional need-type shares, which perform at AUC ≈ 0.50 (equivalent to chance). The warning signals — absolute need-type growth, 20-week timeliness trend, tribunal appeal rate, independent placement spend as a share of DSG — were visible and were not acted on.
+The vintage backtest in this analysis shows the national crisis was predictable within 8% from mid-2017 using the DfE's own published caseload series — yet the 2014 reform's planning assumptions carried no published monitoring triggers, and the 36σ breach produced no proportionate response until 2023. It also shows council-level failure was *not* predictable years ahead: pre-2019 LA-level signals perform at chance. The monitoring failure was national, not a failure to spot particular councils.
 
-**Ask**: DfE should publish an annual LA-level risk dashboard using the validated early-warning signals identified in this analysis. The methodology and underlying data should be transparent and open to external scrutiny.
+**Ask**: DfE should publish the demand and cost assumptions underpinning the current reform alongside an annual national tracker — caseload against assumption, new-plan flow, timely-assessment throughput, independent placement spend share, and DSG balances — with explicit, pre-committed escalation triggers. A companion LA-level dashboard should be used to target support at councils already deteriorating (as several currently are, with no formal engagement), not marketed as a prediction of future failures. Methodology and data should be open to external scrutiny.
 
 ---
 

@@ -25,7 +25,7 @@ All outputs are derived from Crown Copyright data published under the Open Gover
 
 ### For academic or policy documents
 
-> Sharpe, M. (2026). *England's SEND crisis: LA-level analysis of gatekeeping, timeliness failure, and forecastability* [Data analysis]. Oxford Internet Institute. Available at: https://github.com/Kali89/la-send-analysis
+> Sharpe, M. (2026). *England's SEND crisis: LA-level analysis of gatekeeping, timeliness failure, and foreseeability* [Data analysis]. Oxford Internet Institute. Available at: https://github.com/Kali89/la-send-analysis
 
 ---
 
@@ -65,6 +65,7 @@ python extension.py         # DSG, event study, mediation → appends FINDINGS.m
 python capacity_analysis.py # GIAS capacity → figures 11–14
 python timeliness_analysis.py # Capacity ceiling, spend per EHCP → figures 17–21
 python forecastability_analysis.py # Risk scores, AUC heatmap → figures 35–43
+python vintage_backtest.py         # Publication-vintage backtest → figures 47–50
 ```
 
 Scripts 3–5 require manual data downloads (GIAS ~61 MB, S251 ~12 MB). See README for full instructions.
