@@ -10,9 +10,11 @@ A data-driven analysis of England's Special Educational Needs and Disability (SE
 
 3. **[A data-driven post-mortem](article_postmortem.md)** — The foreseeability evidence, rebuilt on publication vintages: using only statistics actually published by each date, the national crisis was predictable within 8% from mid-2017 (within 1.3% from mid-2018), the 2014 planning assumption was 36σ wrong by May 2017 — and which specific councils would fail was NOT predictable (chance-level) before 2019. Year-by-year account of what a competent response would have been, by whom.
 
-4. **[Policy briefing note](briefing_note.md)** — One-page summary for ministers and officials.
+4. **[Policy post-mortems: what did we know, and when did we know it?](article_policy_postmortems.md)** — The generalisable method: a standing, rapid, blameless, data-dated post-mortem discipline for policy failures (publication-vintage reconstruction → decision standard → counterfactual costing → assumptions with tripwires), with precedents (OBR forecast evaluation, AAIB/HSSIB) and SEND as the worked demonstration.
 
-5. **[Literature review](literature_review.md)** — Positioning this analysis against existing academic and policy evidence on SEND system performance.
+5. **[Policy briefing note](briefing_note.md)** — One-page summary for ministers and officials.
+
+6. **[Literature review](literature_review.md)** — Positioning this analysis against existing academic and policy evidence on SEND system performance.
 
 **For journalists and policymakers:** a ready-to-use [evidence pack](press_pack/) is available, including a master overview, 500-word explainer, facility priority planning, invest-to-save cost-benefit analysis, policy asks, methodology summary, and anticipated challenges.
 
@@ -110,6 +112,7 @@ Safety Valve and Delivering Better Value programme lists are sourced from:
 ├── article.md                     # Article 1: System-wide timeliness failure
 ├── article_forecastability.md     # Article 2: Forecastability
 ├── article_postmortem.md          # Article 3: Data-driven post-mortem
+├── article_policy_postmortems.md  # Article 4: The policy post-mortem method (SEND as demonstration)
 ├── briefing_note.md               # One-page policy briefing
 ├── literature_review.md           # Academic and policy context
 ├── press_pack/                    # Evidence pack for journalists and policymakers
